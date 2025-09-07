@@ -1,0 +1,15 @@
+https://testautomationpractice.blogspot.com/
+Interact with the dynamic button and verify its state changes after clicking.
+Click all alert popups, implement conditional waits, and proceed based on dialog type.
+Enter "John" in Field 1 and validate automatic population of Field 2 through data binding.
+Perform drag-and-drop operation between specified elements and confirm successful repositioning.
+Locate and select item ID 120 in dropdown/list components, verifying UI persistence.
+Record CPU percentage of chrome before reload page, recheck metric, and compare pre/post values for equality.
+Download sample text file using download link, then upload it through the file input and verify successful transfer.
+Attempt to submit the form with missing required fields and verify dynamic error messages appear.
+Edit a value in the dynamic web table and confirm the update is reflected without page reload.
+Trigger and validate tab navigation, ensuring content changes with each tab selection.
+Validate that hidden fields or sections appear when specific form options are selected.
+Test search/filter functionality in tables and confirm results update dynamically as expected.
+Monitor and verify that real-time data (such as a timer or live counter, if present) updates correctly without page reload.
+Refresh the page and confirm that dynamic selections or edits do not persist unless explicitly saved.

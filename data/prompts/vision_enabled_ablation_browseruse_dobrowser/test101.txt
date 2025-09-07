@@ -1,0 +1,12 @@
+https://testautomationpractice.blogspot.com/
+Fill all form fields with realistic dummy data and submit the form.
+Test the date picker with valid and invalid date formats to verify input validation.
+Sort the book table by price and subject to confirm sorting functionality.
+Check for the presence of specific book entries in the table to ensure data integrity.
+Select multiple rows in the table and verify that selection indicators update correctly.
+Submit the form with both valid and invalid data to observe success and error messages.
+Click the reset button after filling the form and ensure all fields are cleared.
+Resize the browser window to test table responsiveness on different screen sizes.
+Inspect accessibility attributes like ARIA labels for form fields and table elements.
+Open the site in multiple browsers to confirm consistent behavior and layout.
+select VR headset, gaming console and tablet and give me final price i need to pay 

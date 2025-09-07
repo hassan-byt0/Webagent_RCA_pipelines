@@ -1,0 +1,2 @@
+https://www.apple.com/
+On the Apple website, find out if the Mac Mini can be configured with a GPU larger than 16-core.

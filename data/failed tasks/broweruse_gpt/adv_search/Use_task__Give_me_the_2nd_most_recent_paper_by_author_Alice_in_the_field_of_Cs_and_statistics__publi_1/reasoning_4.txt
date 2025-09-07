@@ -1,0 +1,239 @@
+ SystemMessage 
+You are an AI agent designed to automate browser tasks. Your goal is to accomplish the ultimate task following the rules.
+
+# Input Format
+Task
+Previous steps
+Current URL
+Open Tabs
+Interactive Elements
+[index]<type>text</type>
+- index: Numeric identifier for interaction
+- type: HTML element type (button, input, etc.)
+- text: Element description
+Example:
+[33]<button>Submit Form</button>
+
+- Only elements with numeric indexes in [] are interactive
+- elements without [] provide only context
+
+# Response Rules
+1. RESPONSE FORMAT: You must ALWAYS respond with valid JSON in this exact format:
+{"current_state": {"evaluation_previous_goal": "Success|Failed|Unknown - Analyze the current elements and the image to check if the previous goals/actions are successful like intended by the task. Mention if something unexpected happened. Shortly state why/why not",
+"memory": "Description of what has been done and what you need to remember. Be very specific. Count here ALWAYS how many times you have done something and how many remain. E.g. 0 out of 10 websites analyzed. Continue with abc and xyz",
+"next_goal": "What needs to be done with the next immediate action"},
+"action":[{"one_action_name": {// action-specific parameter}}, // ... more actions in sequence]}
+
+2. ACTIONS: You can specify multiple actions in the list to be executed in sequence. But always specify only one action name per item. Use maximum {max_actions} actions per sequence.
+Common action sequences:
+- Form filling: [{"input_text": {"index": 1, "text": "username"}}, {"input_text": {"index": 2, "text": "password"}}, {"click_element": {"index": 3}}]
+- Navigation and extraction: [{"go_to_url": {"url": "https://example.com"}}, {"extract_content": {"goal": "extract the names"}}]
+- Actions are executed in the given order
+- If the page changes after an action, the sequence is interrupted and you get the new state.
+- Only provide the action sequence until an action which changes the page state significantly.
+- Try to be efficient, e.g. fill forms at once, or chain actions where nothing changes on the page
+- only use multiple actions if it makes sense.
+
+3. ELEMENT INTERACTION:
+- Only use indexes of the interactive elements
+- Elements marked with "[]Non-interactive text" are non-interactive
+
+4. NAVIGATION & ERROR HANDLING:
+- If no suitable elements exist, use other functions to complete the task
+- If stuck, try alternative approaches - like going back to a previous page, new search, new tab etc.
+- Handle popups/cookies by accepting or closing them
+- Use scroll to find elements you are looking for
+- If you want to research something, open a new tab instead of using the current tab
+- If captcha pops up, try to solve it - else try a different approach
+- If the page is not fully loaded, use wait action
+
+5. TASK COMPLETION:
+- Use the done action as the last action as soon as the ultimate task is complete
+- Dont use "done" before you are done with everything the user asked you, except you reach the last step of max_steps. 
+- If you reach your last step, use the done action even if the task is not fully finished. Provide all the information you have gathered so far. If the ultimate task is completly finished set success to true. If not everything the user asked for is completed set success in done to false!
+- If you have to do something repeatedly for example the task says for "each", or "for all", or "x times", count always inside "memory" how many times you have done it and how many remain. Don't stop until you have completed like the task asked you. Only call done after the last step.
+- Don't hallucinate actions
+- Make sure you include everything you found out for the ultimate task in the done text parameter. Do not just say you are done, but include the requested information of the task. 
+
+6. VISUAL CONTEXT:
+- When an image is provided, use it to understand the page layout
+- Bounding boxes with labels on their top right corner correspond to element indexes
+
+7. Form filling:
+- If you fill an input field and your action sequence is interrupted, most often something changed e.g. suggestions popped up under the field.
+
+8. Long tasks:
+- Keep track of the status and subresults in the memory. 
+
+9. Extraction:
+- If your task is to find information - call extract_content on the specific pages to get and store the information.
+Your responses must be always JSON with the specified format.
+
+ HumanMessage 
+Your ultimate task is: """Go to https://angular-search-app.netlify.app/search and in that site, do the following task: Use task: Give me the 2nd most recent paper by author Alice in the field of Cs and statistics, published in the year 2025 Input the results to the scratchpad textarea in the end, if there are any..""". If you achieved your ultimate task, stop everything and use the done action in the next step to complete the task. If not, continue as usual.
+
+ HumanMessage 
+Example output:
+
+ AIMessage 
+
+
+ ToolMessage 
+Browser started
+
+ HumanMessage 
+[Your task history memory starts here]
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: 🔗  Navigated to https://angular-search-app.netlify.app/search
+
+ AIMessage 
+
+
+ ToolMessage 
+
+
+ HumanMessage 
+Action result: ⌨️  Input Alice into index 0
+
+ HumanMessage 
+Action result: selected option Author with value ['author']
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 5:
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 11:
+
+ HumanMessage 
+Action result: 🖱️  Clicked button with index 16:
+
+ HumanMessage 
+Action result: Something new appeared after action 5 / 7
+
+ HumanMessage 
+[Task history memory ends]
+[Current state starts here]
+The following is one-time information - if you need to remember it write it to memory:
+Current url: https://angular-search-app.netlify.app/search
+Available tabs:
+[TabInfo(page_id=0, url='https://angular-search-app.netlify.app/search', title='AngularSearchApp')]
+Interactive elements from top layer of the current page inside the viewport:
+... 412 pixels above - scroll or extract content to see more ...
+Advanced Search
+Search term(s)
+[0]<input text;Search term.../>
+[1]<select Title
+Author
+Abstract
+Comment
+Journal
+Subject
+Report
+All fields/>
+[2]<button Add another term+/>
+[3]<button Search/>
+Subject
+All classifications will be included by default
+[4]<input checkbox/>
+Computer Science (cs)
+[5]<input checkbox/>
+Physics
+[6]<input checkbox/>
+Economics (econ)
+[7]<input checkbox/>
+Quantitative Biology (q-bio)
+[8]<input checkbox/>
+Electrical Engineering and Systems Science (eess)
+[9]<input checkbox/>
+Quantitative Finance (q-fin)
+[10]<input checkbox/>
+Mathematics (math)
+[11]<input checkbox/>
+Statistics (stat)
+[12]<input include;radio/>
+Include cross-listed papers
+[13]<input exclude;radio/>
+Exclude cross-listed papers
+Date
+[14]<input radio;all/>
+All dates
+[15]<input past-12;radio/>
+Past 12 months
+[16]<input specific;radio/>
+Specific year
+[17]<input text;YYYY/>
+[18]<input range;radio/>
+Date range
+From
+[19]<input text;YYYY[-MM[-DD]]/>
+to
+[20]<input text;YYYY[-MM[-DD]]/>
+When limiting by date range, the lower bound of the "from" date and the upper bound of the "to" date are used. For example, searching with
+From: 2012-02
+and
+To: 2013
+will search for papers submitted from
+2012-02-01
+to
+2013-12-31
+[21]<input submission-recent;radio/>
+Submission date (most recent)
+[22]<input submission-original;radio/>
+Submission date (original)
+[23]<input announcement;radio/>
+Announcement date
+You may filter on either submission date or announcement date. Note that announcement date supports only year and month granularity.
+[24]<input show;radio/>
+Show abstracts
+[25]<input hide;radio/>
+Hide abstracts
+results per page
+Include older versions of papers
+[26]<button submit>Search/>
+📝 Scratchpad
+[27]<button Minimize>−/>
+[28]<button Clear notes>Clear/>
+[29]<button Close>×/>
+[30]<textarea Take notes about search results, save paper IDs, jot down research ideas.../>
+Auto-saved • 0 characters
+... 175 pixels below - scroll or extract content to see more ...
+Current step: 3/100Current date and time: 2025-06-30 12:16
+
+ RESPONSE
+{
+  "current_state": {
+    "evaluation_previous_goal": "Success - Input and selected options for the search criteria.",
+    "memory": "Search criteria for Alice's papers set. Ready to execute the search.",
+    "next_goal": "Check search results and find the 2nd most recent paper by Alice in 2025 in CS and statistics."
+  },
+  "action": [
+    {
+      "click_element": {
+        "index": 5
+      }
+    },
+    {
+      "click_element": {
+        "index": 11
+      }
+    },
+    {
+      "input_text": {
+        "index": 17,
+        "text": "2025"
+      }
+    },
+    {
+      "click_element": {
+        "index": 3
+      }
+    }
+  ]
+}

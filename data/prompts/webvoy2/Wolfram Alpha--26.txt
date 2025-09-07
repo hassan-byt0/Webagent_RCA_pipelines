@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Convert 15 kilograms of sulfuric acid to moles and display the percentage composition of H, S, and O by weight.

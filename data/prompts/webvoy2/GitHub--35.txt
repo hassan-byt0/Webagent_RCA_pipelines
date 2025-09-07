@@ -1,0 +1,2 @@
+https://github.com/
+Check the latest release version of React and the date it was published on GitHub.

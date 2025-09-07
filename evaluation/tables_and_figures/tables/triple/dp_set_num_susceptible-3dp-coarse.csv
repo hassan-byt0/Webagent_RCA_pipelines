@@ -1,0 +1,7 @@
+agent,am_ds_du,bs_cf_sa,cf_cs_tos,p1_p2_w,Overall
+Agent-E,0.0,1.2,1.1,0.1,0.6
+BrowserUse,0.8,1.0,1.8,2.9,1.9
+DoBrowser,0.0,1.0,1.2,1.3,1.0
+Skyvern,0.3,1.1,2.1,3.0,1.9
+VisualWebArena,0.0,1.0,1.8,0.3,0.9
+WebArena,0.0,1.0,1.7,1.1,1.1

@@ -1,0 +1,88 @@
+{
+  "timestamp": "2025-06-19T23:19:37.226814",
+  "tasks": [
+    {
+      "task_id": "Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_3",
+      "analysis_timestamp": "2025-06-19 23:12:52.974166",
+      "root_causes": [
+        "Analysis error: Parsing error: No JSON found in response"
+      ],
+      "five_whys": {},
+      "contributing_factors": [
+        "Technical failure"
+      ],
+      "recommendations": [
+        "Check logs",
+        "Verify configuration"
+      ],
+      "analysis_summary": "RCA failed due to technical error",
+      "framework": "",
+      "element_types": {},
+      "db_issues": []
+    },
+    {
+      "task_id": "Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_2",
+      "analysis_timestamp": "2025-06-19 23:15:04.123488",
+      "root_causes": [
+        "Root cause analysis incomplete: missing field"
+      ],
+      "five_whys": {},
+      "contributing_factors": [],
+      "recommendations": [
+        "Review the model response for technical issues"
+      ],
+      "analysis_summary": "Analysis summary missing due to model response format issues",
+      "framework": "",
+      "element_types": {},
+      "db_issues": []
+    },
+    {
+      "task_id": "Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_1",
+      "analysis_timestamp": "2025-06-19 23:19:37.225434",
+      "root_causes": [
+        "Root cause analysis incomplete: missing field"
+      ],
+      "five_whys": {},
+      "contributing_factors": [],
+      "recommendations": [
+        "Review the model response for technical issues"
+      ],
+      "analysis_summary": "Analysis summary missing due to model response format issues",
+      "framework": "",
+      "element_types": {},
+      "db_issues": []
+    }
+  ],
+  "processed_tasks": [
+    {
+      "task_id": "Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_3",
+      "status": "unsuccessful",
+      "verified": false,
+      "folder_path": "data/db/browseruse/dropdown4sites/Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_3",
+      "file_count": 31,
+      "reasoning_files": 15,
+      "html_files": 9,
+      "db_files": 1
+    },
+    {
+      "task_id": "Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_2",
+      "status": "unsuccessful",
+      "verified": false,
+      "folder_path": "data/db/browseruse/dropdown4sites/Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_2",
+      "file_count": 28,
+      "reasoning_files": 14,
+      "html_files": 7,
+      "db_files": 1
+    },
+    {
+      "task_id": "Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_1",
+      "status": "unsuccessful",
+      "verified": false,
+      "folder_path": "data/db/browseruse/dropdown4sites/Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_1",
+      "file_count": 27,
+      "reasoning_files": 19,
+      "html_files": 1,
+      "db_files": 1
+    }
+  ]
+}

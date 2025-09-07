@@ -1,0 +1,2 @@
+https://huggingface.co/
+On the Hugging Face website, search for the model 'GPT-J-6B' and find the 'temperature' parameter in its settings. What is the default value of this parameter?

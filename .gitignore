@@ -1,0 +1,30 @@
+.vscode/*
+!.vscode/launch.json
+*.tfstate
+*_cache
+*.tfstate.*
+crash.log
+*.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform/
+terraform.tfstate.backup
+.terraform.lock.hcl
+logs.DS_Store
+.DS_Store
+
+# Data directories - exclude contents but keep folder structure
+# Note: data/db/ contains large test data files (8.4GB+ browseruse data)
+# These are excluded to keep repository size manageable
+data/db/*
+!data/db/.gitkeep
+data/browser_data/*
+!data/browser_data/.gitkeep
+
+# Cache directories
+cache_0/
+cache_1/
+cache-2/
+cachwew2/

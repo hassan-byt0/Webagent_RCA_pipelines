@@ -1,0 +1,2 @@
+https://huggingface.co/
+Use the Huggingface Inference API to generate a short story about a dragon and a wizard.

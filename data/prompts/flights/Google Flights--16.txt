@@ -1,0 +1,2 @@
+https://www.google.com/travel/flights/
+Find the cheapest one-way flight from New York to Tokyo departing on January 15, 2024, and provide the airline and total flight duration.

@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Show the electrical resistivity of UNS A92024 and UNS G10800 at 20 degrees Celsius.

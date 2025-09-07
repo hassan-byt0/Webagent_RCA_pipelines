@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Let g(x) be the integral of x^2 cos(2x). Write the expression of g(x).

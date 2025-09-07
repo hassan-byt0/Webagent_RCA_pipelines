@@ -1,0 +1,2 @@
+https://textinputdemos.tiiny.site/types/server_sync_search_input.html
+Type "Java" in the search field and select "JavaScript Fundamentals" from the dropdown suggestion list.

@@ -1,0 +1,17 @@
+2025-09-02 22:03:19,882 - INFO - Starting ArXiv deterministic analysis for task arxiv_test_001
+2025-09-02 22:03:19,882 - INFO - Starting ArXiv deterministic analysis for task scenario_website_state_failure_(captcha)
+2025-09-02 22:03:19,882 - INFO - Starting ArXiv deterministic analysis for task scenario_dom_parsing_failure_(author_input)
+2025-09-02 22:03:19,882 - INFO - Starting ArXiv deterministic analysis for task scenario_agent_reasoning_failure_(author_hallucination)
+2025-09-02 22:03:19,882 - INFO - Starting ArXiv deterministic analysis for task scenario_dynamic_content_failure_(classification)
+2025-09-02 22:09:48,565 - INFO - Starting ArXiv deterministic analysis for task arxiv_test_001
+2025-09-02 22:09:48,565 - INFO - Starting ArXiv deterministic analysis for task scenario_website_state_failure_(captcha)
+2025-09-02 22:09:48,565 - INFO - Starting ArXiv deterministic analysis for task scenario_dom_parsing_failure_(author_input)
+2025-09-02 22:09:48,565 - INFO - Starting ArXiv deterministic analysis for task scenario_agent_reasoning_failure_(author_hallucination)
+2025-09-02 22:09:48,565 - INFO - Starting ArXiv deterministic analysis for task scenario_dynamic_content_failure_(classification)
+2025-09-02 22:11:55,874 - INFO - Starting ArXiv deterministic analysis for task quick_test
+2025-09-02 22:12:18,477 - INFO - Starting ArXiv deterministic analysis for task quick_test
+2025-09-02 22:20:11,370 - INFO - Starting ArXiv deterministic analysis for task arxiv_test_001
+2025-09-02 22:20:11,371 - INFO - Starting ArXiv deterministic analysis for task scenario_website_state_failure_(captcha)
+2025-09-02 22:20:11,371 - INFO - Starting ArXiv deterministic analysis for task scenario_dom_parsing_failure_(author_input)
+2025-09-02 22:20:11,371 - INFO - Starting ArXiv deterministic analysis for task scenario_agent_reasoning_failure_(author_hallucination)
+2025-09-02 22:20:11,371 - INFO - Starting ArXiv deterministic analysis for task scenario_dynamic_content_failure_(classification)

@@ -1,0 +1,2 @@
+https://www.coursera.org/
+Identify a Coursera course on artificial intelligence ethics that has a duration of less than 20 hours to complete and has been rated 4+ stars by participants.

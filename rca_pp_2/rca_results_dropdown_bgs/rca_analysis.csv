@@ -1,0 +1,3 @@
+task_id,status,framework,element_types,root_causes,five_whys,db_issues,recommendations,analysis_summary
+4,failure,Unknown,{},Analysis error: Failed after 10 retries,"{""Cause"": [{""question"": ""What caused the analysis failure?"", ""answer"": ""Technical failure: Failed after 10 retries""}]}",,Check logs | Verify configuration,RCA failed due to technical error
+1,failure,Unknown,{},Analysis error: Failed after 10 retries,"{""Cause"": [{""question"": ""What caused the analysis failure?"", ""answer"": ""Technical failure: Failed after 10 retries""}]}",,Check logs | Verify configuration,RCA failed due to technical error

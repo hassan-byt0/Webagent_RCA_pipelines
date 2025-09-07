@@ -1,0 +1,2 @@
+https://huggingface.co/
+Identify the latest updated image to video model available on Huggingface and summarize its main features.

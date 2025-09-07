@@ -1,0 +1,53 @@
+/* src/components/WikipediaClone.css */
+
+.wikipedia-layout {
+  min-height: 100vh;
+}
+
+.wikipedia-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wiki-logo {
+  display: flex;
+  align-items: center;
+}
+
+.wiki-logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.wikipedia-content {
+  padding: 2rem;
+}
+
+.wikipedia-footer {
+  background-color: #f0f2f5;
+  padding: 1rem;
+}
+
+.wikipedia-home ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wikipedia-home li {
+  margin-bottom: 0.5rem;
+}
+
+.article-not-found,
+.article-page {
+  padding: 2rem;
+}
+
+.back-link a {
+  color: #1890ff;
+  cursor: pointer;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}

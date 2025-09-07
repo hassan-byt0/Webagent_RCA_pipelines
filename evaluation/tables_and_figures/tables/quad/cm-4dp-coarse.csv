@@ -1,0 +1,13 @@
+,agent,site_name,DC,DF,EC,EF
+0,Agent-E,news,8.3,16.7,25.0,50.0
+1,Agent-E,shop,0.0,3.3,0.0,96.7
+2,BrowserUse,news,0.0,27.8,0.0,72.2
+3,BrowserUse,shop,40.0,33.3,13.3,13.3
+4,DoBrowser,news,0.0,25.0,0.0,75.0
+5,DoBrowser,shop,11.7,10.0,8.3,70.0
+6,Skyvern,news,0.0,50.0,0.0,50.0
+7,Skyvern,shop,55.0,18.3,18.3,8.3
+8,VisualWebArena,news,0.0,25.0,0.0,75.0
+9,VisualWebArena,shop,0.0,20.0,0.0,80.0
+10,WebArena,news,0.0,25.0,0.0,75.0
+11,WebArena,shop,3.3,21.7,3.3,71.7

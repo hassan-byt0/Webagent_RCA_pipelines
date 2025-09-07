@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Solve the ODE, g' + cos(g) = 0, if there is a constant in the result, determine the value of the constant by the condition that g(0) = 1.

@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Determine the convergence or divergence of the series Σ (n=1 to ∞) of 1/(n^3 + 1).

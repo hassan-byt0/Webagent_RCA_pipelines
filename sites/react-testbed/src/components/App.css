@@ -1,0 +1,15 @@
+/* src/components/App.css */
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 64px; /* Match Ant Design Header height */
+}
+
+a {
+  color: #1890ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}

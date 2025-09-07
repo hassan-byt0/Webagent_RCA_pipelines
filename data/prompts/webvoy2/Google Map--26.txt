@@ -1,0 +1,2 @@
+https://www.google.com/maps/
+Search for Los Angeles on Google Map, try to print the map as PDF and summarize the information on the map.

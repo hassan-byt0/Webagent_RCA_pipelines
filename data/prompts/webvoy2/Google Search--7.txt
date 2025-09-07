@@ -1,0 +1,2 @@
+https://www.google.com/
+Find the software requirements for iPhones that support AirDrop's ability to continue transmitting over the web when out of range.

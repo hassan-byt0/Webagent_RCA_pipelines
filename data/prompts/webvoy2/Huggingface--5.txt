@@ -1,0 +1,2 @@
+https://huggingface.co/
+Find a model released on Hugging Face for recipe generation. Retrieve the information of the model, including its name, model size and tensor type.

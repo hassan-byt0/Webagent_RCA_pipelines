@@ -1,0 +1,7 @@
+,Agent,num_susceptible_0,num_susceptible_1,num_susceptible_2
+0,Agent-E,123,45,3
+1,BrowserUse,22,56,93
+2,DoBrowser,83,58,30
+3,Skyvern,12,64,95
+4,VisualWebArena,84,73,14
+5,WebArena,54,103,10

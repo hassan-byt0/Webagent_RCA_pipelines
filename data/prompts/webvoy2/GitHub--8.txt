@@ -1,0 +1,2 @@
+https://github.com/
+Look up the latest stable release version of Vuex and find out when it was published.

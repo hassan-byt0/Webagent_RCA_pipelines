@@ -1,0 +1,2 @@
+https://arxiv.org/
+Download the paper 'Dense Passage Retrieval for Open-Domain Question Answering'. How many formulas are in the article and which one is the loss function?

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://bulia-keshav.github.io/Element-variation-websites/Dropdown/tailwind-nonhover.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleZon - Shop Online</title>
+    <script src="./tailwind_dropdown_files/saved_resource"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'amazon-blue': '#232f3e',
+                        'amazon-blue-light': '#37475a',
+                        'amazon-orange': '#ff9900',
+                        'amazon-orange-dark': '#e68900',
+                        'amazon-red': '#b12704'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .dropdown-arrow-rotate {
+            transform: rotate(180deg);
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.left-0{left:0px}.left-full{left:100%}.top-0{top:0px}.top-full{top:100%}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-5{margin-top:1.25rem;margin-bottom:1.25rem}.my-1{margin-top:0.25rem;margin-bottom:0.25rem}.mb-2\.5{margin-bottom:0.625rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-7{margin-bottom:1.75rem}.ml-1{margin-left:0.25rem}.mt-2{margin-top:0.5rem}.mt-5{margin-top:1.25rem}.mb-2{margin-bottom:0.5rem}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.w-full{width:100%}.min-w-\[160px\]{min-width:160px}.min-w-\[180px\]{min-width:180px}.min-w-\[200px\]{min-width:200px}.max-w-6xl{max-width:72rem}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-5{gap:1.25rem}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-none{border-style:none}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.bg-amazon-blue{--tw-bg-opacity:1;background-color:rgb(35 47 62 / var(--tw-bg-opacity, 1))}.bg-amazon-orange{--tw-bg-opacity:1;background-color:rgb(255 153 0 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-amazon-blue-light{--tw-bg-opacity:1;background-color:rgb(55 71 90 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.p-10{padding:2.5rem}.p-5{padding:1.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.pt-2{padding-top:0.5rem}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-6xl{font-size:3.75rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.text-amazon-blue{--tw-text-opacity:1;color:rgb(35 47 62 / var(--tw-text-opacity, 1))}.text-amazon-red{--tw-text-opacity:1;color:rgb(177 39 4 / var(--tw-text-opacity, 1))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amazon-orange{--tw-text-opacity:1;color:rgb(255 153 0 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-amazon-blue-light:hover{--tw-bg-opacity:1;background-color:rgb(55 71 90 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-50:hover{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.hover\:bg-amazon-orange-dark:hover{--tw-bg-opacity:1;background-color:rgb(230 137 0 / var(--tw-bg-opacity, 1))}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1280px){.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style></head>
+<body class="font-sans bg-gray-100">
+    <!-- Header -->
+    <div class="bg-amazon-blue text-white px-5 py-2.5 flex justify-between items-center">
+        <div class="text-2xl font-bold">SimpleZon</div>
+        <div class="flex gap-5">
+            <a href="https://bulia-keshav.github.io/Element-variation-websites/Dropdown/tailwind-nonhover.html#" onclick="showProducts()" class="text-white no-underline px-3 py-2 rounded hover:bg-amazon-blue-light transition-colors bg-amazon-blue-light" id="products-tab">Products</a>
+            <a href="https://bulia-keshav.github.io/Element-variation-websites/Dropdown/tailwind-nonhover.html#" onclick="showCart()" class="text-white no-underline px-3 py-2 rounded hover:bg-amazon-blue-light transition-colors" id="cart-tab">
+                Cart 
+                <span class="bg-amazon-orange text-black rounded-full px-1.5 py-0.5 text-xs ml-1" id="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto my-5 px-5">
+        <!-- Products Page -->
+        <div id="products-page">
+            <h1 class="text-3xl font-bold text-amazon-blue mb-5">Shop Our Products</h1>
+            
+            <!-- Multilevel Dropdown Filter -->
+            <div class="relative inline-block my-5" id="dropdown-container">
+                <button class="bg-amazon-blue text-white px-5 py-3 border-none rounded cursor-pointer text-base flex items-center gap-2 hover:bg-amazon-blue-light transition-colors" onclick="toggleDropdown()">
+                    <span>All Products</span>
+                    <span class="dropdown-arrow transition-transform duration-300">▼</span>
+                </button>
+                <div class="dropdown-menu absolute top-full left-0 bg-white border border-gray-300 rounded shadow-lg min-w-[200px] z-50 hidden">
+                    <div class="dropdown-item px-4 py-3 cursor-pointer border-b border-gray-100 flex justify-between items-center relative hover:bg-gray-50 has-submenu" onclick="toggleSubmenu(event, this)">
+                        <span>Men</span>
+                        <span class="text-gray-600">►</span>
+                        <div class="dropdown-submenu absolute left-full top-0 bg-white border border-gray-300 rounded shadow-lg min-w-[180px] hidden">
+                            <div class="dropdown-item px-4 py-3 cursor-pointer border-b border-gray-100 flex justify-between items-center relative hover:bg-gray-50 has-submenu" onclick="toggleSubmenu(event, this)">
+                                <span>Shoes</span>
+                                <span class="text-gray-600">►</span>
+                                <div class="dropdown-submenu-l3 absolute left-full top-0 bg-white border border-gray-300 rounded shadow-lg min-w-[160px] hidden">
+                                    <div class="dropdown-item px-4 py-3 cursor-pointer hover:bg-gray-50" onclick="filterProducts(&#39;men&#39;, &#39;shoes&#39;, &#39;nike&#39;)">Nike</div>
+                                    <div class="dropdown-item px-4 py-3 cursor-pointer hover:bg-gray-50" onclick="filterProducts(&#39;men&#39;, &#39;shoes&#39;, &#39;adidas&#39;)">Adidas</div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-4 py-3 cursor-pointer border-b border-gray-100 flex justify-between items-center relative hover:bg-gray-50 has-submenu" onclick="toggleSubmenu(event, this)">
+                                <span>Clothing</span>
+                                <span class="text-gray-600">►</span>
+                                <div class="dropdown-submenu-l3 absolute left-full top-0 bg-white border border-gray-300 rounded shadow-lg min-w-[160px] hidden">
+                                    <div class="dropdown-item px-4 py-3 cursor-pointer hover:bg-gray-50" onclick="filterProducts(&#39;men&#39;, &#39;clothing&#39;, &#39;tshirts&#39;)">T-Shirts</div>
+                                    <div class="dropdown-item px-4 py-3 cursor-pointer hover:bg-gray-50" onclick="filterProducts(&#39;men&#39;, &#39;clothing&#39;, &#39;jeans&#39;)">Jeans</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item px-4 py-3 cursor-pointer border-b border-gray-100 flex justify-between items-center relative hover:bg-gray-50 has-submenu" onclick="toggleSubmenu(event, this)">
+                        <span>Women</span>
+                        <span class="text-gray-600">►</span>
+                        <div class="dropdown-submenu absolute left-full top-0 bg-white border border-gray-300 rounded shadow-lg min-w-[180px] hidden">
+                            <div class="dropdown-item px-4 py-3 cursor-pointer border-b border-gray-100 flex justify-between items-center relative hover:bg-gray-50 has-submenu" onclick="toggleSubmenu(event, this)">
+                                <span>Shoes</span>
+                                <span class="text-gray-600">►</span>
+                                <div class="dropdown-submenu-l3 absolute left-full top-0 bg-white border border-gray-300 rounded shadow-lg min-w-[160px] hidden">
+                                    <div class="dropdown-item px-4 py-3 cursor-pointer hover:bg-gray-50" onclick="filterProducts(&#39;women&#39;, &#39;shoes&#39;, &#39;nike&#39;)">Nike</div>
+                                    <div class="dropdown-item px-4 py-3 cursor-pointer hover:bg-gray-50" onclick="filterProducts(&#39;women&#39;, &#39;shoes&#39;, &#39;adidas&#39;)">Adidas</div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-4 py-3 cursor-pointer border-b border-gray-100 flex justify-between items-center relative hover:bg-gray-50 has-submenu" onclick="toggleSubmenu(event, this)">
+                                <span>Electronics</span>
+                                <span class="text-gray-600">►</span>
+                                <div class="dropdown-submenu-l3 absolute left-full top-0 bg-white border border-gray-300 rounded shadow-lg min-w-[160px] hidden">
+                                    <div class="dropdown-item px-4 py-3 cursor-pointer hover:bg-gray-50" onclick="filterProducts(&#39;women&#39;, &#39;electronics&#39;, &#39;headphones&#39;)">Headphones</div>
+                                    <div class="dropdown-item px-4 py-3 cursor-pointer hover:bg-gray-50" onclick="filterProducts(&#39;women&#39;, &#39;electronics&#39;, &#39;smartwatch&#39;)">Smartwatch</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item px-4 py-3 cursor-pointer border-b border-gray-100 flex justify-between items-center relative hover:bg-gray-50 has-submenu" onclick="toggleSubmenu(event, this)">
+                        <span>Home</span>
+                        <span class="text-gray-600">►</span>
+                        <div class="dropdown-submenu absolute left-full top-0 bg-white border border-gray-300 rounded shadow-lg min-w-[180px] hidden">
+                            <div class="dropdown-item px-4 py-3 cursor-pointer hover:bg-gray-50" onclick="filterProducts(&#39;home&#39;, &#39;garden&#39;, &#39;plants&#39;)">Plants</div>
+                            <div class="dropdown-item px-4 py-3 cursor-pointer hover:bg-gray-50" onclick="filterProducts(&#39;home&#39;, &#39;decor&#39;, &#39;candles&#39;)">Candles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Products Section -->
+            <div class="products-section">
+                <h2 class="text-2xl font-semibold text-amazon-blue my-5" id="products-title">Featured Products</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-5" id="products-grid">
+                    <div class="bg-white rounded-lg p-5 shadow-lg transform hover:-translate-y-1 transition-transform">
+                        <div class="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs mb-2 inline-block">Electronics</div>
+                        <h3 class="text-amazon-blue font-semibold mb-2">Wireless Headphones</h3>
+                        <div class="mb-2">
+                            <div class="text-gray-600 text-sm mb-2">Bluetooth noise-canceling headphones</div>
+                            <div class="text-lg font-bold text-amazon-red">$89</div>
+                            <div class="text-amazon-orange my-1">★★★★☆ 4.2</div>
+                        </div>
+                        <button class="bg-amazon-orange text-black border-none px-5 py-2.5 rounded cursor-pointer font-bold w-full hover:bg-amazon-orange-dark transition-colors" onclick="addToCart(&#39;headphones&#39;)">Add to Cart</button>
+                    </div>
+                
+                    <div class="bg-white rounded-lg p-5 shadow-lg transform hover:-translate-y-1 transition-transform">
+                        <div class="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs mb-2 inline-block">Electronics</div>
+                        <h3 class="text-amazon-blue font-semibold mb-2">Smart Fitness Watch</h3>
+                        <div class="mb-2">
+                            <div class="text-gray-600 text-sm mb-2">Track your fitness and health metrics</div>
+                            <div class="text-lg font-bold text-amazon-red">$199</div>
+                            <div class="text-amazon-orange my-1">★★★★☆ 4.4</div>
+                        </div>
+                        <button class="bg-amazon-orange text-black border-none px-5 py-2.5 rounded cursor-pointer font-bold w-full hover:bg-amazon-orange-dark transition-colors" onclick="addToCart(&#39;smartwatch&#39;)">Add to Cart</button>
+                    </div>
+                
+                    <div class="bg-white rounded-lg p-5 shadow-lg transform hover:-translate-y-1 transition-transform">
+                        <div class="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs mb-2 inline-block">Clothing</div>
+                        <h3 class="text-amazon-blue font-semibold mb-2">Cotton T-Shirt</h3>
+                        <div class="mb-2">
+                            <div class="text-gray-600 text-sm mb-2">Comfortable 100% cotton t-shirt</div>
+                            <div class="text-lg font-bold text-amazon-red">$25</div>
+                            <div class="text-amazon-orange my-1">★★★★☆ 4.0</div>
+                        </div>
+                        <button class="bg-amazon-orange text-black border-none px-5 py-2.5 rounded cursor-pointer font-bold w-full hover:bg-amazon-orange-dark transition-colors" onclick="addToCart(&#39;tshirt&#39;)">Add to Cart</button>
+                    </div>
+                
+                    <div class="bg-white rounded-lg p-5 shadow-lg transform hover:-translate-y-1 transition-transform">
+                        <div class="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs mb-2 inline-block">Home</div>
+                        <h3 class="text-amazon-blue font-semibold mb-2">Indoor Plant Set</h3>
+                        <div class="mb-2">
+                            <div class="text-gray-600 text-sm mb-2">Set of 3 air-purifying plants</div>
+                            <div class="text-lg font-bold text-amazon-red">$45</div>
+                            <div class="text-amazon-orange my-1">★★★★☆ 4.5</div>
+                        </div>
+                        <button class="bg-amazon-orange text-black border-none px-5 py-2.5 rounded cursor-pointer font-bold w-full hover:bg-amazon-orange-dark transition-colors" onclick="addToCart(&#39;plant&#39;)">Add to Cart</button>
+                    </div>
+                
+                    <div class="bg-white rounded-lg p-5 shadow-lg transform hover:-translate-y-1 transition-transform">
+                        <div class="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs mb-2 inline-block">Home</div>
+                        <h3 class="text-amazon-blue font-semibold mb-2">Scented Candles Pack</h3>
+                        <div class="mb-2">
+                            <div class="text-gray-600 text-sm mb-2">Pack of 4 aromatherapy candles</div>
+                            <div class="text-lg font-bold text-amazon-red">$32</div>
+                            <div class="text-amazon-orange my-1">★★★★☆ 4.2</div>
+                        </div>
+                        <button class="bg-amazon-orange text-black border-none px-5 py-2.5 rounded cursor-pointer font-bold w-full hover:bg-amazon-orange-dark transition-colors" onclick="addToCart(&#39;candle&#39;)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Page -->
+        <div id="cart-page" class="hidden">
+            <h1 class="text-3xl font-bold text-amazon-blue mb-5">Shopping Cart</h1>
+            <div id="cart-items"></div>
+            <div id="cart-summary"></div>
+        </div>
+
+        <!-- Success Page -->
+        <div id="success-page" class="hidden">
+            <div class="text-center bg-white p-10 rounded-lg shadow-lg">
+                <div class="text-6xl text-green-500 mb-5">✅</div>
+                <h1 class="text-3xl font-bold text-amazon-blue mb-2.5">Congratulations!</h1>
+                <p class="text-gray-600 mb-7">Your order has been placed successfully</p>
+                
+                <div class="bg-gray-50 p-5 rounded-lg my-5 text-left">
+                    <h3 class="mb-4 text-amazon-blue font-semibold">Order Summary</h3>
+                    <div id="order-items"></div>
+                    <div class="flex justify-between font-bold text-lg text-amazon-red border-t border-gray-300 pt-2 mt-2">
+                        <span>Total Paid:</span>
+                        <span id="total-paid"></span>
+                    </div>
+                </div>
+                
+                <button class="bg-amazon-blue text-white border-none px-7 py-4 rounded cursor-pointer font-bold mt-5 hover:bg-amazon-blue-light transition-colors" onclick="continueShopping()">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let cart = [];
+        let lastOrder = { items: [], total: 0 };
+        let currentFilter = 'featured';
+        
+        const products = {
+            // Featured Products (shown initially)
+            headphones: { name: 'Wireless Headphones', price: 89, rating: '4.2', category: 'electronics', description: 'Bluetooth noise-canceling headphones', gender: 'women', subcategory: 'electronics', brand: 'headphones' },
+            smartwatch: { name: 'Smart Fitness Watch', price: 199, rating: '4.4', category: 'electronics', description: 'Track your fitness and health metrics', gender: 'women', subcategory: 'electronics', brand: 'smartwatch' },
+            tshirt: { name: 'Cotton T-Shirt', price: 25, rating: '4.0', category: 'clothing', description: 'Comfortable 100% cotton t-shirt', gender: 'men', subcategory: 'clothing', brand: 'tshirts' },
+            plant: { name: 'Indoor Plant Set', price: 45, rating: '4.5', category: 'home', description: 'Set of 3 air-purifying plants', gender: 'home', subcategory: 'garden', brand: 'plants' },
+            candle: { name: 'Scented Candles Pack', price: 32, rating: '4.2', category: 'home', description: 'Pack of 4 aromatherapy candles', gender: 'home', subcategory: 'decor', brand: 'candles' },
+            
+            // Nike Products (only visible through dropdown)
+            nike_air_max_90: { name: 'Nike Air Max 90', price: 110, rating: '4.6', category: 'shoes', description: 'Classic Air Max with visible air cushioning', gender: 'men', subcategory: 'shoes', brand: 'nike' },
+            nike_air_max_pro: { name: 'Nike Air Max Pro', price: 95, rating: '4.5', category: 'shoes', description: 'Professional running shoes with advanced cushioning', gender: 'men', subcategory: 'shoes', brand: 'nike' },
+            nike_air_max_270: { name: 'Nike Air Max 270', price: 130, rating: '4.7', category: 'shoes', description: 'Lifestyle shoes with maximum Air unit', gender: 'men', subcategory: 'shoes', brand: 'nike' },
+            nike_women_air_max: { name: 'Nike Women Air Max', price: 105, rating: '4.4', category: 'shoes', description: 'Stylish women\'s Air Max sneakers', gender: 'women', subcategory: 'shoes', brand: 'nike' },
+            
+            // Other brand products
+            adidas_ultraboost: { name: 'Adidas Ultraboost', price: 180, rating: '4.7', category: 'shoes', description: 'Premium running shoes with boost technology', gender: 'men', subcategory: 'shoes', brand: 'adidas' },
+            adidas_women: { name: 'Adidas Women Sneakers', price: 140, rating: '4.3', category: 'shoes', description: 'Comfortable women\'s sneakers', gender: 'women', subcategory: 'shoes', brand: 'adidas' },
+            jeans: { name: 'Denim Jeans', price: 65, rating: '4.3', category: 'clothing', description: 'Classic fit blue denim jeans', gender: 'men', subcategory: 'clothing', brand: 'jeans' }
+        };
+
+        function toggleDropdown() {
+            const container = document.getElementById('dropdown-container');
+            const menu = container.querySelector('.dropdown-menu');
+            const arrow = container.querySelector('.dropdown-arrow');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                arrow.classList.add('dropdown-arrow-rotate');
+            } else {
+                menu.classList.add('hidden');
+                arrow.classList.remove('dropdown-arrow-rotate');
+                closeAllSubmenus();
+            }
+        }
+
+        function toggleSubmenu(event, element) {
+            event.stopPropagation();
+            
+            // Close all other submenus at the same level and their children
+            const parent = element.parentElement;
+            const siblings = parent.querySelectorAll('.dropdown-item.has-submenu');
+            siblings.forEach(sibling => {
+                if (sibling !== element) {
+                    const submenu = sibling.querySelector('.dropdown-submenu, .dropdown-submenu-l3');
+                    if (submenu) {
+                        submenu.classList.add('hidden');
+                    }
+                    // Close any nested submenus
+                    const nestedSubmenus = sibling.querySelectorAll('.dropdown-submenu, .dropdown-submenu-l3');
+                    nestedSubmenus.forEach(nested => {
+                        nested.classList.add('hidden');
+                    });
+                }
+            });
+            
+            // Toggle the clicked submenu
+            const submenu = element.querySelector('.dropdown-submenu, .dropdown-submenu-l3');
+            if (submenu) {
+                submenu.classList.toggle('hidden');
+            }
+        }
+
+        function closeAllSubmenus() {
+            const submenus = document.querySelectorAll('.dropdown-submenu, .dropdown-submenu-l3');
+            submenus.forEach(submenu => {
+                submenu.classList.add('hidden');
+            });
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const container = document.getElementById('dropdown-container');
+            if (!container.contains(event.target)) {
+                const menu = container.querySelector('.dropdown-menu');
+                const arrow = container.querySelector('.dropdown-arrow');
+                menu.classList.add('hidden');
+                arrow.classList.remove('dropdown-arrow-rotate');
+                closeAllSubmenus();
+            }
+        });
+
+        function renderProducts() {
+            const grid = document.getElementById('products-grid');
+            const title = document.getElementById('products-title');
+            let html = '';
+            let filteredProducts = [];
+            
+            if (currentFilter === 'featured') {
+                title.textContent = 'Featured Products';
+                // Show only featured products initially (no Nike)
+                filteredProducts = Object.entries(products).filter(([id, product]) => 
+                    ['headphones', 'smartwatch', 'tshirt', 'plant', 'candle'].includes(id)
+                );
+            } else {
+                const [gender, subcategory, brand] = currentFilter.split('-');
+                title.textContent = `${gender.charAt(0).toUpperCase() + gender.slice(1)} > ${subcategory.charAt(0).toUpperCase() + subcategory.slice(1)} > ${brand.charAt(0).toUpperCase() + brand.slice(1)}`;
+                
+                filteredProducts = Object.entries(products).filter(([id, product]) => 
+                    product.gender === gender && product.subcategory === subcategory && product.brand === brand
+                );
+            }
+            
+            filteredProducts.forEach(([id, product]) => {
+                html += `
+                    <div class="bg-white rounded-lg p-5 shadow-lg transform hover:-translate-y-1 transition-transform">
+                        <div class="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs mb-2 inline-block">${product.category.charAt(0).toUpperCase() + product.category.slice(1)}</div>
+                        <h3 class="text-amazon-blue font-semibold mb-2">${product.name}</h3>
+                        <div class="mb-2">
+                            <div class="text-gray-600 text-sm mb-2">${product.description}</div>
+                            <div class="text-lg font-bold text-amazon-red">$${product.price}</div>
+                            <div class="text-amazon-orange my-1">★★★★☆ ${product.rating}</div>
+                        </div>
+                        <button class="bg-amazon-orange text-black border-none px-5 py-2.5 rounded cursor-pointer font-bold w-full hover:bg-amazon-orange-dark transition-colors" onclick="addToCart('${id}')">Add to Cart</button>
+                    </div>
+                `;
+            });
+            
+            if (html === '') {
+                html = '<div class="text-center py-12 text-gray-600 col-span-full">No products found for this selection.</div>';
+            }
+            
+            grid.innerHTML = html;
+        }
+
+        function filterProducts(gender, subcategory, brand) {
+            currentFilter = `${gender}-${subcategory}-${brand}`;
+            
+            // Close dropdown
+            const container = document.getElementById('dropdown-container');
+            const menu = container.querySelector('.dropdown-menu');
+            const arrow = container.querySelector('.dropdown-arrow');
+            menu.classList.add('hidden');
+            arrow.classList.remove('dropdown-arrow-rotate');
+            closeAllSubmenus();
+            
+            renderProducts();
+        }
+
+        function addToCart(productId) {
+            const existing = cart.find(item => item.id === productId);
+            if (existing) {
+                existing.quantity++;
+            } else {
+                cart.push({ id: productId, quantity: 1 });
+            }
+            updateCartCount();
+            alert('Added to cart!');
+        }
+
+        function removeFromCart(productId) {
+            cart = cart.filter(item => item.id !== productId);
+            updateCartCount();
+            showCart();
+        }
+
+        function updateCartCount() {
+            const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cart-count').textContent = count;
+        }
+
+        function showProducts() {
+            document.getElementById('products-page').classList.remove('hidden');
+            document.getElementById('cart-page').classList.add('hidden');
+            document.getElementById('success-page').classList.add('hidden');
+            document.getElementById('products-tab').classList.add('bg-amazon-blue-light');
+            document.getElementById('cart-tab').classList.remove('bg-amazon-blue-light');
+        }
+
+        function showCart() {
+            document.getElementById('products-page').classList.add('hidden');
+            document.getElementById('cart-page').classList.remove('hidden');
+            document.getElementById('success-page').classList.add('hidden');
+            document.getElementById('products-tab').classList.remove('bg-amazon-blue-light');
+            document.getElementById('cart-tab').classList.add('bg-amazon-blue-light');
+            renderCart();
+        }
+
+        function showSuccess() {
+            document.getElementById('products-page').classList.add('hidden');
+            document.getElementById('cart-page').classList.add('hidden');
+            document.getElementById('success-page').classList.remove('hidden');
+            document.getElementById('products-tab').classList.remove('bg-amazon-blue-light');
+            document.getElementById('cart-tab').classList.remove('bg-amazon-blue-light');
+            renderSuccessPage();
+        }
+
+        function renderCart() {
+            const cartItems = document.getElementById('cart-items');
+            const cartSummary = document.getElementById('cart-summary');
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<div class="text-center py-12 text-gray-600">Your cart is empty</div>';
+                cartSummary.innerHTML = '';
+                return;
+            }
+
+            let itemsHtml = '';
+            let total = 0;
+            
+            cart.forEach(item => {
+                const product = products[item.id];
+                const itemTotal = product.price * item.quantity;
+                total += itemTotal;
+                
+                itemsHtml += `
+                    <div class="bg-white p-4 my-2.5 rounded-lg flex justify-between items-center shadow">
+                        <div>
+                            <h3 class="font-semibold text-amazon-blue">${product.name}</h3>
+                            <div class="text-gray-600 text-sm">Category: ${product.category} | Qty: ${item.quantity}</div>
+                            <div class="text-amazon-orange text-sm">Rating: ★ ${product.rating}</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-lg font-bold text-amazon-red mb-2">$${itemTotal}</div>
+                            <button onclick="removeFromCart('${item.id}')" class="bg-red-600 text-white border-none px-2.5 py-1 rounded cursor-pointer hover:bg-red-700 transition-colors">Remove</button>
+                        </div>
+                    </div>
+                `;
+            });
+
+            cartItems.innerHTML = itemsHtml;
+            
+            cartSummary.innerHTML = `
+                <div class="bg-white p-5 rounded-lg mt-5 shadow">
+                    <h2 class="text-xl font-bold text-amazon-blue mb-4">Order Summary</h2>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">Subtotal: <span>$${total}</span></div>
+                        <div class="flex justify-between">Shipping: <span>FREE</span></div>
+                        <hr class="my-2.5">
+                        <div class="flex justify-between font-bold text-lg text-amazon-red">Total: <span>$${total}</span></div>
+                    </div>
+                    <button class="bg-amazon-orange text-black border-none px-7 py-4 rounded cursor-pointer font-bold w-full mt-4 hover:bg-amazon-orange-dark transition-colors" onclick="proceedToCheckout()">Proceed to Checkout</button>
+                </div>
+            `;
+        }
+
+        function proceedToCheckout() {
+            lastOrder.items = [...cart];
+            let total = 0;
+            cart.forEach(item => {
+                const product = products[item.id];
+                total += product.price * item.quantity;
+            });
+            
+            lastOrder.total = total;
+            cart = [];
+            updateCartCount();
+            showSuccess();
+        }
+
+        function renderSuccessPage() {
+            const orderItems = document.getElementById('order-items');
+            const totalPaid = document.getElementById('total-paid');
+            
+            let itemsHtml = '';
+            lastOrder.items.forEach(item => {
+                const product = products[item.id];
+                const itemTotal = product.price * item.quantity;
+                itemsHtml += `
+                    <div class="flex justify-between py-2 border-b border-gray-200">
+                        <span>${product.name} (Qty: ${item.quantity})</span>
+                        <span>$${itemTotal}</span>
+                    </div>
+                `;
+            });
+            
+            orderItems.innerHTML = itemsHtml;
+            totalPaid.textContent = `$${lastOrder.total}`;
+        }
+
+        function continueShopping() {
+            currentFilter = 'featured';
+            showProducts();
+            renderProducts();
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('products-tab').classList.add('bg-amazon-blue-light');
+            renderProducts();
+        });
+    </script>
+
+
+</body></html>

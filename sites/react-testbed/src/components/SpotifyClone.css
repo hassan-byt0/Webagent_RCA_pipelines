@@ -1,0 +1,196 @@
+/* src/components/spotify/SpotifyClone.css */
+
+.spotify-layout {
+  min-height: 100vh;
+}
+
+.spotify-sider {
+  background-color: #040404;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spotify-logo {
+  height: 60px;
+  margin: 16px;
+  text-align: center;
+}
+
+.spotify-logo img {
+  height: 40px;
+}
+
+.spotify-menu {
+  background-color: #040404;
+}
+
+.sider-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.spotify-header {
+  background-color: #1db954;
+  padding: 0;
+}
+
+.spotify-content {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.spotify-content > .podcasts-section {
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.spotify-home,
+.spotify-search,
+.spotify-artist-profile {
+  padding: 24px;
+}
+
+.spotify-music-player {
+  background-color: #121212;
+  color: #b3b3b3;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.player-controls .ant-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.player-info {
+  flex: 1;
+  text-align: center;
+}
+
+.song-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.song-artist {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.player-volume {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.slider-track {
+  background-color: #1db954;
+}
+
+.spotify-search .ant-input-search {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.spotify-artist-profile img {
+  margin-bottom: 20px;
+}
+
+.spotify-artist-profile .ant-list-item {
+  background: #fff;
+}
+
+.artist-avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.private-session-container {
+  background-color: #040404; /* Match sidebar background */
+  color: #fff;
+  padding: 1rem 16px; /* Consistent padding */
+  border-radius: 0;
+  margin: 16px 0 0 0; /* Top margin only */
+  box-shadow: none;
+  font-family: "Arial", sans-serif;
+}
+
+.spotify-sider .private-session-container {
+  width: 100%;
+}
+
+/* Ensure vertical alignment */
+.private-session-content {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.private-session-title {
+  color: #1db954; /* Spotify green for titles */
+  margin-bottom: 0.5rem;
+}
+
+.private-session-divider {
+  background-color: #333;
+  margin: 0.5rem 0;
+}
+
+.private-session-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.private-session-text {
+  font-size: 0.9rem;
+  color: #b3b3b3; /* Lighter text for readability */
+}
+
+.private-session-description {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.private-session-switch {
+  background-color: #1db954; /* Spotify green when active */
+}
+
+.connect-facebook-link {
+  font-size: 0.8rem;
+  color: #1db954; /* Highlight link with Spotify green */
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+/* Customize the Ant Design Switch component */
+.private-session-switch .ant-switch {
+  background-color: #555; /* Inactive color */
+}
+
+.private-session-switch .ant-switch-checked {
+  background-color: #1db954; /* Active color */
+}
+
+.private-session-switch .ant-switch-handle {
+  background: #fff;
+}

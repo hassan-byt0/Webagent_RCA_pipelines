@@ -1,0 +1,2 @@
+https://arxiv.org/
+Identify the most recent paper related to 'graph neural networks' on ArXiv and determine the affiliation of the first author.

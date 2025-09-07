@@ -1,0 +1,752 @@
+import re
+import json
+import asyncio
+import hashlib
+import tiktoken
+import logging
+import google.generativeai as genai
+from datetime import datetime
+from pathlib import Path
+
+from .models import TaskResult, RCAResult
+from .config import MAX_TOKENS_PER_REQUEST, MIN_TOKENS_FOR_RESPONSE
+
+logger = logging.getLogger(__name__)
+
+
+def estimate_tokens(text: str, model: str) -> int:
+    """Estimate tokens using tiktoken or fallback method"""
+    try:
+        encoding = tiktoken.encoding_for_model(model)
+        return len(encoding.encode(text))
+    except Exception:
+        return len(text) // 4 + 1
+
+
+class GeminiRCAAnalyzer:
+    def __init__(self, api_key: str = "AIzaSyB9xtsDBHlYXrd7eU4iiXiZA9w5q2mdzpo"):
+        # Configure Gemini API
+        genai.configure(api_key=api_key)
+        self.model = genai.GenerativeModel('gemini-2.5-flash')
+        self.reference_html = None
+
+    def _get_cache_path(self, task_id: str, file_name: str) -> Path:
+        """Get cache path for processed reasoning files"""
+        cache_dir = Path("cache/reasoning") / task_id
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        return cache_dir / f"{hashlib.md5(file_name.encode()).hexdigest()}.json"
+
+    def extract_critical_sections(self, content: str) -> list[str]:
+        """Extract key sections to preserve verbatim"""
+        critical = []
+
+        # Preserve final outcome
+        final_answer = re.search(r"Final Answer:.+", content, re.DOTALL)
+        if final_answer:
+            critical.append(final_answer.group(0)[:1000])
+
+        # Preserve error messages
+        errors = re.findall(r"Error:.+|Exception:.+|Failed:.+", content)
+        critical.extend(errors[:3])
+
+        # Preserve tool responses with failure
+        tool_failures = re.findall(r"Tool:.+\nResult:.+(error|fail|invalid|denied)", content, re.IGNORECASE)
+        critical.extend(tool_failures[:2])
+
+        return critical
+
+    def remove_boilerplate(self, content: str) -> str:
+        """Remove unnecessary boilerplate from reasoning files"""
+        cleaned = re.sub(r"# Input Format.*?---", "", content, flags=re.DOTALL)
+        cleaned = re.sub(r"RESPONSE FORMAT.*?---", "", cleaned, flags=re.DOTALL)
+        cleaned = re.sub(r"SystemMessage.*?\)", "", cleaned, flags=re.DOTALL)
+        cleaned = re.sub(r"HumanMessage.*?\)", "", cleaned, flags=re.DOTALL)
+        cleaned = re.sub(r"AIMessage.*?\)", "", cleaned, flags=re.DOTALL)
+        return cleaned.strip()
+
+    async def summarize_to_token_limit(self, content: str, max_tokens: int) -> str:
+        """Hierarchical summarization to fit token limits"""
+        if estimate_tokens(content, "gemini-2.5-flash") <= max_tokens:
+            return content
+
+        # First-level summarization
+        summary = await self._summarize_content(content)
+        if estimate_tokens(summary, "gemini-2.5-flash") <= max_tokens:
+            return summary
+
+        # Second-level summarization
+        return await self._summarize_content(summary, aggressive=True)
+
+    async def _summarize_content(self, content: str, aggressive: bool = False) -> str:
+        """Summarize content with adjustable aggressiveness"""
+        if len(content) < 500:
+            return content
+
+        prompt = f"""
+Summarize the following technical content while preserving:
+- Error messages
+- Key decisions
+- Action sequences
+- Status changes
+
+{'Provide only the most critical points in 2-3 bullet points' if aggressive else 'Provide 3-5 key bullet points'}
+
+Content:
+{content[:5000] if aggressive else content[:10000]}
+"""
+        full_prompt = f"""System: You are a technical summarizer focusing on key details
+User: {prompt}"""
+
+        try:
+            response = await self._analyze_with_retry(full_prompt)
+            return response.strip()
+        except Exception as e:
+            logger.error(f"Content summarization failed: {e}")
+            return content[:1000] if aggressive else content[:2000]
+
+    async def process_reasoning_file(self, task_id: str, file_name: str, content: str) -> str:
+        """Process reasoning files with hierarchical summarization"""
+        cache_path = self._get_cache_path(task_id, file_name)
+        if cache_path.exists():
+            return json.load(open(cache_path, 'r', encoding='utf-8'))
+
+        logger.info(f"Processing reasoning file: {file_name}")
+
+        # Clean and extract critical content
+        cleaned_content = self.remove_boilerplate(content)
+        critical_sections = self.extract_critical_sections(cleaned_content)
+
+        # Process remaining content
+        remaining_content = cleaned_content
+        for section in critical_sections:
+            remaining_content = remaining_content.replace(section, "")
+
+        # Create combined content
+        critical_str = "\n".join(critical_sections)
+        combined = f"CRITICAL SECTIONS:\n{critical_str}\n\nOTHER CONTENT:\n{remaining_content}"
+
+        # Summarize to fit token budget
+        processed = await self.summarize_to_token_limit(combined, 1500)
+
+        # Save to cache
+        with open(cache_path, 'w', encoding='utf-8') as f:
+            json.dump(processed, f)
+        return processed
+
+    def _truncate_to_tokens(self, text: str, max_tokens: int) -> str:
+        """Truncate text to a specific token count"""
+        try:
+            encoding = tiktoken.encoding_for_model("gemini-2.5-flash")
+            tokens = encoding.encode(text)
+            if len(tokens) <= max_tokens:
+                return text
+            return encoding.decode(tokens[:max_tokens])
+        except:
+            return text[:max_tokens * 4]
+
+    async def generate_compact_prompt(self, task_result: TaskResult) -> tuple[str, int]:
+        """Generate RCA prompt with strict token budgeting"""
+        # Get core task info
+        primary_framework = "Unknown"
+        element_counts = {}
+        if task_result.html_files:
+            for html_data in task_result.html_files:
+                if html_data.get('primary_framework'):
+                    primary_framework = html_data['primary_framework']
+                if html_data.get('element_counts'):
+                    element_counts = html_data['element_counts']
+
+        # Build base prompt
+        base_prompt = f"""
+## TASK CONTEXT
+- ID: {task_result.task_id}
+- Status: {task_result.status} {'(Verified)' if task_result.verified_success else '(Unverified)'}
+- Type: {task_result.task_type}
+
+## UI FRAMEWORK ANALYSIS
+- Primary Framework: {primary_framework}
+- Element Distribution: {json.dumps(element_counts) or 'No elements detected'}
+"""
+
+        # Add reference comparison section if available
+        if self.reference_html:
+            ref_framework = self.reference_html.get('primary_framework', 'Unknown')
+            ref_elements = self.reference_html.get('element_counts', {})
+            ref_content = self.reference_html.get('full_content', '')
+
+            # Create reference section with full content
+            ref_section = f"""
+## REFERENCE UI (Expected Implementation)
+- Primary Framework: {ref_framework}
+- Element Distribution: {json.dumps(ref_elements)}
+- Full HTML Content:
+{ref_content}
+"""
+            base_prompt += ref_section
+
+        base_prompt += "\n## REASONING ANALYSIS\n"
+        token_count = estimate_tokens(base_prompt, "gemini-2.5-flash")
+        reasoning_content = ""
+
+        # Process reasoning files with token budget
+        for file_path, content in task_result.reasoning_files.items():
+            if token_count >= MAX_TOKENS_PER_REQUEST - MIN_TOKENS_FOR_RESPONSE:
+                break
+
+            processed = await self.process_reasoning_file(task_result.task_id, file_path, content)
+            file_content = f"\n\n### {file_path}\n{processed}"
+            file_tokens = estimate_tokens(file_content, "gemini-2.5-flash")
+
+            if token_count + file_tokens > MAX_TOKENS_PER_REQUEST - MIN_TOKENS_FOR_RESPONSE:
+                file_content = await self.summarize_to_token_limit(file_content, 500)
+                file_tokens = estimate_tokens(file_content, "gemini-2.5-flash")
+
+            if token_count + file_tokens <= MAX_TOKENS_PER_REQUEST - MIN_TOKENS_FOR_RESPONSE:
+                reasoning_content += file_content
+                token_count += file_tokens
+
+        # Add database information
+        db_content = "\n\n## DATABASE SUMMARY"
+        db_issues = []
+        if task_result.db_data:
+            db_summary = []
+            for db_path, db_info in task_result.db_data.items():
+                db_summary.append(f"- {db_path}: {db_info.get('total_tables', 0)} tables")
+
+                # Collect potential issues
+                for issue in db_info.get('potential_issues', []):
+                    db_issues.append(issue)
+
+                for table, details in db_info.get('tables', {}).items():
+                    db_summary.append(f"  - {table}: {details.get('row_count', 0)} rows")
+                    if len(db_summary) > 5:
+                        break
+            db_content += "\n" + "\n".join(db_summary[:5])
+        else:
+            db_content += "\nNo databases found"
+
+        db_tokens = estimate_tokens(db_content, "gemini-2.5-flash")
+        if token_count + db_tokens > MAX_TOKENS_PER_REQUEST - MIN_TOKENS_FOR_RESPONSE:
+            db_content = "\n\n## DATABASE SUMMARY\n[Summary truncated]"
+            db_tokens = estimate_tokens(db_content, "gemini-2.5-flash")
+        token_count += db_tokens
+
+        # Add analysis directives with technical 5 Whys
+        directives = f"""
+
+## ROOT CAUSE ANALYSIS DIRECTIVES
+You are a technical root cause analyst.
+I need you to perform a detailed 5 Whys analysis on the primary root cause from the provided context.
+
+**Instructions:**
+1. Take the first/primary root cause from the analysis provided
+2. Perform a technical 5 Whys drill-down with these requirements:
+   - Each "Why" should dig deeper into the technical implementation details
+   - Include specific code examples, function names, DOM elements, and technical architecture details
+   - Focus on the underlying system design decisions and technical limitations
+   - Progress from symptoms -> immediate causes -> systemic issues -> architectural decisions -> design philosophy
+3. {'Compare task UI with reference UI to identify implementation differences' if self.reference_html else ''}
+4. Pay special attention to database issues: {db_issues}
+5. Provide specific technical recommendations with code examples
+
+**Example Output Format:**
+Note: This reference is to showcase the depth of technical root cause analysis and understand how it works.
+
+````json
+{{
+  "technical_5_whys_analysis": {{
+    "root_cause_1": {{
+      "title": "Failure to Interact with Vue.js Dropdown Submenu Elements",
+      "analysis": [
+        {{
+          "question": "Why did the agent fail to interact with Vue.js dropdown submenu elements?",
+          "technical_answer": "The agent couldn't assign clickable indices to <div class=\\"dropdown-item\\"> elements after they were dynamically rendered by Vue.js's toggleDropdown() method."
+        }},
+        {{
+          "question": "Why couldn't the agent assign indices to dynamically rendered dropdown items?",
+          "technical_answer": "The agent's element indexing system (extract_clickable_elements()) runs only once per page load and doesn't re-scan the DOM after JavaScript mutations. When toggleDropdown() executes: toggleDropdown() {{ this.showDropdown = !this.showDropdown; // Renders: <div class=\\"dropdown-item\\" @click=\\"filterProducts('men', 'shoes', 'nike')\\"> }}"
+        }},
+        {{
+          "question": "Why doesn't the element indexing system re-scan after JavaScript mutations?",
+          "technical_answer": "The agent architecture uses a static DOM snapshot approach without MutationObserver: Page Load → extract_clickable_elements() → Static Index Created → No Further Updates"
+        }},
+        {{
+          "question": "Why was a static DOM approach used instead of dynamic re-scanning?",
+          "technical_answer": "The agent framework was designed for traditional server-rendered pages where DOM structure remains stable after initial load. It lacks: MutationObserver implementation for DOM change detection, Post-action hooks to trigger extract_clickable_elements()"
+        }},
+        {{
+          "question": "Why wasn't SPA compatibility considered in the original architecture?",
+          "technical_answer": "The agent was built with assumptions about web architecture patterns: def process_page(): elements = extract_static_elements() # Once return elements # Forever valid"
+        }}
+      ],
+      "major_keywords": ["dynamic-element-detection-failure", "spa-incompatibility", "mutation-observer-missing", "static-indexing-failure", "framework-design-limitation"]
+    }},
+    "technical_recommendations": [
+      {{
+        "solution": "Implement MutationObserver Pattern",
+        "code_example": "const observer = new MutationObserver(() => {{ agent.reindex_clickable_elements(); }}); observer.observe(document.body, {{childList: true, subtree: true}});"
+      }},
+      {{
+        "solution": "Add Post-Action DOM Re-scanning",
+        "code_example": "def execute_action_with_rescan(action): execute_action(action) time.sleep(0.5) # Allow DOM updates reindex_clickable_elements()"
+      }}
+    ]
+  }}
+}}
+RESPONSE FORMAT
+Return a JSON object with this exact structure:
+{{
+"technical_5_whys_analysis": {{
+"root_cause_1": {{
+"title": "[Root cause title]",
+"analysis": [
+{{
+"question": "Why did [specific technical failure occur]?",
+"technical_answer": "[Detailed technical explanation with code/DOM examples]"
+}}
+// ... repeat for all 5 whys
+],
+"major_keywords": ["keyword1", "keyword2", "keyword3", "keyword4", "keyword5"]
+}},
+"technical_recommendations": [
+{{
+"solution": "[Solution name]",
+"code_example": "[Actual code implementation]"
+}}
+// ... 2-3 recommendations
+]
+}},
+"framework": "{primary_framework}",
+"element_types": {json.dumps(element_counts)},
+"db_issues": ["..."]
+}}
+
+"""
+        # Combine all parts
+        full_prompt = base_prompt + reasoning_content + db_content + directives
+        token_count = estimate_tokens(full_prompt, "gemini-2.5-flash")
+
+        # Final truncation if needed
+        if token_count > MAX_TOKENS_PER_REQUEST - MIN_TOKENS_FOR_RESPONSE:
+            full_prompt = self._truncate_to_tokens(
+                full_prompt,
+                MAX_TOKENS_PER_REQUEST - MIN_TOKENS_FOR_RESPONSE
+            )
+            token_count = estimate_tokens(full_prompt, "gemini-2.5-flash")
+
+        return full_prompt, token_count
+
+    async def hierarchical_rca_analysis(self, task_result: TaskResult) -> RCAResult:
+        """Perform RCA in stages to handle large inputs"""
+        # Stage 1: Analyze reasoning files
+        reasoning_analysis = await self.analyze_reasoning_files(task_result)
+
+        # Stage 2: Analyze UI framework
+        framework_analysis = await self.analyze_ui_framework(task_result)
+
+        # Stage 3: Analyze database
+        db_analysis = await self.analyze_database(task_result)
+
+        # Stage 4: Final RCA synthesis with technical 5 Whys
+        return await self.synthesize_rca(
+            task_result,
+            reasoning_analysis,
+            framework_analysis,
+            db_analysis
+        )
+
+    async def analyze_reasoning_files(self, task_result: TaskResult) -> str:
+        """Analyze reasoning files in a focused way"""
+        analysis = []
+        for file_path, content in task_result.reasoning_files.items():
+            processed = await self.process_reasoning_file(task_result.task_id, file_path, content)
+            analysis.append(f"### {file_path}\n{processed}")
+
+        prompt = f"""
+Analyze the following reasoning files to identify critical failures and decision points:
+
+{"".join(analysis)}
+
+Respond with a concise summary of:
+- Key errors
+- Critical decision points
+- Final outcomes
+"""
+        full_prompt = f"""System: You are an analyst identifying critical issues in task execution logs
+User: {prompt}"""
+
+        try:
+            response = await self._analyze_with_retry(full_prompt)
+            return response.strip()
+        except Exception as e:
+            logger.error(f"Reasoning analysis failed: {e}")
+            return "Reasoning analysis incomplete"
+
+    async def analyze_ui_framework(self, task_result: TaskResult) -> str:
+        """Analyze UI framework and elements"""
+        if not task_result.html_files:
+            return "No UI analysis performed"
+
+        primary_framework = "Unknown"
+        element_counts = {}
+        for html_data in task_result.html_files:
+            if html_data.get('primary_framework'):
+                primary_framework = html_data['primary_framework']
+            if html_data.get('element_counts'):
+                element_counts = html_data['element_counts']
+
+        prompt = f"""
+Analyze the UI framework and element distribution for potential issues:
+
+- Primary Framework: {primary_framework}
+- Element Distribution: {json.dumps(element_counts)}
+
+Consider common failure patterns for this framework and element types.
+"""
+        full_prompt = f"""System: You are a UI expert analyzing potential failure points
+User: {prompt}"""
+
+        try:
+            response = await self._analyze_with_retry(full_prompt)
+            return response.strip()
+        except Exception as e:
+            logger.error(f"UI analysis failed: {e}")
+            return "UI analysis incomplete"
+
+    async def analyze_database(self, task_result: TaskResult) -> str:
+        """Analyze database state for issues"""
+        if not task_result.db_data:
+            return "No database analysis performed"
+
+        db_summary = []
+        for db_path, db_info in task_result.db_data.items():
+            db_summary.append(f"- {db_path}: {db_info.get('total_tables', 0)} tables")
+            for table, details in db_info.get('tables', {}).items():
+                db_summary.append(f"  - {table}: {details.get('row_count', 0)} rows")
+                if len(db_summary) > 10:
+                    break
+
+        prompt = f"""
+Review the database state for potential issues:
+
+{"".join(db_summary)}
+
+Identify any anomalies or inconsistencies.
+"""
+        full_prompt = f"""System: You are a database analyst identifying potential data issues
+User: {prompt}"""
+
+        try:
+            response = await self._analyze_with_retry(full_prompt)
+            return response.strip()
+        except Exception as e:
+            logger.error(f"Database analysis failed: {e}")
+            return "Database analysis incomplete"
+
+    async def synthesize_rca(self, task_result: TaskResult, reasoning_analysis: str,
+                              framework_analysis: str, db_analysis: str) -> RCAResult:
+        """Synthesize final RCA from component analyses with technical 5 Whys"""
+        # Get core task info
+        primary_framework = "Unknown"
+        element_counts = {}
+        if task_result.html_files:
+            for html_data in task_result.html_files:
+                if html_data.get('primary_framework'):
+                    primary_framework = html_data['primary_framework']
+                if html_data.get('element_counts'):
+                    element_counts = html_data['element_counts']
+
+        # Collect database issues
+        db_issues = []
+        for db_path, db_info in task_result.db_data.items():
+            db_issues.extend(db_info.get('potential_issues', []))
+
+        prompt = f"""
+## TASK CONTEXT
+- ID: {task_result.task_id}
+- Status: {task_result.status} {'(Verified)' if task_result.verified_success else '(Unverified)'}
+- Type: {task_result.task_type}
+
+## REASONING ANALYSIS SUMMARY
+{reasoning_analysis}
+
+## UI FRAMEWORK ANALYSIS SUMMARY
+{framework_analysis}
+
+## DATABASE ANALYSIS SUMMARY
+{db_analysis}
+"""
+
+        # Add reference comparison if available
+        if self.reference_html:
+            ref_framework = self.reference_html.get('primary_framework', 'Unknown')
+            ref_elements = self.reference_html.get('element_counts', {})
+            ref_content = self.reference_html.get('full_content', '')
+
+            prompt += f"""
+## REFERENCE UI (Expected Implementation)
+- Primary Framework: {ref_framework}
+- Element Distribution: {json.dumps(ref_elements)}
+- Full HTML Content:
+{ref_content}
+"""
+
+        prompt += f"""
+## TECHNICAL ROOT CAUSE ANALYSIS SYNTHESIS
+You are a technical root cause analyst.
+Perform a comprehensive technical 5 Whys analysis by integrating the above analyses.
+
+**Instructions:**
+1. Identify the primary root cause from the analysis provided
+2. Perform a technical 5 Whys drill-down with these requirements:
+   - Each "Why" should dig deeper into the technical implementation details
+   - Include specific code examples, function names, DOM elements, and technical architecture details
+   - Focus on the underlying system design decisions and technical limitations
+   - Progress from symptoms -> immediate causes -> systemic issues -> architectural decisions -> design philosophy
+
+## RESPONSE FORMAT
+Return a JSON object with this exact structure:
+{{
+  "technical_5_whys_analysis": {{
+    "root_cause_1": {{
+      "title": "[Root cause title]",
+      "analysis": [
+        {{
+          "question": "Why did [specific technical failure occur]?",
+          "technical_answer": "[Detailed technical explanation with code/DOM examples]"
+        }}
+        // ... repeat for all 5 whys
+      ],
+      "major_keywords": ["keyword1", "keyword2", "keyword3", "keyword4", "keyword5"]
+    }},
+    "technical_recommendations": [
+      {{
+        "solution": "[Solution name]",
+        "code_example": "[Actual code implementation]"
+      }}
+      // ... 2-3 recommendations
+    ]
+  }},
+  "framework": "{primary_framework}",
+  "element_types": {json.dumps(element_counts)},
+  "db_issues": {json.dumps(db_issues)}
+}}
+"""
+        # Validate token count
+        token_count = estimate_tokens(prompt, "gemini-2.5-flash")
+        if token_count > MAX_TOKENS_PER_REQUEST - MIN_TOKENS_FOR_RESPONSE:
+            logger.warning(f"RCA synthesis prompt too large ({token_count} tokens), truncating")
+            prompt = self._truncate_to_tokens(prompt, MAX_TOKENS_PER_REQUEST - MIN_TOKENS_FOR_RESPONSE)
+
+        system_instruction = "You are a technical RCA synthesis expert. Perform EXACTLY 5 iterations of the 'Why?' methodology with detailed technical analysis."
+        full_prompt = f"""System: {system_instruction}
+User: {prompt}"""
+
+        response_content = await self._analyze_with_retry(full_prompt)
+        return self._parse_response(task_result.task_id, response_content)
+
+    async def analyze_task(self, task_result: TaskResult, reference_html: dict = None) -> RCAResult:
+        """Perform RCA with strict token management"""
+        self.reference_html = reference_html
+        try:
+            prompt, token_count = await self.generate_compact_prompt(task_result)
+            if token_count <= MAX_TOKENS_PER_REQUEST - MIN_TOKENS_FOR_RESPONSE:
+                logger.info(f"Using compact prompt ({token_count} tokens) for {task_result.task_id}")
+                return await self._analyze_single_prompt(prompt, task_result.task_id)
+            else:
+                logger.warning(f"Compact prompt too large ({token_count} tokens), using hierarchical RCA")
+                return await self.hierarchical_rca_analysis(task_result)
+        except Exception as e:
+            logger.exception(f"RCA analysis failed: {e}")
+            return self._error_result(task_result.task_id, str(e))
+
+    async def _analyze_single_prompt(self, prompt: str, task_id: str) -> RCAResult:
+        """Process normal-sized prompt with validation"""
+        token_count = estimate_tokens(prompt, "gemini-2.5-flash")
+        if token_count > MAX_TOKENS_PER_REQUEST - MIN_TOKENS_FOR_RESPONSE:
+            logger.warning(f"Prompt too large ({token_count} tokens), truncating")
+            prompt = self._truncate_to_tokens(prompt, MAX_TOKENS_PER_REQUEST - MIN_TOKENS_FOR_RESPONSE)
+
+        system_instruction = "You are an expert in technical root cause..."
+        full_prompt = f"""System: {system_instruction}
+User: {prompt}"""
+
+        response_content = await self._analyze_with_retry(full_prompt)
+        return self._parse_response(task_id, response_content)
+
+    async def _analyze_with_retry(self, prompt: str, max_retries: int = 10) -> str:
+        """Send request with exponential backoff using Gemini SDK"""
+        for attempt in range(max_retries):
+            try:
+                response = await asyncio.to_thread(
+                    lambda: self.model.generate_content(
+                        prompt,
+                        generation_config={
+                            "max_output_tokens": 8192,
+                            "temperature": 0.1
+                        }
+                    )
+                )
+                return response.text
+
+            except Exception as e:
+                if "429" in str(e) or "quota" in str(e).lower():
+                    wait_time = min(2 ** (attempt + 1) + 5, 120)
+                    logger.warning(f"Rate limited (attempt {attempt + 1}/{max_retries}), waiting {wait_time}s")
+                    await asyncio.sleep(wait_time)
+                else:
+                    wait_time = min(2 ** (attempt + 1), 30)
+                    logger.warning(f"API error (attempt {attempt + 1}/{max_retries}): {e} - waiting {wait_time}s")
+                    await asyncio.sleep(wait_time)
+        raise RuntimeError(f"Failed after {max_retries} retries")
+
+    def _parse_response(self, task_id: str, response_content: str) -> RCAResult:
+        """Parse response with enhanced validation and separate Q/A storage"""
+        # Try to find JSON in various formats
+        json_match = None
+        patterns = [
+            r'```json\s*({.*?})\s*```',
+            r'```\s*({.*?})\s*```',
+            r'({.*})'
+        ]
+
+        for pattern in patterns:
+            match = re.search(pattern, response_content, re.DOTALL)
+            if match:
+                json_match = match.group(1)
+                try:
+                    data = json.loads(json_match)
+                    break
+                except json.JSONDecodeError:
+                    continue
+
+        # If no match found, try to parse the whole response
+        if not json_match:
+            try:
+                data = json.loads(response_content)
+            except json.JSONDecodeError:
+                logger.error(f"Response parsing failed: No JSON found in response")
+                logger.error(f"Response content (truncated): {response_content[:1000]}")
+                return self._error_result(task_id, "No valid JSON found in response")
+
+        # Handle new technical 5 Whys format
+        if 'technical_5_whys_analysis' in data:
+            # Extract technical analysis
+            tech_analysis = data['technical_5_whys_analysis']
+
+            # Convert to new separated Q/A format
+            root_causes = []
+            five_whys = {}
+            recommendations = []
+            analysis_summary = ""
+
+            if 'root_cause_1' in tech_analysis:
+                root_cause = tech_analysis['root_cause_1']
+                root_causes.append(root_cause.get('title', 'Technical root cause identified'))
+
+                # Build separated Q/A structure
+                qa_pairs = []
+                for item in root_cause.get('analysis', []):
+                    qa_pairs.append({
+                        "question": item.get('question', 'Technical question'),
+                        "answer": item.get('technical_answer', 'Technical answer')
+                    })
+
+                five_whys['Primary Technical Cause Chain'] = qa_pairs
+                analysis_summary = f"Technical Analysis: {root_cause.get('title', 'Root cause analysis')}"
+
+            # Extract technical recommendations
+            tech_recommendations = tech_analysis.get('technical_recommendations', [])
+            for rec in tech_recommendations:
+                solution = rec.get('solution', 'Technical solution')
+                code_example = rec.get('code_example', '')
+                recommendations.append(f"{solution}: {code_example}")
+
+            return RCAResult(
+                task_id=task_id,
+                analysis_timestamp=datetime.now(),
+                root_causes=root_causes,
+                five_whys=five_whys,
+                contributing_factors=tech_analysis.get('root_cause_1', {}).get('major_keywords', []),
+                recommendations=recommendations,
+                analysis_summary=analysis_summary,
+                framework=data.get('framework', 'Unknown'),
+                element_types=data.get('element_types', {}),
+                db_issues=data.get('db_issues', [])
+            )
+
+        # Handle legacy format - convert to new Q/A separated format
+        required_fields = ['root_causes', 'five_whys', 'recommendations', 'analysis_summary']
+        defaults = {
+            'root_causes': ["Root cause analysis incomplete: missing field"],
+            'five_whys': {"Cause": []},
+            'recommendations': ["Review the model response for technical issues"],
+            'analysis_summary': "Analysis summary missing due to model response format issues"
+        }
+
+        # Ensure required fields exist
+        for field in required_fields:
+            if field not in data:
+                logger.warning(f"Response missing required field: {field}")
+                data[field] = defaults[field]
+
+        # Convert legacy alternating format to Q/A pairs
+        converted_five_whys = {}
+        for chain_name, chain in data.get('five_whys', {}).items():
+            qa_pairs = []
+            # Process in pairs (question, answer)
+            for i in range(0, len(chain), 2):
+                if i + 1 < len(chain):
+                    qa_pairs.append({
+                        "question": chain[i],
+                        "answer": chain[i + 1]
+                    })
+                else:
+                    # Handle incomplete pair
+                    qa_pairs.append({
+                        "question": chain[i] if i < len(chain) else "Missing question",
+                        "answer": "Missing answer"
+                    })
+            converted_five_whys[chain_name] = qa_pairs
+
+        # Ensure minimum 5 levels
+        for chain_name, qa_pairs in converted_five_whys.items():
+            while len(qa_pairs) < 5:
+                qa_pairs.append({
+                    "question": f"Why did this happen? (missing level {len(qa_pairs) + 1})",
+                    "answer": "Analysis incomplete"
+                })
+
+        # Ensure framework has a default value
+        framework = data.get('framework', 'Unknown')
+
+        return RCAResult(
+            task_id=task_id,
+            analysis_timestamp=datetime.now(),
+            root_causes=data.get('root_causes', []),
+            five_whys=converted_five_whys,
+            contributing_factors=data.get('contributing_factors', []),
+            recommendations=data.get('recommendations', []),
+            analysis_summary=data.get('analysis_summary', ''),
+            framework=framework,
+            element_types=data.get('element_types', {}),
+            db_issues=data.get('db_issues', [])
+        )
+
+    def _error_result(self, task_id: str, error: str) -> RCAResult:
+        """Create error result with separated Q/A format"""
+        return RCAResult(
+            task_id=task_id,
+            analysis_timestamp=datetime.now(),
+            root_causes=[f"Analysis error: {error}"],
+            five_whys={
+                "Cause": [{
+                    "question": "What caused the analysis failure?",
+                    "answer": f"Technical failure: {error}"
+                }]
+            },
+            contributing_factors=["Technical failure"],
+            recommendations=["Check logs", "Verify configuration"],
+            analysis_summary="RCA failed due to technical error",
+            framework="Unknown"
+        )

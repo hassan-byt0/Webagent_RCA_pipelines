@@ -1,0 +1,2 @@
+https://www.coursera.org/
+Find a course on Coursera about 'Artificial Intelligence Ethics', which has a duration of less than 5 weeks and has been rated 4.5 stars or higher. Provide the course name and the instructor's name.

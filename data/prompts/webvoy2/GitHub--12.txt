@@ -1,0 +1,2 @@
+https://github.com/
+Retrieve the latest release from the 'electron/electron' repository on GitHub and note down the release version number and date.

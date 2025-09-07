@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Compute the length of a curve defined by y = 2x^3 - 3x^2 + 4x - 5 from x = 0 to x = 3.

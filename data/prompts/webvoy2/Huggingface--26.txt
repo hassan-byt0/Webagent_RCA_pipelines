@@ -1,0 +1,2 @@
+https://huggingface.co/
+Identify a model on Hugging Face designed for generating travel chats. Obtain information about the model, including its name, size and training framwork.

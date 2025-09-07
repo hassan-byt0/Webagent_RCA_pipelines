@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Calculate the determinant of a 6x6 Hilbert matrix.

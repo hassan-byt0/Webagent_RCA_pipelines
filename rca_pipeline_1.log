@@ -1,0 +1,570 @@
+2025-06-11 17:06:28,151 - INFO - Starting RCA Pipeline for parent folder: data/db/browseruse/text_input_demos
+2025-06-11 17:06:28,151 - INFO - Found task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_4
+2025-06-11 17:06:28,151 - INFO - Found task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_3
+2025-06-11 17:06:28,151 - INFO - Found task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_2
+2025-06-11 17:06:28,151 - INFO - Found task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:06:28,151 - INFO - Found task folder: Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:06:28,151 - INFO - Found task folder: Search_for__hello__in_the_search_bar_and_press_Enter_1
+2025-06-11 17:06:28,151 - INFO - Found task folder: Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:06:28,151 - INFO - Found task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_7
+2025-06-11 17:06:28,151 - INFO - Found task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_6
+2025-06-11 17:06:28,151 - INFO - Found task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_1
+2025-06-11 17:06:28,151 - INFO - Found task folder: Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:06:28,152 - INFO - Total discovered task folders: 11
+2025-06-11 17:06:28,152 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_4
+2025-06-11 17:06:28,152 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_4
+2025-06-11 17:06:28,159 - INFO - Completed processing task: Enter__hello__in_the_text_field_and_click_the_submit_button_4 (Status: unsuccessful)
+2025-06-11 17:06:28,159 - INFO - Summarizing reasoning file reasoning_2.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_4
+2025-06-11 17:06:28,797 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:28,812 - INFO - Summarizing reasoning file reasoning_3.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_4
+2025-06-11 17:06:29,873 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:29,877 - INFO - Summarizing reasoning file reasoning_6.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_4
+2025-06-11 17:06:30,647 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:31,306 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:31,310 - INFO - Summarizing reasoning file reasoning_4.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_4
+2025-06-11 17:06:32,083 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:32,087 - INFO - Summarizing reasoning file reasoning_5.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_4
+2025-06-11 17:06:32,653 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:32,657 - INFO - Sending analysis request for task: Enter__hello__in_the_text_field_and_click_the_submit_button_4
+2025-06-11 17:06:33,866 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:33,869 - INFO - Received response for task Enter__hello__in_the_text_field_and_click_the_submit_button_4: 2102 characters
+2025-06-11 17:06:33,870 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_3
+2025-06-11 17:06:33,871 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_3
+2025-06-11 17:06:33,883 - INFO - Completed processing task: Enter__hello__in_the_text_field_and_click_the_submit_button_3 (Status: unsuccessful)
+2025-06-11 17:06:33,884 - INFO - Summarizing reasoning file reasoning_2.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_3
+2025-06-11 17:06:34,583 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:34,587 - INFO - Summarizing reasoning file reasoning_3.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_3
+2025-06-11 17:06:35,302 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:35,308 - INFO - Summarizing reasoning file reasoning_7.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_3
+2025-06-11 17:06:36,016 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:36,834 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:36,838 - INFO - Summarizing reasoning file reasoning_6.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_3
+2025-06-11 17:06:37,553 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:37,557 - INFO - Summarizing reasoning file reasoning_4.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_3
+2025-06-11 17:06:37,583 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:06:37,583 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:06:40,213 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:40,217 - INFO - Summarizing reasoning file reasoning_5.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_3
+2025-06-11 17:06:40,246 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:06:40,247 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:06:42,874 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:06:42,877 - INFO - Sending analysis request for task: Enter__hello__in_the_text_field_and_click_the_submit_button_3
+2025-06-11 17:06:42,903 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:06:42,903 - INFO - Retrying request to /chat/completions in 26.000000 seconds
+2025-06-11 17:07:10,006 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:07:10,010 - INFO - Received response for task Enter__hello__in_the_text_field_and_click_the_submit_button_3: 1862 characters
+2025-06-11 17:07:10,011 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_2
+2025-06-11 17:07:10,011 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_2
+2025-06-11 17:07:10,022 - INFO - Completed processing task: Enter__hello__in_the_text_field_and_click_the_submit_button_2 (Status: unsuccessful)
+2025-06-11 17:07:10,022 - INFO - Summarizing reasoning file reasoning_2.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_2
+2025-06-11 17:07:10,053 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:07:10,053 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:07:13,907 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:07:13,910 - INFO - Summarizing reasoning file reasoning_3.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_2
+2025-06-11 17:07:14,001 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:07:14,002 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:07:16,718 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:07:16,721 - INFO - Summarizing reasoning file reasoning_6.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_2
+2025-06-11 17:07:16,762 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:07:16,763 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:07:22,508 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:07:22,512 - INFO - Summarizing reasoning file reasoning_4.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_2
+2025-06-11 17:07:22,536 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:07:22,537 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:07:25,575 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:07:25,579 - INFO - Summarizing reasoning file reasoning_5.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_2
+2025-06-11 17:07:25,612 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:07:25,612 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:07:28,267 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:07:28,271 - INFO - Sending analysis request for task: Enter__hello__in_the_text_field_and_click_the_submit_button_2
+2025-06-11 17:07:28,295 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:07:28,296 - INFO - Retrying request to /chat/completions in 22.000000 seconds
+2025-06-11 17:07:51,594 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:07:51,596 - INFO - Received response for task Enter__hello__in_the_text_field_and_click_the_submit_button_2: 1907 characters
+2025-06-11 17:07:51,596 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:07:51,596 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:07:51,603 - INFO - Completed processing task: Enter__hello__in_the_text_field_and_click_the_submit_button_5 (Status: unsuccessful)
+2025-06-11 17:07:51,603 - INFO - Summarizing reasoning file reasoning_11.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:07:51,630 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:07:51,630 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:07:57,348 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:07:57,378 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:07:57,378 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:08:03,158 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:08:03,162 - INFO - Summarizing reasoning file reasoning_10.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:08:03,190 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:08:03,190 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:08:09,098 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:08:09,102 - INFO - Summarizing reasoning file reasoning_8.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:08:09,133 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:08:09,133 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:08:14,932 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:08:14,936 - INFO - Summarizing reasoning file reasoning_9.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:08:14,963 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:08:14,963 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:08:21,112 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:08:21,115 - INFO - Summarizing reasoning file reasoning_2.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:08:21,147 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:08:21,147 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:08:27,121 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:08:27,125 - INFO - Summarizing reasoning file reasoning_3.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:08:27,157 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:08:27,157 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:08:29,883 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:08:29,888 - INFO - Summarizing reasoning file reasoning_7.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:08:29,919 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:08:29,919 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:08:34,709 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:08:34,713 - INFO - Summarizing reasoning file reasoning_6.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:08:34,737 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:08:34,737 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:08:40,407 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:08:40,411 - INFO - Summarizing reasoning file reasoning_4.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:08:40,436 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:08:40,437 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:08:44,221 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:08:44,224 - INFO - Summarizing reasoning file reasoning_5.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:08:44,255 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:08:44,256 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:08:48,316 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:08:48,320 - INFO - Sending analysis request for task: Enter__hello__in_the_text_field_and_click_the_submit_button_5
+2025-06-11 17:08:48,354 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:08:48,355 - INFO - Retrying request to /chat/completions in 37.000000 seconds
+2025-06-11 17:09:27,027 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:09:27,031 - INFO - Received response for task Enter__hello__in_the_text_field_and_click_the_submit_button_5: 3395 characters
+2025-06-11 17:09:27,033 - INFO - Processing task folder: Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:09:27,033 - INFO - Processing task folder: Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:09:27,110 - INFO - Completed processing task: Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1 (Status: unsuccessful)
+2025-06-11 17:09:27,111 - INFO - Summarizing reasoning file reasoning_17.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:09:27,132 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:09:27,132 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:09:30,810 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:09:30,814 - INFO - Summarizing reasoning file reasoning_16.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:09:30,873 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:09:30,873 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 17:09:37,672 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:09:37,709 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:09:37,709 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:09:43,513 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:09:43,516 - INFO - Summarizing reasoning file reasoning_14.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:09:43,545 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:09:43,545 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:09:48,529 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:09:48,532 - INFO - Summarizing reasoning file reasoning_15.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:09:48,561 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:09:48,562 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:09:54,378 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:09:54,382 - INFO - Summarizing reasoning file reasoning_11.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:09:54,408 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:09:54,409 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 17:10:01,343 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:01,372 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:01,373 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:10:06,143 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:06,145 - INFO - Summarizing reasoning file reasoning_10.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:06,176 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:06,177 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:10:10,953 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:10,958 - INFO - Summarizing reasoning file reasoning_12.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:10,981 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:10,981 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:10:15,765 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:15,769 - INFO - Summarizing reasoning file reasoning_13.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:15,795 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:15,795 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:10:21,600 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:21,604 - INFO - Summarizing reasoning file reasoning_8.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:21,657 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:21,657 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:10:27,655 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:27,684 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:27,685 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:10:31,432 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:31,433 - INFO - Summarizing reasoning file reasoning_9.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:31,460 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:31,460 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:10:36,246 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:36,250 - INFO - Summarizing reasoning file reasoning_2.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:36,281 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:36,282 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:10:39,009 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:39,013 - INFO - Summarizing reasoning file reasoning_3.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:39,039 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:39,039 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:10:41,775 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:41,779 - INFO - Summarizing reasoning file reasoning_7.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:41,807 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:41,808 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:10:45,560 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:45,564 - INFO - Summarizing reasoning file reasoning_6.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:45,597 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:45,598 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:10:51,706 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:51,710 - INFO - Summarizing reasoning file reasoning_4.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:51,743 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:51,744 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-11 17:10:53,306 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:53,309 - INFO - Summarizing reasoning file reasoning_5.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:53,338 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:53,339 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:10:56,953 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:10:56,957 - INFO - Summarizing reasoning file reasoning_18.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:10:56,995 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:10:56,995 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:11:02,869 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:02,905 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:02,906 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:11:05,585 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:05,587 - INFO - Summarizing reasoning file reasoning_19.txt for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:11:05,614 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:05,614 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:11:11,370 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:11,401 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:11,402 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:11:14,137 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:14,141 - INFO - Sending analysis request for task: Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1
+2025-06-11 17:11:14,177 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-06-11 17:11:14,178 - ERROR - Error in RCA analysis for task Type__Can__in_the_search_field__select__Canada__from_the_dropdown_suggestion_list_and_click_the_subm_1: Error code: 413 - {'error': {'message': 'Request too large for model `meta-llama/llama-4-maverick-17b-128e-instruct` in organization `org_01hyhxgrz4fagv2xmffr3b2b5w` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6782, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2025-06-11 17:11:14,179 - INFO - Processing task folder: Search_for__hello__in_the_search_bar_and_press_Enter_1
+2025-06-11 17:11:14,179 - INFO - Processing task folder: Search_for__hello__in_the_search_bar_and_press_Enter_1
+2025-06-11 17:11:14,190 - INFO - Completed processing task: Search_for__hello__in_the_search_bar_and_press_Enter_1 (Status: unsuccessful)
+2025-06-11 17:11:14,190 - INFO - Summarizing reasoning file reasoning_2.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_1
+2025-06-11 17:11:14,213 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:14,214 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:11:19,899 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:19,902 - INFO - Summarizing reasoning file reasoning_3.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_1
+2025-06-11 17:11:19,931 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:19,932 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:11:24,576 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:24,580 - INFO - Summarizing reasoning file reasoning_7.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_1
+2025-06-11 17:11:24,616 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:24,616 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:11:30,312 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:30,345 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:30,346 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:11:36,151 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:36,183 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:36,183 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:11:39,745 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:39,749 - INFO - Summarizing reasoning file reasoning_6.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_1
+2025-06-11 17:11:39,777 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:39,778 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:11:45,468 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:45,499 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:45,500 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:11:50,176 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:50,180 - INFO - Summarizing reasoning file reasoning_4.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_1
+2025-06-11 17:11:50,209 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:50,210 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:11:55,096 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:55,100 - INFO - Summarizing reasoning file reasoning_5.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_1
+2025-06-11 17:11:55,124 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:55,125 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:11:59,782 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:11:59,785 - INFO - Sending analysis request for task: Search_for__hello__in_the_search_bar_and_press_Enter_1
+2025-06-11 17:11:59,816 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:11:59,816 - INFO - Retrying request to /chat/completions in 32.000000 seconds
+2025-06-11 17:12:33,295 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:12:33,298 - INFO - Received response for task Search_for__hello__in_the_search_bar_and_press_Enter_1: 3305 characters
+2025-06-11 17:12:33,299 - INFO - Processing task folder: Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:12:33,299 - INFO - Processing task folder: Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:12:33,318 - INFO - Completed processing task: Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1 (Status: unsuccessful)
+2025-06-11 17:12:33,318 - INFO - Summarizing reasoning file reasoning_11.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:12:33,352 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:12:33,353 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:12:39,128 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:12:39,158 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:12:39,158 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:12:43,882 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:12:43,886 - INFO - Summarizing reasoning file reasoning_10.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:12:43,914 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:12:43,914 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 17:12:50,874 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:12:50,913 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:12:50,914 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:12:54,590 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:12:54,594 - INFO - Summarizing reasoning file reasoning_12.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:12:54,616 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:12:54,617 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 17:13:01,393 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:01,422 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:01,422 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:13:07,184 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:07,188 - INFO - Summarizing reasoning file reasoning_13.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:13:07,225 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:07,225 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:13:12,966 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:13,006 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:13,006 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:13:18,779 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:18,783 - INFO - Summarizing reasoning file reasoning_8.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:13:18,880 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:18,881 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:13:23,490 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:23,494 - INFO - Summarizing reasoning file reasoning_9.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:13:23,525 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:23,525 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:13:29,126 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:29,156 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:29,156 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:13:34,872 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:34,875 - INFO - Summarizing reasoning file reasoning_2.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:13:34,904 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:34,904 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:13:40,699 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:40,703 - INFO - Summarizing reasoning file reasoning_3.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:13:40,729 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:40,729 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:13:44,312 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:44,316 - INFO - Summarizing reasoning file reasoning_7.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:13:44,348 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:44,349 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:13:50,123 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:50,127 - INFO - Summarizing reasoning file reasoning_6.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:13:50,151 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:50,152 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:13:55,859 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:55,862 - INFO - Summarizing reasoning file reasoning_4.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:13:55,889 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:55,890 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:13:59,524 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:13:59,527 - INFO - Summarizing reasoning file reasoning_5.txt for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:13:59,556 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:13:59,556 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:14:04,266 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:14:04,270 - INFO - Sending analysis request for task: Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1
+2025-06-11 17:14:04,299 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:14:04,299 - INFO - Retrying request to /chat/completions in 55.000000 seconds
+2025-06-11 17:15:00,473 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:15:00,476 - INFO - Received response for task Type__Java__in_the_search_field_and_select__JavaScript_Fundamentals__from_the_dropdown_suggestion_li_1: 1842 characters
+2025-06-11 17:15:00,478 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_7
+2025-06-11 17:15:00,478 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_7
+2025-06-11 17:15:00,490 - INFO - Completed processing task: Enter__hello__in_the_text_field_and_click_the_submit_button_7 (Status: unsuccessful)
+2025-06-11 17:15:00,490 - INFO - Summarizing reasoning file reasoning_2.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_7
+2025-06-11 17:15:01,088 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:15:01,092 - INFO - Summarizing reasoning file reasoning_3.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_7
+2025-06-11 17:15:01,802 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:15:01,806 - INFO - Summarizing reasoning file reasoning_6.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_7
+2025-06-11 17:15:01,831 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:15:01,832 - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-06-11 17:15:03,766 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:15:03,796 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:15:03,796 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:15:07,420 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:15:07,424 - INFO - Summarizing reasoning file reasoning_4.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_7
+2025-06-11 17:15:07,454 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:15:07,455 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:15:10,200 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:15:10,204 - INFO - Summarizing reasoning file reasoning_5.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_7
+2025-06-11 17:15:10,233 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:15:10,234 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:15:13,828 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:15:13,831 - INFO - Sending analysis request for task: Enter__hello__in_the_text_field_and_click_the_submit_button_7
+2025-06-11 17:15:13,857 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:15:13,858 - INFO - Retrying request to /chat/completions in 23.000000 seconds
+2025-06-11 17:15:39,080 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:15:39,083 - INFO - Received response for task Enter__hello__in_the_text_field_and_click_the_submit_button_7: 4604 characters
+2025-06-11 17:15:39,085 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_6
+2025-06-11 17:15:39,085 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_6
+2025-06-11 17:15:39,099 - INFO - Completed processing task: Enter__hello__in_the_text_field_and_click_the_submit_button_6 (Status: unsuccessful)
+2025-06-11 17:15:39,099 - INFO - Summarizing reasoning file reasoning_2.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_6
+2025-06-11 17:15:39,133 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:15:39,134 - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-06-11 17:15:49,012 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:15:49,016 - INFO - Summarizing reasoning file reasoning_3.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_6
+2025-06-11 17:15:49,042 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:15:49,042 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:15:53,723 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:15:53,727 - INFO - Summarizing reasoning file reasoning_6.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_6
+2025-06-11 17:15:53,753 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:15:53,753 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:15:59,426 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:15:59,454 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:15:59,454 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:16:03,142 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:16:03,145 - INFO - Summarizing reasoning file reasoning_4.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_6
+2025-06-11 17:16:03,177 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:16:03,177 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:16:06,827 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:16:06,831 - INFO - Summarizing reasoning file reasoning_5.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_6
+2025-06-11 17:16:06,856 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:16:06,856 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:16:11,505 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:16:11,509 - INFO - Sending analysis request for task: Enter__hello__in_the_text_field_and_click_the_submit_button_6
+2025-06-11 17:16:11,538 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:16:11,538 - INFO - Retrying request to /chat/completions in 26.000000 seconds
+2025-06-11 17:16:38,676 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:16:38,679 - INFO - Received response for task Enter__hello__in_the_text_field_and_click_the_submit_button_6: 1686 characters
+2025-06-11 17:16:38,681 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_1
+2025-06-11 17:16:38,681 - INFO - Processing task folder: Enter__hello__in_the_text_field_and_click_the_submit_button_1
+2025-06-11 17:16:38,691 - INFO - Completed processing task: Enter__hello__in_the_text_field_and_click_the_submit_button_1 (Status: unsuccessful)
+2025-06-11 17:16:38,692 - INFO - Summarizing reasoning file reasoning_2.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_1
+2025-06-11 17:16:38,717 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:16:38,717 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:16:43,473 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:16:43,477 - INFO - Summarizing reasoning file reasoning_3.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_1
+2025-06-11 17:16:43,504 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:16:43,505 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:16:46,259 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:16:46,263 - INFO - Summarizing reasoning file reasoning_4.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_1
+2025-06-11 17:16:46,300 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:16:46,300 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:16:49,940 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:16:49,944 - INFO - Summarizing reasoning file reasoning_5.txt for task Enter__hello__in_the_text_field_and_click_the_submit_button_1
+2025-06-11 17:16:49,978 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:16:49,978 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:16:55,776 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:16:55,780 - INFO - Sending analysis request for task: Enter__hello__in_the_text_field_and_click_the_submit_button_1
+2025-06-11 17:16:55,806 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:16:55,808 - INFO - Retrying request to /chat/completions in 21.000000 seconds
+2025-06-11 17:17:18,098 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:17:18,101 - INFO - Received response for task Enter__hello__in_the_text_field_and_click_the_submit_button_1: 2508 characters
+2025-06-11 17:17:18,103 - INFO - Processing task folder: Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:17:18,103 - INFO - Processing task folder: Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:17:18,140 - INFO - Completed processing task: Search_for__hello__in_the_search_bar_and_press_Enter_2 (Status: unsuccessful)
+2025-06-11 17:17:18,140 - INFO - Summarizing reasoning file reasoning_17.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:17:18,170 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:17:18,170 - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-06-11 17:17:25,984 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:17:26,015 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:17:26,016 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:17:31,761 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:17:31,788 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:17:31,789 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:17:34,420 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:17:34,425 - INFO - Summarizing reasoning file reasoning_16.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:17:34,448 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:17:34,449 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:17:40,218 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:17:40,253 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:17:40,254 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:17:46,262 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:17:46,295 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:17:46,295 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:17:48,949 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:17:48,952 - INFO - Summarizing reasoning file reasoning_14.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:17:48,975 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:17:48,976 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:17:54,759 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:17:54,791 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:17:54,792 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:18:00,577 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:00,612 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:00,612 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:18:03,484 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:03,488 - INFO - Summarizing reasoning file reasoning_15.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:18:03,519 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:03,520 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 17:18:10,278 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:10,310 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:10,311 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:18:16,282 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:16,313 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:16,313 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:18:19,232 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:19,236 - INFO - Summarizing reasoning file reasoning_11.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:18:19,262 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:19,263 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 17:18:25,995 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:26,023 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:26,023 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:18:30,803 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:30,807 - INFO - Summarizing reasoning file reasoning_10.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:18:30,833 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:30,833 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:18:36,643 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:36,672 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:36,673 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:18:42,481 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:42,485 - INFO - Summarizing reasoning file reasoning_12.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:18:42,513 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:42,513 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:18:48,214 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:48,244 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:48,244 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:18:53,889 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:53,892 - INFO - Summarizing reasoning file reasoning_13.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:18:53,916 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:53,916 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:18:59,595 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:18:59,621 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:18:59,622 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:19:05,417 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:19:05,420 - INFO - Summarizing reasoning file reasoning_8.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:19:05,451 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:19:05,452 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:19:11,234 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:19:11,262 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:19:11,262 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:19:15,983 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:19:15,987 - INFO - Summarizing reasoning file reasoning_9.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:19:16,016 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:19:16,017 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 17:19:22,720 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:19:22,758 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:19:22,759 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:19:27,492 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:19:27,496 - INFO - Summarizing reasoning file reasoning_2.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:19:27,526 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:19:27,526 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:19:33,576 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:19:33,580 - INFO - Summarizing reasoning file reasoning_3.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:19:33,607 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:19:33,608 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:19:37,170 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:19:37,173 - INFO - Summarizing reasoning file reasoning_7.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:19:37,200 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:19:37,201 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 17:19:43,994 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:19:44,022 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:19:44,023 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:19:48,732 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:19:48,736 - INFO - Summarizing reasoning file reasoning_6.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:19:48,763 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:19:48,763 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:19:53,487 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:19:53,490 - INFO - Summarizing reasoning file reasoning_4.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:19:53,518 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:19:53,519 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 17:19:58,460 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:19:58,464 - INFO - Summarizing reasoning file reasoning_5.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:19:58,486 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:19:58,486 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:20:02,349 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:20:02,353 - INFO - Summarizing reasoning file reasoning_20.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:20:02,381 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:20:02,382 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 17:20:09,110 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:20:09,140 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:20:09,140 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:20:15,046 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:20:15,079 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:20:15,079 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:20:18,678 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:20:18,682 - INFO - Summarizing reasoning file reasoning_18.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:20:18,709 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:20:18,710 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:20:24,469 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:20:24,502 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:20:24,503 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:20:30,304 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:20:30,330 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:20:30,332 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 17:20:32,889 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:20:32,892 - INFO - Summarizing reasoning file reasoning_19.txt for task Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:20:32,917 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:20:32,917 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:20:38,594 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:20:38,623 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:20:38,624 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 17:20:44,391 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:20:44,420 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 17:20:44,420 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 17:20:48,059 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:20:48,063 - INFO - Sending analysis request for task: Search_for__hello__in_the_search_bar_and_press_Enter_2
+2025-06-11 17:20:48,101 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-06-11 17:20:48,101 - ERROR - Error in RCA analysis for task Search_for__hello__in_the_search_bar_and_press_Enter_2: Error code: 413 - {'error': {'message': 'Request too large for model `meta-llama/llama-4-maverick-17b-128e-instruct` in organization `org_01hyhxgrz4fagv2xmffr3b2b5w` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 10662, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2025-06-11 17:20:48,103 - INFO - Saved results to JSON file: my_rca_results/rca_results.json
+2025-06-11 17:20:48,104 - INFO - Saved RCA results to CSV: my_rca_results/rca_analysis_results.csv
+2025-06-11 17:20:48,105 - INFO - Saved task metadata to CSV: my_rca_results/task_metadata.csv
+2025-06-11 17:20:48,105 - INFO - Pipeline completed. Processed 11 tasks

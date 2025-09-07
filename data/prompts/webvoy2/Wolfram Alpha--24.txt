@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Solve the differential equation y''(t) - 2y'(t) + 10y(t) = 0 and display its general solution.

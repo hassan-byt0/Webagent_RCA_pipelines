@@ -1,0 +1,3 @@
+task_id,html_files,db_files,reasoning_files,framework_detected,elements_detected,validation_notes,reference_available
+3,3,1,13,True,True,OK,True
+1,8,1,14,False,False,OK,True

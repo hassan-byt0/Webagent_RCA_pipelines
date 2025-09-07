@@ -1,0 +1,2 @@
+task_id,html_files,db_files,reasoning_files,framework_detected,elements_detected,validation_notes,reference_available
+1,7,1,8,True,True,OK,True

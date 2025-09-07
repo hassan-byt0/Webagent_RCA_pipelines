@@ -1,0 +1,2 @@
+https://arxiv.org/
+On ArXiv, how many articles have 'SimCSE' in the article and are originally announced in October 2023?

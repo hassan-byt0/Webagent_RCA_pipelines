@@ -1,0 +1,2 @@
+https://github.com/
+Find the wiki page of ohmyzsh on GitHub and tell me how to change the theme of zsh to agnoster.

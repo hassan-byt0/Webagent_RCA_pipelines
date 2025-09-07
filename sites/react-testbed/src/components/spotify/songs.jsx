@@ -1,0 +1,77 @@
+// src/data/songs.js
+
+const songs = [
+  {
+    id: "1",
+    title: "You Belong With Me",
+    artistId: "1",
+    artist: "Taylor Swift",
+    album: "Acoustic Breeze",
+    duration: "3:45",
+    audioSrc: "https://www.bensound.com/bensound-music/bensound-ukulele.mp3",
+    coverArt: "https://www.bensound.com/bensound-img/ukulele.jpg",
+  },
+  {
+    id: "2",
+    title: "Bad Habits",
+    artistId: "2",
+    artist: "Ed Sheeran",
+    album: "Corporate",
+    duration: "4:20",
+    audioSrc:
+      "https://www.bensound.com/bensound-music/bensound-creativeminds.mp3",
+    coverArt: "https://www.bensound.com/bensound-img/creativeminds.jpg",
+  },
+  {
+    id: "3",
+    title: "Lift Yourself",
+    artistId: "3",
+    artist: "Kanye West",
+    album: "Acoustic Breeze",
+    duration: "2:58",
+    audioSrc: "https://www.bensound.com/bensound-music/bensound-sunny.mp3",
+    coverArt: "https://www.bensound.com/bensound-img/sunny.jpg",
+  },
+  {
+    id: "4",
+    title: "Gooba",
+    artistId: "4",
+    artist: "6IX9INE",
+    album: "Corporate",
+    duration: "3:30",
+    audioSrc: "https://www.bensound.com/bensound-music/bensound-energy.mp3",
+    coverArt: "https://www.bensound.com/bensound-img/energy.jpg",
+  },
+  {
+    id: "5",
+    title: "Ghetto",
+    artistId: "5",
+    artist: "Dababy",
+    album: "Rock",
+    duration: "4:00",
+    audioSrc: "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+    coverArt: "https://www.bensound.com/bensound-img/happyrock.jpg",
+  },
+  {
+    id: "6",
+    title: "Radioactive",
+    artistId: "6",
+    artist: "Imagine Dragons",
+    album: "Night Visions",
+    duration: "3:06",
+    audioSrc: "https://www.bensound.com/bensound-music/bensound-dubstep.mp3",
+    coverArt: "https://www.bensound.com/bensound-img/dubstep.jpg",
+  },
+  {
+    id: "7",
+    title: "Midnights",
+    artistId: "1",
+    artist: "Taylor Swift",
+    album: "Midnights",
+    duration: "3:20",
+    audioSrc: "https://www.example.com/audio/midnights.mp3",
+    coverArt: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fc4.wallpaperflare.com%2Fwallpaper%2F655%2F126%2F441%2Ftime-lapse-photo-of-high-rise-building-singapore-singapore-wallpaper-thumb.jpg&f=1&nofb=1&ipt=8afe714b650d1a7c7169b2191adbde07bc379e54cbede9a6594661a68ef1f60e&ipo=images",
+  },
+];
+
+export default songs;

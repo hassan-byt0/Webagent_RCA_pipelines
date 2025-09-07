@@ -1,0 +1,2 @@
+https://arxiv.org/
+Query ArXiv for the latest research article in the category of Systems and Control under Computer Science. Summarize the main objective or hypothesis presented in the paper and provide the names of the authors.

@@ -1,0 +1,2 @@
+https://github.com/
+Browse the GitHub Trending and find out which developer is currently ranked first this month and the corresponding repository.

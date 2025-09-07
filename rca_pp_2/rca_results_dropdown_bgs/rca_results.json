@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-07-04T20:26:12.539847",
+  "tasks": [
+    {
+      "task_id": "4",
+      "analysis_timestamp": "2025-07-04 20:22:20.960005",
+      "root_causes": [
+        "Analysis error: Failed after 10 retries"
+      ],
+      "five_whys": {
+        "Cause": [
+          {
+            "question": "What caused the analysis failure?",
+            "answer": "Technical failure: Failed after 10 retries"
+          }
+        ]
+      },
+      "contributing_factors": [
+        "Technical failure"
+      ],
+      "recommendations": [
+        "Check logs",
+        "Verify configuration"
+      ],
+      "analysis_summary": "RCA failed due to technical error",
+      "framework": "Unknown",
+      "element_types": {},
+      "db_issues": []
+    },
+    {
+      "task_id": "1",
+      "analysis_timestamp": "2025-07-04 20:26:12.537808",
+      "root_causes": [
+        "Analysis error: Failed after 10 retries"
+      ],
+      "five_whys": {
+        "Cause": [
+          {
+            "question": "What caused the analysis failure?",
+            "answer": "Technical failure: Failed after 10 retries"
+          }
+        ]
+      },
+      "contributing_factors": [
+        "Technical failure"
+      ],
+      "recommendations": [
+        "Check logs",
+        "Verify configuration"
+      ],
+      "analysis_summary": "RCA failed due to technical error",
+      "framework": "Unknown",
+      "element_types": {},
+      "db_issues": []
+    }
+  ],
+  "processed_tasks": [
+    {
+      "task_id": "4",
+      "folder_name": "Buy_mens_nike_air_max_from_all_products__the_one_with_lowest_price__add_to_Cart_and_buy_4",
+      "status": "unsuccessful",
+      "verified": false,
+      "folder_path": "data/failed tasks/broweruse_gpt/dropdown/per/Buy_mens_nike_air_max_from_all_products__the_one_with_lowest_price__add_to_Cart_and_buy_4",
+      "file_count": 23,
+      "reasoning_files": 13,
+      "html_files": 3,
+      "db_files": 1,
+      "reference_available": true
+    },
+    {
+      "task_id": "1",
+      "folder_name": "Buy_mens_nike_air_max_from_all_products__the_one_with_lowest_price__add_to_Cart_and_buy__Note__entir_1",
+      "status": "unsuccessful",
+      "verified": false,
+      "folder_path": "data/failed tasks/broweruse_gpt/dropdown/per/Buy_mens_nike_air_max_from_all_products__the_one_with_lowest_price__add_to_Cart_and_buy__Note__entir_1",
+      "file_count": 29,
+      "reasoning_files": 14,
+      "html_files": 8,
+      "db_files": 1,
+      "reference_available": true
+    }
+  ]
+}

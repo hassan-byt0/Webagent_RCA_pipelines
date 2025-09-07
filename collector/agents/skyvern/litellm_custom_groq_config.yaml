@@ -1,0 +1,11 @@
+# litellm_custom_groq_config.yaml
+custom_groq:
+  alias: groq-llama
+  model_info:
+    input_cost_per_1k_tokens: 0.0
+    output_cost_per_1k_tokens: 0.0
+  litellm_params:
+    model: meta-llama/llama-4-scout-17b-16e-instruct
+    api_key: "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"
+    api_base: https://api.groq.com/openai/v1
+    custom_llm_provider: "openai"

@@ -1,0 +1,21 @@
+Skyvern-AI/skyvern-cloud:
+  - source: skyvern/
+    dest: skyvern/
+  - source: streamlit_app/
+    dest: streamlit_app/
+  - source: pyproject.toml
+    dest: pyproject.toml
+  - source: poetry.lock
+    dest: poetry.lock
+  - source: setup.sh
+    dest: setup.sh
+  - source: .env.example
+    dest: .env.example
+  - source: run_ui.sh
+    dest: run_ui.sh
+  - source: run_skyvern.sh
+    dest: run_skyvern.sh
+  - source: run_alembic_check.sh
+    dest: run_alembic_check.sh
+  - source: skyvern-frontend/src/
+    dest: skyvern-frontend/src/

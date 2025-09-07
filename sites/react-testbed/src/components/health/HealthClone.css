@@ -1,0 +1,277 @@
+/* src/components/health/HealthClone.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f2f5;
+}
+
+.health-layout {
+  min-height: 100vh;
+}
+
+.health-header {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #1890ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.health-logo img {
+  height: 50px; /* Adjust the height as needed */
+}
+
+.health-menu {
+  background: none;
+  border-bottom: none;
+  margin-left: auto;
+}
+
+.health-menu .ant-menu-item {
+  color: #fff;
+}
+
+.health-menu .ant-menu-item a {
+  color: #fff;
+}
+
+.overlay-active {
+  position: relative;
+  pointer-events: none;
+}
+
+.overlay-active *:not(.overlay):not(.overlay *) {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+  z-index: 1000; /* Ensures the overlay is on top */
+}
+
+/* Ensure the overlay-active class is only applied when the overlay is visible */
+.health-layout.overlay-active .overlay {
+  display: flex;
+}
+
+.health-menu .ant-menu-item:hover,
+.health-menu .ant-menu-item-active,
+.health-menu .ant-menu-item-selected {
+  background-color: #40a9ff;
+  color: #fff;
+}
+
+.health-footer {
+  text-align: center;
+  background-color: #001529;
+  color: #fff;
+}
+
+.health-content {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Login and Register Styles */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.auth-card {
+  width: 400px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card .ant-card-head {
+  text-align: center;
+}
+
+.auth-card .ant-form-item {
+  margin-bottom: 16px;
+}
+
+/* Dashboard Styles */
+.dashboard-content h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.dashboard-card {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Card Styles */
+.ant-card {
+  border-radius: 8px;
+}
+
+.ant-card-head {
+  border-bottom: none;
+}
+
+.ant-card-head-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ant-card-body {
+  padding: 16px;
+}
+
+/* Buttons */
+.ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+/* Home Page Styles */
+.home-content .ant-carousel .slick-slide {
+  text-align: center;
+  height: 400px;
+  background: #364d79;
+  overflow: hidden;
+  color: #fff;
+}
+
+.home-content .ant-carousel .slick-slide h3 {
+  color: #fff;
+  font-size: 36px;
+  line-height: 400px;
+}
+
+.about-us-card {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about-us-card p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Messages Styles */
+.messages-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.messages-content h2 {
+  margin-bottom: 20px;
+}
+
+/* Doctor Profile Styles */
+.doctor-profile-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.doctor-profile-card {
+  text-align: center;
+}
+
+.doctor-profile-card h2,
+.doctor-profile-card h3 {
+  margin: 10px 0;
+}
+
+/* Appointments Content Styles */
+.appointments-content {
+  width: 100%;
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Ensure padding doesn't reduce effective width */
+  /* Remove or adjust any max-width or margin properties that may constrain the width */
+  margin: 0;
+}
+
+/* Welcome Card Styles */
+.welcome-card {
+  text-align: center;
+  background-color: #e6f7ff;
+  border: 1px solid #91d5ff;
+  padding: 40px 20px;
+  height: auto; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-card h2 {
+  font-size: 28px;
+  color: #1890ff;
+}
+
+/* Feature Card Styles */
+.feature-card {
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+  height: 150px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  color: #595959;
+}
+
+/* Optional: Adjust the grid spacing */
+.home-content .ant-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-cards {
+    flex-direction: column;
+  }
+
+  .welcome-card {
+    padding: 30px 10px;
+  }
+
+  .welcome-card h2 {
+    font-size: 24px;
+  }
+
+  .feature-card {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .feature-card h3 {
+    font-size: 16px;
+  }
+}

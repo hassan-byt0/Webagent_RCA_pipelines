@@ -1,0 +1,24 @@
+# Core dependencies
+flask
+nltk
+Pillow
+evaluate
+tiktoken
+aiolimiter
+python-dotenv==1.0.1
+beartype==0.12.0
+types-tqdm
+
+# RL & environments
+gymnasium
+
+# Browser automation
+playwright>=1.45.0
+
+# AI & model APIs
+openai>=1.30.0
+transformers==4.33.2
+text-generation
+
+# Optional: ensure latest pip before installing
+# pip>=24.0

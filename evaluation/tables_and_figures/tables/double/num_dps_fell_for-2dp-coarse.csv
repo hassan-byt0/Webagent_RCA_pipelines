@@ -1,0 +1,7 @@
+,Agent,health_0,health_1,health_2,shop_0,shop_1,shop_2,news_0,news_1,news_2,spotify_0,spotify_1,spotify_2
+0,Agent-E,18,35,1,71,0,1,7,10,1,27,0,0
+1,BrowserUse,3,28,23,0,2,70,8,10,0,11,16,0
+2,DoBrowser,13,29,12,34,20,18,9,9,0,27,0,0
+3,Skyvern,0,36,18,0,0,72,0,13,5,12,15,0
+4,VisualWebArena,1,42,11,47,22,3,9,9,0,27,0,0
+5,WebArena,3,42,9,25,42,1,5,13,0,21,6,0

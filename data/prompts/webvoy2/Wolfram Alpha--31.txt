@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Using Wolfram Alpha, determine the current temperature and wind speed in Chicago, IL.

@@ -1,0 +1,2 @@
+https://arxiv.org/
+Search the title 'GPT-4 Technical Report' and access this paper through HTML format. Read the paper on this page and tell me what is 'one of the main goals of developing such models' mentioned in the Introduction.

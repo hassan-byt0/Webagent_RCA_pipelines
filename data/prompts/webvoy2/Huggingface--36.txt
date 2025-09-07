@@ -1,0 +1,2 @@
+https://huggingface.co/
+Summarize all the payment plans and their advantages in huggingface pricing.

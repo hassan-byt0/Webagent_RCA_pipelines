@@ -1,0 +1,2 @@
+https://textinputdemos.tiiny.site/types/minimalist_text_input.html
+Enter "hello" in the text field and click the submit button.

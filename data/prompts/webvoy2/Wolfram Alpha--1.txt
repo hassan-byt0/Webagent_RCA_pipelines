@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Give a constraint on the set of inequalities for the inner region of the pentagram.

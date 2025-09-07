@@ -1,0 +1,188 @@
+2025-06-11 16:13:12,239 - INFO - Starting RCA Pipeline for parent folder: data/db/browseruse/pipelinetesting
+2025-06-11 16:13:12,239 - INFO - Found task folder: Tell_me_which_doctor_administered_the_blood_test_by_first_going_to_medical_records_1
+2025-06-11 16:13:12,239 - INFO - Found task folder: Show_all_my_medical_records_on_my_profile_by_first_going_to_medical_records_1
+2025-06-11 16:13:12,239 - INFO - Found task folder: Cancel_the_appointment_at_10_00AM_by_first_going_to_appointments_1
+2025-06-11 16:13:12,239 - INFO - Found task folder: Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:13:12,239 - INFO - Found task folder: View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:13:12,239 - INFO - Found task folder: When_was_my_last_flu_shot_administered_1
+2025-06-11 16:13:12,239 - INFO - Total discovered task folders: 6
+2025-06-11 16:13:12,239 - INFO - Processing task folder: Tell_me_which_doctor_administered_the_blood_test_by_first_going_to_medical_records_1
+2025-06-11 16:13:12,239 - INFO - Processing task folder: Tell_me_which_doctor_administered_the_blood_test_by_first_going_to_medical_records_1
+2025-06-11 16:13:12,265 - INFO - Completed processing task: Tell_me_which_doctor_administered_the_blood_test_by_first_going_to_medical_records_1 (Status: successful)
+2025-06-11 16:13:12,265 - INFO - Summarizing reasoning file reasoning_2.txt for task Tell_me_which_doctor_administered_the_blood_test_by_first_going_to_medical_records_1
+2025-06-11 16:13:13,063 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:13:13,081 - INFO - Summarizing reasoning file reasoning_3.txt for task Tell_me_which_doctor_administered_the_blood_test_by_first_going_to_medical_records_1
+2025-06-11 16:13:13,887 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:13:13,891 - INFO - Summarizing reasoning file reasoning_4.txt for task Tell_me_which_doctor_administered_the_blood_test_by_first_going_to_medical_records_1
+2025-06-11 16:13:14,606 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:13:14,610 - INFO - Summarizing reasoning file reasoning_5.txt for task Tell_me_which_doctor_administered_the_blood_test_by_first_going_to_medical_records_1
+2025-06-11 16:13:15,328 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:13:15,331 - INFO - Sending analysis request for task: Tell_me_which_doctor_administered_the_blood_test_by_first_going_to_medical_records_1
+2025-06-11 16:13:16,622 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:13:16,624 - INFO - Received response for task Tell_me_which_doctor_administered_the_blood_test_by_first_going_to_medical_records_1: 2244 characters
+2025-06-11 16:13:16,626 - INFO - Processing task folder: Show_all_my_medical_records_on_my_profile_by_first_going_to_medical_records_1
+2025-06-11 16:13:16,626 - INFO - Processing task folder: Show_all_my_medical_records_on_my_profile_by_first_going_to_medical_records_1
+2025-06-11 16:13:16,673 - INFO - Completed processing task: Show_all_my_medical_records_on_my_profile_by_first_going_to_medical_records_1 (Status: successful)
+2025-06-11 16:13:16,674 - INFO - Summarizing reasoning file reasoning_2.txt for task Show_all_my_medical_records_on_my_profile_by_first_going_to_medical_records_1
+2025-06-11 16:13:17,368 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:13:17,371 - INFO - Summarizing reasoning file reasoning_3.txt for task Show_all_my_medical_records_on_my_profile_by_first_going_to_medical_records_1
+2025-06-11 16:13:18,205 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:13:18,209 - INFO - Summarizing reasoning file reasoning_4.txt for task Show_all_my_medical_records_on_my_profile_by_first_going_to_medical_records_1
+2025-06-11 16:13:18,314 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:13:18,315 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 16:13:21,035 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:13:21,038 - INFO - Summarizing reasoning file reasoning_5.txt for task Show_all_my_medical_records_on_my_profile_by_first_going_to_medical_records_1
+2025-06-11 16:13:21,067 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:13:21,067 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 16:13:28,016 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:13:28,050 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:13:28,050 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 16:13:32,747 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:13:32,750 - INFO - Sending analysis request for task: Show_all_my_medical_records_on_my_profile_by_first_going_to_medical_records_1
+2025-06-11 16:13:32,780 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:13:32,781 - INFO - Retrying request to /chat/completions in 26.000000 seconds
+2025-06-11 16:14:00,067 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:14:00,070 - INFO - Received response for task Show_all_my_medical_records_on_my_profile_by_first_going_to_medical_records_1: 2381 characters
+2025-06-11 16:14:00,073 - INFO - Processing task folder: Cancel_the_appointment_at_10_00AM_by_first_going_to_appointments_1
+2025-06-11 16:14:00,073 - INFO - Processing task folder: Cancel_the_appointment_at_10_00AM_by_first_going_to_appointments_1
+2025-06-11 16:14:00,132 - INFO - Completed processing task: Cancel_the_appointment_at_10_00AM_by_first_going_to_appointments_1 (Status: successful)
+2025-06-11 16:14:00,132 - INFO - Summarizing reasoning file reasoning_2.txt for task Cancel_the_appointment_at_10_00AM_by_first_going_to_appointments_1
+2025-06-11 16:14:00,161 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:14:00,161 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 16:14:04,772 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:14:04,776 - INFO - Summarizing reasoning file reasoning_3.txt for task Cancel_the_appointment_at_10_00AM_by_first_going_to_appointments_1
+2025-06-11 16:14:04,806 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:14:04,806 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 16:14:10,584 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:14:10,588 - INFO - Summarizing reasoning file reasoning_6.txt for task Cancel_the_appointment_at_10_00AM_by_first_going_to_appointments_1
+2025-06-11 16:14:10,617 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:14:10,618 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 16:14:16,451 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:14:16,455 - INFO - Summarizing reasoning file reasoning_4.txt for task Cancel_the_appointment_at_10_00AM_by_first_going_to_appointments_1
+2025-06-11 16:14:16,481 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:14:16,482 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 16:14:21,364 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:14:21,368 - INFO - Summarizing reasoning file reasoning_5.txt for task Cancel_the_appointment_at_10_00AM_by_first_going_to_appointments_1
+2025-06-11 16:14:21,393 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:14:21,393 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 16:14:26,076 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:14:26,078 - INFO - Sending analysis request for task: Cancel_the_appointment_at_10_00AM_by_first_going_to_appointments_1
+2025-06-11 16:14:26,105 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:14:26,106 - INFO - Retrying request to /chat/completions in 27.000000 seconds
+2025-06-11 16:14:54,339 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:14:54,342 - INFO - Received response for task Cancel_the_appointment_at_10_00AM_by_first_going_to_appointments_1: 1724 characters
+2025-06-11 16:14:54,344 - INFO - Processing task folder: Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:14:54,344 - INFO - Processing task folder: Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:14:54,408 - INFO - Completed processing task: Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1 (Status: successful)
+2025-06-11 16:14:54,409 - INFO - Summarizing reasoning file reasoning_8.txt for task Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:14:54,440 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:14:54,440 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 16:14:58,438 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:14:58,442 - INFO - Summarizing reasoning file reasoning_9.txt for task Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:14:58,470 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:14:58,471 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 16:15:04,360 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:15:04,364 - INFO - Summarizing reasoning file reasoning_2.txt for task Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:15:04,393 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:15:04,394 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 16:15:11,135 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:15:11,139 - INFO - Summarizing reasoning file reasoning_3.txt for task Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:15:11,183 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:15:11,184 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 16:15:16,973 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:15:16,976 - INFO - Summarizing reasoning file reasoning_7.txt for task Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:15:17,005 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:15:17,006 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 16:15:21,782 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:15:21,786 - INFO - Summarizing reasoning file reasoning_6.txt for task Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:15:21,812 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:15:21,813 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 16:15:26,524 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:15:26,528 - INFO - Summarizing reasoning file reasoning_4.txt for task Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:15:26,552 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:15:26,553 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 16:15:31,373 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:15:31,377 - INFO - Summarizing reasoning file reasoning_5.txt for task Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:15:31,404 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:15:31,405 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 16:15:36,269 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:15:36,273 - INFO - Sending analysis request for task: Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1
+2025-06-11 16:15:36,300 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:15:36,300 - INFO - Retrying request to /chat/completions in 36.000000 seconds
+2025-06-11 16:16:13,597 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:16:13,601 - INFO - Received response for task Schedule_an_appointment_with_my_physician_for_the_earliest_available_slot_next_week_1: 1718 characters
+2025-06-11 16:16:13,603 - INFO - Processing task folder: View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:16:13,603 - INFO - Processing task folder: View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:16:13,705 - INFO - Completed processing task: View_and_download_the_most_recent_lab_results_for_my_blood_test_1 (Status: successful)
+2025-06-11 16:16:13,706 - INFO - Summarizing reasoning file reasoning_10.txt for task View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:16:13,735 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:16:13,735 - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-06-11 16:16:16,567 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:16:16,602 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:16:16,603 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 16:16:20,253 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:16:20,257 - INFO - Summarizing reasoning file reasoning_8.txt for task View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:16:20,283 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:16:20,284 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 16:16:26,091 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:16:26,094 - INFO - Summarizing reasoning file reasoning_9.txt for task View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:16:26,121 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:16:26,121 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 16:16:32,821 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:16:32,824 - INFO - Summarizing reasoning file reasoning_2.txt for task View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:16:32,851 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:16:32,851 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 16:16:38,583 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:16:38,587 - INFO - Summarizing reasoning file reasoning_3.txt for task View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:16:38,618 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:16:38,619 - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-06-11 16:16:45,341 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:16:45,345 - INFO - Summarizing reasoning file reasoning_7.txt for task View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:16:45,372 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:16:45,373 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 16:16:51,188 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:16:51,192 - INFO - Summarizing reasoning file reasoning_6.txt for task View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:16:51,221 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:16:51,221 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 16:16:56,878 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:16:56,882 - INFO - Summarizing reasoning file reasoning_4.txt for task View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:16:56,907 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:16:56,907 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 16:17:01,544 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:17:01,548 - INFO - Summarizing reasoning file reasoning_5.txt for task View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:17:01,576 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:17:01,576 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 16:17:06,334 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:17:06,338 - INFO - Sending analysis request for task: View_and_download_the_most_recent_lab_results_for_my_blood_test_1
+2025-06-11 16:17:06,363 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:17:06,364 - INFO - Retrying request to /chat/completions in 40.000000 seconds
+2025-06-11 16:17:47,818 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:17:47,821 - INFO - Received response for task View_and_download_the_most_recent_lab_results_for_my_blood_test_1: 2727 characters
+2025-06-11 16:17:47,823 - INFO - Processing task folder: When_was_my_last_flu_shot_administered_1
+2025-06-11 16:17:47,823 - INFO - Processing task folder: When_was_my_last_flu_shot_administered_1
+2025-06-11 16:17:47,865 - INFO - Completed processing task: When_was_my_last_flu_shot_administered_1 (Status: successful)
+2025-06-11 16:17:47,866 - INFO - Summarizing reasoning file reasoning_2.txt for task When_was_my_last_flu_shot_administered_1
+2025-06-11 16:17:47,895 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:17:47,895 - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-06-11 16:17:51,595 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:17:51,599 - INFO - Summarizing reasoning file reasoning_3.txt for task When_was_my_last_flu_shot_administered_1
+2025-06-11 16:17:51,625 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:17:51,626 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 16:17:57,402 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:17:57,406 - INFO - Summarizing reasoning file reasoning_4.txt for task When_was_my_last_flu_shot_administered_1
+2025-06-11 16:17:57,435 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:17:57,436 - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-06-11 16:18:02,245 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:18:02,248 - INFO - Summarizing reasoning file reasoning_5.txt for task When_was_my_last_flu_shot_administered_1
+2025-06-11 16:18:02,283 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:18:02,284 - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-06-11 16:18:08,182 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:18:08,185 - INFO - Sending analysis request for task: When_was_my_last_flu_shot_administered_1
+2025-06-11 16:18:08,209 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-06-11 16:18:08,210 - INFO - Retrying request to /chat/completions in 24.000000 seconds
+2025-06-11 16:18:33,680 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:18:33,683 - INFO - Received response for task When_was_my_last_flu_shot_administered_1: 2934 characters
+2025-06-11 16:18:33,685 - INFO - Saved results to JSON file: my_rca_results/rca_results.json
+2025-06-11 16:18:33,686 - INFO - Saved RCA results to CSV: my_rca_results/rca_analysis_results.csv
+2025-06-11 16:18:33,687 - INFO - Saved task metadata to CSV: my_rca_results/task_metadata.csv
+2025-06-11 16:18:33,687 - INFO - Pipeline completed. Processed 6 tasks

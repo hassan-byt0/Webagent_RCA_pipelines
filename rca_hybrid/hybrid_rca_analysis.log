@@ -1,0 +1,48 @@
+2025-09-03 00:41:14,543 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:41:14,544 - INFO - Using AI provider: gpt
+2025-09-03 00:41:14,690 - INFO - AI analyzer initialized with openai provider, model: gpt-4o
+2025-09-03 00:41:14,693 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:41:14,695 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:41:14,695 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:41:14,696 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:41:14,696 - INFO - Starting hybrid analysis for task: test_gpt_001
+2025-09-03 00:41:14,696 - INFO - Starting deterministic analysis for task test_gpt_001
+2025-09-03 00:41:14,696 - INFO - Deterministic confidence too low: 0.00
+2025-09-03 00:41:19,529 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:41:33,807 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:41:33,814 - INFO - AI analysis completed for task test_gpt_001 in 19117.75ms
+2025-09-03 00:41:33,814 - INFO - AI analysis successful: of the task failure is a DOM change or dynamic content issue (confidence: 1.00)
+2025-09-03 00:41:33,817 - INFO - Stored learning case: case_a577ffadf7b1
+2025-09-03 00:41:33,817 - INFO - Hybrid analysis completed in 19121.81ms
+2025-09-03 00:41:33,818 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:41:33,819 - INFO - Using AI provider: groq
+2025-09-03 00:41:33,842 - INFO - AI analyzer initialized with groq provider, model: meta-llama/llama-4-maverick-17b-128e-instruct
+2025-09-03 00:41:33,842 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:41:33,842 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:41:33,842 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:41:33,842 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:41:33,843 - INFO - Starting hybrid analysis for task: test_groq_001
+2025-09-03 00:41:33,844 - INFO - Starting deterministic analysis for task test_groq_001
+2025-09-03 00:41:33,844 - INFO - Deterministic confidence too low: 0.00
+2025-09-03 00:41:36,477 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:41:38,129 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:41:38,132 - INFO - AI analysis completed for task test_groq_001 in 4288.38ms
+2025-09-03 00:41:38,133 - INFO - AI analysis successful: of the task failure for Task ID: test_groq_001, let's break down the information provided (confidence: 1.00)
+2025-09-03 00:41:38,135 - INFO - Stored learning case: case_479f73184bf6
+2025-09-03 00:41:38,135 - INFO - Hybrid analysis completed in 4292.22ms
+2025-09-03 00:41:38,136 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:41:38,136 - INFO - Using AI provider: gemini
+2025-09-03 00:41:38,781 - INFO - AI analyzer initialized with google provider, model: gemini-2.0-flash-exp
+2025-09-03 00:41:38,781 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:41:38,781 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:41:38,781 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:41:38,781 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:41:38,781 - INFO - Starting hybrid analysis for task: test_gemini_001
+2025-09-03 00:41:38,782 - INFO - Starting deterministic analysis for task test_gemini_001
+2025-09-03 00:41:38,782 - INFO - Deterministic confidence too low: 0.00
+2025-09-03 00:42:08,784 - WARNING - Primary analysis timeout for task test_gemini_001
+2025-09-03 00:42:38,790 - WARNING - Detailed analysis timeout for task test_gemini_001
+2025-09-03 00:42:38,792 - INFO - AI analysis completed for task test_gemini_001 in 60010.36ms
+2025-09-03 00:42:38,792 - INFO - AI analysis successful: Analysis timeout - unable to complete primary analysis (confidence: 0.21)
+2025-09-03 00:42:38,796 - INFO - Stored learning case: case_40447efdb20a
+2025-09-03 00:42:38,796 - INFO - Hybrid analysis completed in 60014.99ms

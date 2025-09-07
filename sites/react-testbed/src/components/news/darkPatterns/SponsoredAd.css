@@ -1,0 +1,14 @@
+.sponsored-ad {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #f9f9f9;
+}
+
+.sponsored-ad h2 {
+  color: #ff0000; /* Highlight sponsored label */
+}
+
+.sponsored-ad p {
+  font-size: 16px;
+}

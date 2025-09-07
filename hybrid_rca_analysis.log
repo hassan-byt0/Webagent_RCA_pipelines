@@ -1,0 +1,231 @@
+2025-09-02 22:59:50,268 - WARNING - LangChain not available, AI analysis will be limited
+2025-09-02 22:59:50,271 - WARNING - LangChain not available, AI analysis disabled
+2025-09-02 23:00:25,364 - ERROR - Failed to initialize LLM: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-09-02 23:00:37,924 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-02 23:02:03,337 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-02 23:11:00,379 - ERROR - Failed to initialize LLM: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-09-02 23:11:00,381 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-02 23:11:00,382 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-02 23:11:00,382 - ERROR - Failed to initialize LLM: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-09-02 23:11:00,387 - INFO - Successfully initialized dropdown analyzer
+2025-09-02 23:11:00,391 - INFO - Successfully initialized ArXiv analyzer
+2025-09-02 23:11:00,391 - INFO - Available analyzers: dropdown, arxiv
+2025-09-02 23:11:00,391 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:09:52,154 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:11:42,761 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:11:42,762 - INFO - Using AI provider: gpt
+2025-09-03 00:12:45,773 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:12:45,773 - INFO - Using AI provider: gpt
+2025-09-03 00:12:46,126 - INFO - AI analyzer initialized with openai provider, model: gpt-4o
+2025-09-03 00:12:46,128 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:12:46,130 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:12:46,130 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:12:46,130 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:12:46,131 - INFO - Starting hybrid analysis for task: test_gpt_001
+2025-09-03 00:12:46,131 - INFO - Starting ArXiv deterministic analysis for task test_gpt_001
+2025-09-03 00:12:46,131 - INFO - Deterministic confidence too low: 0.20
+2025-09-03 00:12:46,131 - ERROR - AI analysis failed: 'AIRootCauseAnalyzer' object has no attribute 'analyze_task'
+2025-09-03 00:12:46,131 - ERROR - Error in hybrid analysis: AIAnalysisResult.__init__() got an unexpected keyword argument 'model_used'
+2025-09-03 00:18:03,243 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:18:03,243 - INFO - Using AI provider: gpt
+2025-09-03 00:18:03,356 - INFO - AI analyzer initialized with openai provider, model: gpt-4o
+2025-09-03 00:18:03,359 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:18:03,361 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:18:03,361 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:18:03,361 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:18:03,361 - INFO - Starting hybrid analysis for task: test_gpt_001
+2025-09-03 00:18:03,361 - INFO - Starting ArXiv deterministic analysis for task test_gpt_001
+2025-09-03 00:18:03,361 - INFO - Deterministic confidence too low: 0.20
+2025-09-03 00:18:08,816 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:18:24,200 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:18:24,217 - INFO - AI analysis completed for task test_gpt_001 in 20855.24ms
+2025-09-03 00:18:24,217 - INFO - AI analysis successful: of the web automation failure is likely related to element interaction failures (confidence: 1.00)
+2025-09-03 00:18:24,219 - INFO - Stored learning case: case_f2268963d932
+2025-09-03 00:18:24,220 - INFO - Hybrid analysis completed in 20858.76ms
+2025-09-03 00:18:51,921 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:18:51,921 - INFO - Using AI provider: groq
+2025-09-03 00:18:52,019 - INFO - AI analyzer initialized with groq provider, model: meta-llama/llama-3.1-70b-versatile
+2025-09-03 00:18:52,021 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:18:52,024 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:18:52,024 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:18:52,024 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:18:52,024 - INFO - Starting hybrid analysis for task: test_groq_001
+2025-09-03 00:18:52,024 - INFO - Starting ArXiv deterministic analysis for task test_groq_001
+2025-09-03 00:18:52,024 - INFO - Deterministic confidence too low: 0.20
+2025-09-03 00:18:52,190 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-03 00:18:52,192 - ERROR - Primary analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2025-09-03 00:18:52,259 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-03 00:18:52,260 - ERROR - Detailed analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2025-09-03 00:18:52,262 - INFO - AI analysis completed for task test_groq_001 in 237.76ms
+2025-09-03 00:18:52,262 - INFO - AI analysis successful: Primary analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}} (confidence: 0.21)
+2025-09-03 00:18:52,264 - INFO - Stored learning case: case_2d8711857cd2
+2025-09-03 00:18:52,264 - INFO - Hybrid analysis completed in 240.44ms
+2025-09-03 00:19:43,010 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:19:43,010 - INFO - Using AI provider: groq
+2025-09-03 00:19:43,102 - INFO - AI analyzer initialized with groq provider, model: meta-llama/llama-3.1-70b-versatile
+2025-09-03 00:19:43,104 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:19:43,107 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:19:43,107 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:19:43,107 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:19:43,107 - INFO - Starting hybrid analysis for task: test_groq_002
+2025-09-03 00:19:43,107 - INFO - Starting ArXiv deterministic analysis for task test_groq_002
+2025-09-03 00:19:43,107 - INFO - Deterministic confidence too low: 0.20
+2025-09-03 00:19:43,319 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-03 00:19:43,323 - ERROR - Primary analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2025-09-03 00:19:43,422 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-03 00:19:43,424 - ERROR - Detailed analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2025-09-03 00:19:43,426 - INFO - AI analysis completed for task test_groq_002 in 318.51ms
+2025-09-03 00:19:43,426 - INFO - AI analysis successful: Primary analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}} (confidence: 0.21)
+2025-09-03 00:19:43,429 - INFO - Stored learning case: case_1b96ffb7aedf
+2025-09-03 00:19:43,429 - INFO - Hybrid analysis completed in 321.95ms
+2025-09-03 00:20:05,002 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:20:05,002 - INFO - Using AI provider: gemini
+2025-09-03 00:20:05,002 - ERROR - langchain_google_genai not installed. Install with: pip install langchain-google-genai
+2025-09-03 00:20:05,102 - INFO - AI analyzer initialized with google provider, model: gemini-2.0-flash-exp
+2025-09-03 00:20:05,104 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:20:05,106 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:20:05,106 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:20:05,106 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:20:05,106 - INFO - Starting hybrid analysis for task: test_gemini_001
+2025-09-03 00:20:05,107 - INFO - Starting ArXiv deterministic analysis for task test_gemini_001
+2025-09-03 00:20:05,107 - INFO - Deterministic confidence too low: 0.20
+2025-09-03 00:20:06,316 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:20:21,456 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:20:21,471 - INFO - AI analysis completed for task test_gemini_001 in 16364.26ms
+2025-09-03 00:20:21,471 - INFO - AI analysis successful: of the web automation failure (confidence: 1.00)
+2025-09-03 00:20:21,473 - INFO - Stored learning case: case_455e7fa5e3eb
+2025-09-03 00:20:21,473 - INFO - Hybrid analysis completed in 16366.79ms
+2025-09-03 00:22:45,581 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:22:45,582 - INFO - Using AI provider: gpt
+2025-09-03 00:22:45,693 - INFO - AI analyzer initialized with openai provider, model: gpt-4o
+2025-09-03 00:22:45,696 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:22:45,697 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:22:45,697 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:22:45,697 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:22:45,698 - INFO - Starting hybrid analysis for task: test_gpt_001
+2025-09-03 00:22:45,698 - INFO - Starting deterministic analysis for task test_gpt_001
+2025-09-03 00:22:45,698 - INFO - Deterministic confidence too low: 0.00
+2025-09-03 00:22:48,988 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:22:57,185 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:22:57,195 - INFO - AI analysis completed for task test_gpt_001 in 11496.93ms
+2025-09-03 00:22:57,195 - INFO - AI analysis successful: of the task failure is a DOM change or dynamic content issue (confidence: 1.00)
+2025-09-03 00:22:57,197 - INFO - Stored learning case: case_955a4bf4a9dd
+2025-09-03 00:22:57,197 - INFO - Hybrid analysis completed in 11499.86ms
+2025-09-03 00:22:57,198 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:22:57,198 - INFO - Using AI provider: groq
+2025-09-03 00:22:57,215 - INFO - AI analyzer initialized with groq provider, model: meta-llama/llama-3.1-70b-versatile
+2025-09-03 00:22:57,215 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:22:57,215 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:22:57,215 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:22:57,215 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:22:57,215 - INFO - Starting hybrid analysis for task: test_groq_001
+2025-09-03 00:22:57,215 - INFO - Starting deterministic analysis for task test_groq_001
+2025-09-03 00:22:57,216 - INFO - Deterministic confidence too low: 0.00
+2025-09-03 00:22:57,363 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-03 00:22:57,365 - ERROR - Primary analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2025-09-03 00:22:57,434 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-03 00:22:57,435 - ERROR - Detailed analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2025-09-03 00:22:57,436 - INFO - AI analysis completed for task test_groq_001 in 219.80ms
+2025-09-03 00:22:57,436 - INFO - AI analysis successful: Primary analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}} (confidence: 0.21)
+2025-09-03 00:22:57,437 - INFO - Stored learning case: case_a11c207b720d
+2025-09-03 00:22:57,438 - INFO - Hybrid analysis completed in 222.43ms
+2025-09-03 00:22:57,438 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:22:57,438 - INFO - Using AI provider: gemini
+2025-09-03 00:22:57,438 - ERROR - langchain_google_genai not installed. Install with: pip install langchain-google-genai
+2025-09-03 00:22:57,454 - INFO - AI analyzer initialized with google provider, model: gemini-2.0-flash-exp
+2025-09-03 00:22:57,454 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:22:57,454 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:22:57,454 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:22:57,454 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:22:57,455 - INFO - Starting hybrid analysis for task: test_gemini_001
+2025-09-03 00:22:57,455 - INFO - Starting deterministic analysis for task test_gemini_001
+2025-09-03 00:22:57,455 - INFO - Deterministic confidence too low: 0.00
+2025-09-03 00:22:59,059 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:23:12,415 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:23:12,428 - INFO - AI analysis completed for task test_gemini_001 in 14973.00ms
+2025-09-03 00:23:12,428 - INFO - AI analysis successful: is the inability to find and interact with the dropdown option "#option-1" after the dropdown was successfully opened (confidence: 1.00)
+2025-09-03 00:23:12,431 - INFO - Stored learning case: case_101afff064fe
+2025-09-03 00:23:12,431 - INFO - Hybrid analysis completed in 14976.25ms
+2025-09-03 00:30:12,567 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:30:12,568 - INFO - Using AI provider: groq
+2025-09-03 00:30:12,669 - INFO - AI analyzer initialized with groq provider, model: meta-llama/llama-4-maverick-17b-128e-instruct
+2025-09-03 00:30:12,671 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:30:12,673 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:30:12,673 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:30:12,673 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:30:12,673 - INFO - Starting hybrid analysis for task: test_groq_001
+2025-09-03 00:30:12,675 - INFO - Starting ArXiv deterministic analysis for task test_groq_001
+2025-09-03 00:30:12,675 - INFO - Deterministic confidence too low: 0.20
+2025-09-03 00:30:12,853 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-03 00:30:12,858 - ERROR - Primary analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2025-09-03 00:30:12,928 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-09-03 00:30:12,929 - ERROR - Detailed analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2025-09-03 00:30:12,930 - INFO - AI analysis completed for task test_groq_001 in 255.11ms
+2025-09-03 00:30:12,930 - INFO - AI analysis successful: Primary analysis error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}} (confidence: 0.21)
+2025-09-03 00:30:12,933 - INFO - Stored learning case: case_558e6e8af5c7
+2025-09-03 00:30:12,933 - INFO - Hybrid analysis completed in 260.33ms
+2025-09-03 00:31:44,959 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:31:44,960 - INFO - Using AI provider: groq
+2025-09-03 00:31:45,064 - INFO - AI analyzer initialized with groq provider, model: meta-llama/llama-4-maverick-17b-128e-instruct
+2025-09-03 00:31:45,066 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:31:45,068 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:31:45,068 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:31:45,068 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:31:45,068 - INFO - Starting hybrid analysis for task: test_groq_001
+2025-09-03 00:31:45,070 - INFO - Starting ArXiv deterministic analysis for task test_groq_001
+2025-09-03 00:31:45,070 - INFO - Deterministic confidence too low: 0.20
+2025-09-03 00:31:46,292 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:31:48,362 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:31:48,368 - INFO - AI analysis completed for task test_groq_001 in 3297.79ms
+2025-09-03 00:31:48,368 - INFO - AI analysis successful: of the task failure cannot be directly pinpointed due to the lack of specific details in the failure log (confidence: 1.00)
+2025-09-03 00:31:48,373 - INFO - Stored learning case: case_369ba0b75b72
+2025-09-03 00:31:48,374 - INFO - Hybrid analysis completed in 3305.11ms
+2025-09-03 00:32:09,472 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:32:09,472 - INFO - Using AI provider: gpt
+2025-09-03 00:32:09,568 - INFO - AI analyzer initialized with openai provider, model: gpt-4o
+2025-09-03 00:32:09,570 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:32:09,572 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:32:09,573 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:32:09,573 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:32:09,573 - INFO - Starting hybrid analysis for task: test_gpt_001
+2025-09-03 00:32:09,574 - INFO - Starting deterministic analysis for task test_gpt_001
+2025-09-03 00:32:09,574 - INFO - Deterministic confidence too low: 0.00
+2025-09-03 00:32:13,753 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:32:23,606 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:32:23,616 - INFO - AI analysis completed for task test_gpt_001 in 14041.94ms
+2025-09-03 00:32:23,616 - INFO - AI analysis successful: of the task failure is an "Element interaction failure" specifically related to the inability to interact with the dropdown option (confidence: 1.00)
+2025-09-03 00:32:23,619 - INFO - Stored learning case: case_55307a8de16b
+2025-09-03 00:32:23,619 - INFO - Hybrid analysis completed in 14046.27ms
+2025-09-03 00:32:23,619 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:32:23,619 - INFO - Using AI provider: groq
+2025-09-03 00:32:23,633 - INFO - AI analyzer initialized with groq provider, model: meta-llama/llama-4-maverick-17b-128e-instruct
+2025-09-03 00:32:23,633 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:32:23,633 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:32:23,633 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:32:23,633 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:32:23,633 - INFO - Starting hybrid analysis for task: test_groq_001
+2025-09-03 00:32:23,633 - INFO - Starting deterministic analysis for task test_groq_001
+2025-09-03 00:32:23,633 - INFO - Deterministic confidence too low: 0.00
+2025-09-03 00:32:24,885 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:32:26,725 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:32:26,727 - INFO - AI analysis completed for task test_groq_001 in 3093.74ms
+2025-09-03 00:32:26,727 - INFO - AI analysis successful: of the task failure for Task ID: test_groq_001, let's break down the information provided (confidence: 1.00)
+2025-09-03 00:32:26,729 - INFO - Stored learning case: case_972be011fa5c
+2025-09-03 00:32:26,729 - INFO - Hybrid analysis completed in 3096.34ms
+2025-09-03 00:32:26,730 - INFO - Learning database initialized at rca_hybrid/learning_database.sqlite
+2025-09-03 00:32:26,730 - INFO - Using AI provider: gemini
+2025-09-03 00:32:26,731 - ERROR - langchain_google_genai not installed. Install with: pip install langchain-google-genai
+2025-09-03 00:32:26,749 - INFO - AI analyzer initialized with google provider, model: gemini-2.0-flash-exp
+2025-09-03 00:32:26,749 - INFO - Successfully initialized dropdown analyzer
+2025-09-03 00:32:26,749 - INFO - Successfully initialized ArXiv analyzer
+2025-09-03 00:32:26,749 - INFO - Available analyzers: dropdown, arxiv
+2025-09-03 00:32:26,749 - INFO - Hybrid analyzer initialized with threshold: 0.75
+2025-09-03 00:32:26,749 - INFO - Starting hybrid analysis for task: test_gemini_001
+2025-09-03 00:32:26,749 - INFO - Starting deterministic analysis for task test_gemini_001
+2025-09-03 00:32:26,749 - INFO - Deterministic confidence too low: 0.00
+2025-09-03 00:32:28,403 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:32:41,356 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2025-09-03 00:32:41,370 - INFO - AI analysis completed for task test_gemini_001 in 14620.44ms
+2025-09-03 00:32:41,370 - INFO - AI analysis successful: is the inability to find and interact with the dropdown option "#option-1" after the dropdown was successfully opened (confidence: 1.00)
+2025-09-03 00:32:41,372 - INFO - Stored learning case: case_58717c788205
+2025-09-03 00:32:41,372 - INFO - Hybrid analysis completed in 14623.38ms

@@ -1,0 +1,9 @@
+synthetic/clones
+browser_data
+old_benign_batch
+*.zip
+*.bkp
+*.dp
+human
+tmp
+test_tasks/

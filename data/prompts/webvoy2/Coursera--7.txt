@@ -1,0 +1,2 @@
+https://www.coursera.org/
+Find a course on Coursera that teaches Reinforcement Learning for Intermediate with a rating of at least 4.5. Provide the name of the course, the institution offering it, and the number of reviews it has received.

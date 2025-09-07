@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rrweb Player Event Viewer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rrweb-player@latest/dist/style.css"/>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            min-height: 100vh;
+        }
+        #player-container {
+            width: 100%;
+            max-width: 1024px;
+            height: 576px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="player-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/rrweb-player@latest/dist/index.js"></script>
+    <script>
+        function loadAndPlayEvents() {
+            fetch("Buy_mens_nike_air_max_from_all_products__the_one_with_lowest_price__add_to_Cart_and_buy__Note__entir_2_rrweb_events.json")
+                .then(response => response.json())
+                .then(events => {
+                    new rrwebPlayer({
+                        target: document.getElementById('player-container'),
+                        props: {
+                            events: events,
+                            width: 1024,
+                            height: 576,
+                            autoPlay: true,
+                            speedOption: [1, 2, 4, 8]
+                        }
+                    });
+                })
+                .catch(error => {
+                    console.error("Failed to load rrweb events:", error);
+                });
+        }
+
+        loadAndPlayEvents();
+    </script>
+</body>
+</html>
+    

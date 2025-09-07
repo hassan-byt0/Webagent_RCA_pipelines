@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Calculate the mass of Jupiter compared to Earth using Wolfram Alpha. Also, find the length of one day on Jupiter.

@@ -1,0 +1,1501 @@
+[
+  {
+    "sites": ["health"],
+    "task_id": 0,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/health",
+    "geolocation": null,
+    "intent_template": "Go to {{section}} and tell me if my vitals are normal.",
+    "instantiation_dict": {
+      "section": "Medical Records"
+    },
+    "intent": "Go to Medical Records and tell me if my vitals are normal.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "vitals are normal"
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "vitals are normal"
+    },
+    "intent_template_id": 1000
+  },
+  {
+    "sites": ["health"],
+    "task_id": 1,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/health",
+    "geolocation": null,
+    "intent_template": "Write a message to remind me about the appointment at {{time}}.",
+    "instantiation_dict": {
+      "time": "10AM"
+    },
+    "intent": "Write a message to remind me about the appointment at 10AM.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Reminder: Appointment at 10AM."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Reminder: Appointment at 10AM."
+    },
+    "intent_template_id": 1001
+  },
+  {
+    "sites": ["health"],
+    "task_id": 2,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/health",
+    "geolocation": null,
+    "intent_template": "Find out what date my blood test was administered.",
+    "instantiation_dict": {},
+    "intent": "Find out what date my blood test was administered.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Blood test was administered on March 15, 2023."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Blood test was administered on March 15, 2023."
+    },
+    "intent_template_id": 1002
+  },
+  {
+    "sites": ["health"],
+    "task_id": 3,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/health",
+    "geolocation": null,
+    "intent_template": "Cancel the appointment at {{time}} by first going to {{section}}.",
+    "instantiation_dict": {
+      "time": "11:05 AM",
+      "section": "Appointments"
+    },
+    "intent": "Cancel the appointment at 11:05 AM by first going to Appointments.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Appointment at 11:05 AM has been canceled."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Appointment at 11:05 AM has been canceled."
+    },
+    "intent_template_id": 1003
+  },
+  {
+    "sites": ["health"],
+    "task_id": 4,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/health",
+    "geolocation": null,
+    "intent_template": "Show all my medical records on my profile by first going to {{section}}.",
+    "instantiation_dict": {
+      "section": "Medical Records"
+    },
+    "intent": "Show all my medical records on my profile by first going to Medical Records.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "All medical records are displayed on your profile."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "All medical records are displayed on your profile."
+    },
+    "intent_template_id": 1004
+  },
+  {
+    "sites": ["health"],
+    "task_id": 5,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/health",
+    "geolocation": null,
+    "intent_template": "Explain the vision of the health portal.",
+    "instantiation_dict": {},
+    "intent": "Explain the vision of the health portal.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The vision of the health portal is to provide comprehensive and accessible healthcare information to users."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The vision of the health portal is to provide comprehensive and accessible healthcare information to users."
+    },
+    "intent_template_id": 1005
+  },
+  {
+    "sites": ["health"],
+    "task_id": 6,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/health",
+    "geolocation": null,
+    "intent_template": "Summarize my messages.",
+    "instantiation_dict": {},
+    "intent": "Summarize my messages.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "You have 5 new messages. Summary: Upcoming appointments and test results."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "You have 5 new messages. Summary: Upcoming appointments and test results."
+    },
+    "intent_template_id": 1006
+  },
+  {
+    "sites": ["health"],
+    "task_id": 7,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/health",
+    "geolocation": null,
+    "intent_template": "Tell me which doctor administered the blood test by first going to {{section}}.",
+    "instantiation_dict": {
+      "section": "Medical Records"
+    },
+    "intent": "Tell me which doctor administered the blood test by first going to Medical Records.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Dr. Emily Carter administered your blood test."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Dr. Emily Carter administered your blood test."
+    },
+    "intent_template_id": 1007
+  },
+  {
+    "sites": ["health"],
+    "task_id": 8,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/health",
+    "geolocation": null,
+    "intent_template": "Tell me which appointments are related to {{specialty}}.",
+    "instantiation_dict": {
+      "specialty": "cardiology"
+    },
+    "intent": "Tell me which appointments are related to cardiology.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "You have two cardiology appointments scheduled on April 10 and May 5."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "You have two cardiology appointments scheduled on April 10 and May 5."
+    },
+    "intent_template_id": 1008
+  },
+  {
+    "sites": ["health"],
+    "task_id": 9,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/health",
+    "geolocation": null,
+    "intent_template": "Tell me all my medical records.",
+    "instantiation_dict": {},
+    "intent": "Tell me all my medical records.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "All your medical records have been retrieved and are available for review."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "All your medical records have been retrieved and are available for review."
+    },
+    "intent_template_id": 1009
+  },
+  
+  {
+    "sites": ["news"],
+    "task_id": 10,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/news",
+    "geolocation": null,
+    "intent_template": "Summarize the latest news article.",
+    "instantiation_dict": {},
+    "intent": "Summarize the latest news article.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The latest news article discusses the recent advancements in renewable energy technology."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The latest news article discusses the recent advancements in renewable energy technology."
+    },
+    "intent_template_id": 1010
+  },
+  {
+    "sites": ["news"],
+    "task_id": 11,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/news",
+    "geolocation": null,
+    "intent_template": "Give me a summary of today’s top headlines.",
+    "instantiation_dict": {},
+    "intent": "Give me a summary of today’s top headlines.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Today's top headlines include the global economic summit, breakthroughs in medical research, and major political developments."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Today's top headlines include the global economic summit, breakthroughs in medical research, and major political developments."
+    },
+    "intent_template_id": 1011
+  },
+  {
+    "sites": ["news"],
+    "task_id": 12,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/news",
+    "geolocation": null,
+    "intent_template": "Summarize the latest news article about {{topic}}.",
+    "instantiation_dict": {
+      "topic": "the economy"
+    },
+    "intent": "Summarize the latest news article about the economy.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The latest article covers the current state of the economy, highlighting growth in the tech sector and challenges in manufacturing."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The latest article covers the current state of the economy, highlighting growth in the tech sector and challenges in manufacturing."
+    },
+    "intent_template_id": 1012
+  },
+  {
+    "sites": ["news"],
+    "task_id": 13,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/news",
+    "geolocation": null,
+    "intent_template": "Find and summarize an article from the {{section}} in the current article.",
+    "instantiation_dict": {
+      "section": "related news"
+    },
+    "intent": "Find and summarize an article from the related news section in the current article.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The related news article discusses environmental policies introduced by the government."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The related news article discusses environmental policies introduced by the government."
+    },
+    "intent_template_id": 1013
+  },
+  {
+    "sites": ["news"],
+    "task_id": 14,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/news",
+    "geolocation": null,
+    "intent_template": "Translate the top headline to {{language}}.",
+    "instantiation_dict": {
+      "language": "Spanish"
+    },
+    "intent": "Translate the top headline to Spanish.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Traduce el titular principal al español."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Traduce el titular principal al español."
+    },
+    "intent_template_id": 1014
+  },
+  {
+    "sites": ["news"],
+    "task_id": 15,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/news",
+    "geolocation": null,
+    "intent_template": "Tell me which new {{policy_type}} have been announced.",
+    "instantiation_dict": {
+      "policy_type": "environmental policies"
+    },
+    "intent": "Tell me which new environmental policies have been announced.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "New environmental policies include carbon emission reductions and renewable energy incentives."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "New environmental policies include carbon emission reductions and renewable energy incentives."
+    },
+    "intent_template_id": 1015
+  },
+  {
+    "sites": ["news"],
+    "task_id": 16,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/news",
+    "geolocation": null,
+    "intent_template": "Tell me why a surge in profits occurred for {{industry}}.",
+    "instantiation_dict": {
+      "industry": "tech giants"
+    },
+    "intent": "Tell me why a surge in profits occurred for tech giants.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Tech giants experienced a surge in profits due to increased demand for cloud services and innovative product launches."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Tech giants experienced a surge in profits due to increased demand for cloud services and innovative product launches."
+    },
+    "intent_template_id": 1016
+  },
+  {
+    "sites": ["news"],
+    "task_id": 17,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/news",
+    "geolocation": null,
+    "intent_template": "Tell me why there was a rally in global markets.",
+    "instantiation_dict": {},
+    "intent": "Tell me why there was a rally in global markets.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The rally in global markets was driven by positive economic data and investor optimism."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The rally in global markets was driven by positive economic data and investor optimism."
+    },
+    "intent_template_id": 1017
+  },
+  {
+    "sites": ["news"],
+    "task_id": 18,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/news",
+    "geolocation": null,
+    "intent_template": "Tell me which quarter {{metric}} have been surpassed.",
+    "instantiation_dict": {
+      "metric": "analysts' expectations"
+    },
+    "intent": "Tell me which quarter analysts' expectations have been surpassed.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "In Q2 2023, analysts' expectations were surpassed due to higher-than-expected revenue growth."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "In Q2 2023, analysts' expectations were surpassed due to higher-than-expected revenue growth."
+    },
+    "intent_template_id": 1018
+  },
+  {
+    "sites": ["news"],
+    "task_id": 19,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/news",
+    "geolocation": null,
+    "intent_template": "Tell me which news is related to {{topic}}.",
+    "instantiation_dict": {
+      "topic": "global markets"
+    },
+    "intent": "Tell me which news is related to global markets.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "News related to global markets include updates on international trade agreements and economic forecasts."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "News related to global markets include updates on international trade agreements and economic forecasts."
+    },
+    "intent_template_id": 1019
+  },
+  
+  {
+    "sites": ["shopping"],
+    "task_id": 20,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/shopping",
+    "geolocation": null,
+    "intent_template": "Add a {{item}} to my cart and checkout.",
+    "instantiation_dict": {
+      "item": "laptop"
+    },
+    "intent": "Add a laptop to my cart and checkout.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Laptop has been added to your cart and you have successfully checked out."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Laptop has been added to your cart and you have successfully checked out."
+    },
+    "intent_template_id": 1020
+  },
+  {
+    "sites": ["shopping"],
+    "task_id": 21,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/shopping",
+    "geolocation": null,
+    "intent_template": "Add the {{criteria}} item to the cart.",
+    "instantiation_dict": {
+      "criteria": "cheapest"
+    },
+    "intent": "Add the cheapest item to the cart.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The cheapest item has been added to your cart."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The cheapest item has been added to your cart."
+    },
+    "intent_template_id": 1021
+  },
+  {
+    "sites": ["shopping"],
+    "task_id": 22,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/shopping",
+    "geolocation": null,
+    "intent_template": "Summarize the reviews of the {{criteria}} product for me.",
+    "instantiation_dict": {
+      "criteria": "cheapest"
+    },
+    "intent": "Summarize the reviews of the cheapest product for me.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The cheapest product has received positive reviews for its affordability and decent performance."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The cheapest product has received positive reviews for its affordability and decent performance."
+    },
+    "intent_template_id": 1022
+  },
+  {
+    "sites": ["shopping"],
+    "task_id": 23,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/shopping",
+    "geolocation": null,
+    "intent_template": "Give a {{rating}}-star review for the {{item}}.",
+    "instantiation_dict": {
+      "rating": "2",
+      "item": "laptop"
+    },
+    "intent": "Give a 2-star review for the laptop.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Your 2-star review for the laptop has been submitted."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Your 2-star review for the laptop has been submitted."
+    },
+    "intent_template_id": 1023
+  },
+  {
+    "sites": ["shopping"],
+    "task_id": 24,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/shopping",
+    "geolocation": null,
+    "intent_template": "Remove all items from my cart.",
+    "instantiation_dict": {},
+    "intent": "Remove all items from my cart.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "All items have been removed from your cart."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "All items have been removed from your cart."
+    },
+    "intent_template_id": 1024
+  },
+  {
+    "sites": ["shopping"],
+    "task_id": 25,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/shopping",
+    "geolocation": null,
+    "intent_template": "Add {{quantity1}} {{item1}}, {{quantity2}} {{item2}}, and {{quantity3}} {{item3}} to the cart, then tell me how much that cost.",
+    "instantiation_dict": {
+      "quantity1": "two",
+      "item1": "smartwatches",
+      "quantity2": "one",
+      "item2": "laptop",
+      "quantity3": "three",
+      "item3": "headphones"
+    },
+    "intent": "Add two smartwatches, one laptop, and three headphones to the cart, then tell me how much that cost.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Two smartwatches, one laptop, and three headphones have been added to your cart. The total cost is $1200."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Two smartwatches, one laptop, and three headphones have been added to your cart. The total cost is $1200."
+    },
+    "intent_template_id": 1025
+  },
+  {
+    "sites": ["shopping"],
+    "task_id": 26,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/shopping",
+    "geolocation": null,
+    "intent_template": "Tell me the price of the {{item}}.",
+    "instantiation_dict": {
+      "item": "laptop"
+    },
+    "intent": "Tell me the price of the laptop.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The laptop is priced at $800."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The laptop is priced at $800."
+    },
+    "intent_template_id": 1026
+  },
+  {
+    "sites": ["shopping"],
+    "task_id": 27,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/shopping",
+    "geolocation": null,
+    "intent_template": "Tell me how much more expensive the {{item1}} is compared to the {{item2}}.",
+    "instantiation_dict": {
+      "item1": "smartphone",
+      "item2": "laptop"
+    },
+    "intent": "Tell me how much more expensive the smartphone is compared to the laptop.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The smartphone is $200 more expensive than the laptop."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The smartphone is $200 more expensive than the laptop."
+    },
+    "intent_template_id": 1027
+  },
+  {
+    "sites": ["shopping"],
+    "task_id": 28,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/shopping",
+    "geolocation": null,
+    "intent_template": "See if there are any reviews for the {{item}}.",
+    "instantiation_dict": {
+      "item": "smartwatch"
+    },
+    "intent": "See if there are any reviews for the smartwatch.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "There are several reviews available for the smartwatch."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "There are several reviews available for the smartwatch."
+    },
+    "intent_template_id": 1028
+  },
+  {
+    "sites": ["shopping"],
+    "task_id": 29,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/shopping",
+    "geolocation": null,
+    "intent_template": "Tell me whether I should buy a {{item1}} or a {{item2}} based on price.",
+    "instantiation_dict": {
+      "item1": "smartphone",
+      "item2": "laptop"
+    },
+    "intent": "Tell me whether I should buy a smartphone or a laptop based on price.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Based on price, the laptop is more affordable than the smartphone."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Based on price, the laptop is more affordable than the smartphone."
+    },
+    "intent_template_id": 1029
+  },
+  
+  {
+    "sites": ["spotify"],
+    "task_id": 30,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/spotify",
+    "geolocation": null,
+    "intent_template": "Play the first song on my home page.",
+    "instantiation_dict": {},
+    "intent": "Play the first song on my home page.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Playing the first song on your home page."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Playing the first song on your home page."
+    },
+    "intent_template_id": 1030
+  },
+  {
+    "sites": ["spotify"],
+    "task_id": 31,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/spotify",
+    "geolocation": null,
+    "intent_template": "Summarize the artist {{artist_name}}’s profile.",
+    "instantiation_dict": {
+      "artist_name": "Kanye West"
+    },
+    "intent": "Summarize the artist Kanye West’s profile.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Kanye West is a renowned artist known for his influential music and impactful presence in the entertainment industry."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Kanye West is a renowned artist known for his influential music and impactful presence in the entertainment industry."
+    },
+    "intent_template_id": 1031
+  },
+  {
+    "sites": ["spotify"],
+    "task_id": 32,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/spotify",
+    "geolocation": null,
+    "intent_template": "Search for the song \"{{song_title}}\" by {{artist_name}}.",
+    "instantiation_dict": {
+      "song_title": "Bad Habits",
+      "artist_name": "Ed Sheeran"
+    },
+    "intent": "Search for the song \"Bad Habits\" by Ed Sheeran.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "\"Bad Habits\" by Ed Sheeran has been found."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "\"Bad Habits\" by Ed Sheeran has been found."
+    },
+    "intent_template_id": 1032
+  },
+  {
+    "sites": ["spotify"],
+    "task_id": 33,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/spotify",
+    "geolocation": null,
+    "intent_template": "Play the song \"{{song_title}}\".",
+    "instantiation_dict": {
+      "song_title": "Lift Yourself"
+    },
+    "intent": "Play the song \"Lift Yourself\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Playing the song \"Lift Yourself\"."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Playing the song \"Lift Yourself\"."
+    },
+    "intent_template_id": 1033
+  },
+  {
+    "sites": ["spotify"],
+    "task_id": 34,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/spotify",
+    "geolocation": null,
+    "intent_template": "Add \"{{song_title}}\" by {{artist_name}} to my {{playlist_name}} playlist.",
+    "instantiation_dict": {
+      "song_title": "You Belong With Me",
+      "artist_name": "Taylor Swift",
+      "playlist_name": "driving"
+    },
+    "intent": "Add \"You Belong With Me\" by Taylor Swift to my driving playlist.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "\"You Belong With Me\" by Taylor Swift has been added to your driving playlist."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "\"You Belong With Me\" by Taylor Swift has been added to your driving playlist."
+    },
+    "intent_template_id": 1034
+  },
+  {
+    "sites": ["spotify"],
+    "task_id": 35,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/spotify",
+    "geolocation": null,
+    "intent_template": "Add the song \"{{song_title1}}\" by {{artist_name1}} as well as the song \"{{song_title2}}\" by {{artist_name2}} to different playlists.",
+    "instantiation_dict": {
+      "song_title1": "Bad Habits",
+      "artist_name1": "Ed Sheeran",
+      "song_title2": "Gooba",
+      "artist_name2": "6IX9INE"
+    },
+    "intent": "Add the song \"Bad Habits\" by Ed Sheeran as well as the song \"Gooba\" by 6IX9INE to different playlists.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "\"Bad Habits\" by Ed Sheeran and \"Gooba\" by 6IX9INE have been added to separate playlists."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "\"Bad Habits\" by Ed Sheeran and \"Gooba\" by 6IX9INE have been added to separate playlists."
+    },
+    "intent_template_id": 1035
+  },
+  {
+    "sites": ["spotify"],
+    "task_id": 36,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/spotify",
+    "geolocation": null,
+    "intent_template": "Turn the sound off for the music.",
+    "instantiation_dict": {},
+    "intent": "Turn the sound off for the music.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The sound has been turned off."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The sound has been turned off."
+    },
+    "intent_template_id": 1036
+  },
+  {
+    "sites": ["spotify"],
+    "task_id": 37,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/spotify",
+    "geolocation": null,
+    "intent_template": "See which playlists I have created.",
+    "instantiation_dict": {},
+    "intent": "See which playlists I have created.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Your created playlists include 'Driving', 'Workout', and 'Chill Vibes'."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Your created playlists include 'Driving', 'Workout', and 'Chill Vibes'."
+    },
+    "intent_template_id": 1037
+  },
+  {
+    "sites": ["spotify"],
+    "task_id": 38,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/spotify",
+    "geolocation": null,
+    "intent_template": "Tell me which song {{artist_name}} created.",
+    "instantiation_dict": {
+      "artist_name": "Ed Sheeran"
+    },
+    "intent": "Tell me which song Ed Sheeran created.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Ed Sheeran created the song \"Bad Habits\"."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Ed Sheeran created the song \"Bad Habits\"."
+    },
+    "intent_template_id": 1038
+  },
+  {
+    "sites": ["spotify"],
+    "task_id": 39,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/spotify",
+    "geolocation": null,
+    "intent_template": "Tell me whether {{artist_name}} has a song called \"{{song_title}}\".",
+    "instantiation_dict": {
+      "artist_name": "Taylor Swift",
+      "song_title": "Lift Yourself"
+    },
+    "intent": "Tell me whether Taylor Swift has a song called \"Lift Yourself\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Taylor Swift does not have a song called \"Lift Yourself\"."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Taylor Swift does not have a song called \"Lift Yourself\"."
+    },
+    "intent_template_id": 1039
+  },
+  
+  {
+    "sites": ["wiki"],
+    "task_id": 40,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/wiki",
+    "geolocation": null,
+    "intent_template": "Summarize the Wiki Page about {{topic}}.",
+    "instantiation_dict": {
+      "topic": "Instagram"
+    },
+    "intent": "Summarize the Wiki Page about Instagram.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Instagram is a social media platform focused on photo and video sharing, launched in 2010."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Instagram is a social media platform focused on photo and video sharing, launched in 2010."
+    },
+    "intent_template_id": 1040
+  },
+  {
+    "sites": ["wiki"],
+    "task_id": 41,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/wiki",
+    "geolocation": null,
+    "intent_template": "Search for the article about {{topic}} and summarize the results.",
+    "instantiation_dict": {
+      "topic": "social networking"
+    },
+    "intent": "Search for the article about social networking and summarize the results.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Social networking involves online platforms that facilitate the creation and sharing of information, ideas, and interests."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Social networking involves online platforms that facilitate the creation and sharing of information, ideas, and interests."
+    },
+    "intent_template_id": 1041
+  },
+  {
+    "sites": ["wiki"],
+    "task_id": 42,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/wiki",
+    "geolocation": null,
+    "intent_template": "Tell me the articles under the related article sections in the {{page}} page.",
+    "instantiation_dict": {
+      "page": "social networking"
+    },
+    "intent": "Tell me the articles under the related article sections in the social networking page.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Related articles include 'Online Community', 'Social Media', and 'Networking Events'."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Related articles include 'Online Community', 'Social Media', and 'Networking Events'."
+    },
+    "intent_template_id": 1042
+  },
+  {
+    "sites": ["wiki"],
+    "task_id": 43,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/wiki",
+    "geolocation": null,
+    "intent_template": "Translate the Wiki page about the programming language {{language}} into {{language_target}}.",
+    "instantiation_dict": {
+      "language": "React",
+      "language_target": "Spanish"
+    },
+    "intent": "Translate the Wiki page about the programming language React into Spanish.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "React es una biblioteca de JavaScript para construir interfaces de usuario."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "React es una biblioteca de JavaScript para construir interfaces de usuario."
+    },
+    "intent_template_id": 1043
+  },
+  {
+    "sites": ["wiki"],
+    "task_id": 44,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/wiki",
+    "geolocation": null,
+    "intent_template": "Tell me who owns {{entity}} by opening the {{entity}} article.",
+    "instantiation_dict": {
+      "entity": "Facebook"
+    },
+    "intent": "Tell me who owns Facebook by opening the Facebook article.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Facebook is owned by Meta Platforms, Inc."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Facebook is owned by Meta Platforms, Inc."
+    },
+    "intent_template_id": 1044
+  },
+  {
+    "sites": ["wiki"],
+    "task_id": 45,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/wiki",
+    "geolocation": null,
+    "intent_template": "Tell me who maintains the {{library}} library.",
+    "instantiation_dict": {
+      "library": "React"
+    },
+    "intent": "Tell me who maintains the React library.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The React library is maintained by Meta Platforms, Inc. and a community of developers."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The React library is maintained by Meta Platforms, Inc. and a community of developers."
+    },
+    "intent_template_id": 1045
+  },
+  {
+    "sites": ["wiki"],
+    "task_id": 46,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/wiki",
+    "geolocation": null,
+    "intent_template": "Edit the article about {{topic}} to add information as to how {{information}}.",
+    "instantiation_dict": {
+      "topic": "JavaScript",
+      "information": "for loops work in JavaScript"
+    },
+    "intent": "Edit the article about JavaScript to add information as to how for loops work in JavaScript.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The JavaScript article has been updated with information on how for loops work."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The JavaScript article has been updated with information on how for loops work."
+    },
+    "intent_template_id": 1046
+  },
+  {
+    "sites": ["wiki"],
+    "task_id": 47,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/wiki",
+    "geolocation": null,
+    "intent_template": "Tell me the features {{entity}} offers.",
+    "instantiation_dict": {
+      "entity": "Instagram"
+    },
+    "intent": "Tell me the features Instagram offers.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Instagram offers features like photo and video sharing, Stories, Reels, direct messaging, and IGTV."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Instagram offers features like photo and video sharing, Stories, Reels, direct messaging, and IGTV."
+    },
+    "intent_template_id": 1047
+  },
+  {
+    "sites": ["wiki"],
+    "task_id": 48,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/wiki",
+    "geolocation": null,
+    "intent_template": "Tell me who hosts {{entity}}.",
+    "instantiation_dict": {
+      "entity": "Wikipedia"
+    },
+    "intent": "Tell me who hosts Wikipedia.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Wikipedia is hosted by the Wikimedia Foundation."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Wikipedia is hosted by the Wikimedia Foundation."
+    },
+    "intent_template_id": 1048
+  },
+  {
+    "sites": ["wiki"],
+    "task_id": 49,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/wiki",
+    "geolocation": null,
+    "intent_template": "Tell me which articles are related to {{topic}}.",
+    "instantiation_dict": {
+      "topic": "social networking"
+    },
+    "intent": "Tell me which articles are related to social networking.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Related articles include 'Online Community', 'Social Media', and 'Networking Events'."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Related articles include 'Online Community', 'Social Media', and 'Networking Events'."
+    },
+    "intent_template_id": 1049
+  },
+  
+  {
+    "sites": ["linkedin"],
+    "task_id": 50,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/linkedin",
+    "geolocation": null,
+    "intent_template": "Open {{company}}’s profile and tell me the name of the hiring manager.",
+    "instantiation_dict": {
+      "company": "Google"
+    },
+    "intent": "Open Google’s profile and tell me the name of the hiring manager.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "The hiring manager at Google is Sarah Johnson."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "The hiring manager at Google is Sarah Johnson."
+    },
+    "intent_template_id": 1050
+  },
+  {
+    "sites": ["linkedin"],
+    "task_id": 51,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/linkedin",
+    "geolocation": null,
+    "intent_template": "Create a new post saying {{message}}.",
+    "instantiation_dict": {
+      "message": "I graduated from Purdue class of 2024."
+    },
+    "intent": "Create a new post saying I graduated from Purdue class of 2024.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Your new post has been created: I graduated from Purdue class of 2024."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Your new post has been created: I graduated from Purdue class of 2024."
+    },
+    "intent_template_id": 1051
+  },
+  {
+    "sites": ["linkedin"],
+    "task_id": 52,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/linkedin",
+    "geolocation": null,
+    "intent_template": "Accept {{name}}’s connection request.",
+    "instantiation_dict": {
+      "name": "Ben Taylor"
+    },
+    "intent": "Accept Ben Taylor’s connection request.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Ben Taylor’s connection request has been accepted."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Ben Taylor’s connection request has been accepted."
+    },
+    "intent_template_id": 1052
+  },
+  {
+    "sites": ["linkedin"],
+    "task_id": 53,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/linkedin",
+    "geolocation": null,
+    "intent_template": "Summarize information on {{entity}}’s profile.",
+    "instantiation_dict": {
+      "entity": "Purdue University"
+    },
+    "intent": "Summarize information on Purdue University’s profile.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Purdue University is a leading research institution known for its engineering and technology programs."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Purdue University is a leading research institution known for its engineering and technology programs."
+    },
+    "intent_template_id": 1053
+  },
+  {
+    "sites": ["linkedin"],
+    "task_id": 54,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/linkedin",
+    "geolocation": null,
+    "intent_template": "Tell me the location of {{entity}}.",
+    "instantiation_dict": {
+      "entity": "Purdue University"
+    },
+    "intent": "Tell me the location of Purdue University.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Purdue University is located in West Lafayette, Indiana."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Purdue University is located in West Lafayette, Indiana."
+    },
+    "intent_template_id": 1054
+  },
+  {
+    "sites": ["linkedin"],
+    "task_id": 55,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/linkedin",
+    "geolocation": null,
+    "intent_template": "Tell me what {{person_name}} provides consultation services for.",
+    "instantiation_dict": {
+      "person_name": "James Bond"
+    },
+    "intent": "Tell me what James Bond provides consultation services for.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "James Bond provides consultation services for strategic security and intelligence operations."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "James Bond provides consultation services for strategic security and intelligence operations."
+    },
+    "intent_template_id": 1055
+  },
+  {
+    "sites": ["linkedin"],
+    "task_id": 56,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/linkedin",
+    "geolocation": null,
+    "intent_template": "Find out what kind of company {{company_name}} is.",
+    "instantiation_dict": {
+      "company_name": "TechCorp Global LTD"
+    },
+    "intent": "Find out what kind of company TechCorp Global LTD is.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "TechCorp Global LTD is a multinational technology company specializing in software development and IT services."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "TechCorp Global LTD is a multinational technology company specializing in software development and IT services."
+    },
+    "intent_template_id": 1056
+  },
+  {
+    "sites": ["linkedin"],
+    "task_id": 57,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/linkedin",
+    "geolocation": null,
+    "intent_template": "Tell me who got a new job at {{company_name}}.",
+    "instantiation_dict": {
+      "company_name": "TechCorp Global LTD"
+    },
+    "intent": "Tell me who got a new job at TechCorp Global LTD.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Jane Doe has recently started a new position at TechCorp Global LTD as a Senior Developer."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Jane Doe has recently started a new position at TechCorp Global LTD as a Senior Developer."
+    },
+    "intent_template_id": 1057
+  },
+  {
+    "sites": ["linkedin"],
+    "task_id": 58,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/linkedin",
+    "geolocation": null,
+    "intent_template": "Tell me what {{person_name}} is excited about.",
+    "instantiation_dict": {
+      "person_name": "Jane Smith"
+    },
+    "intent": "Tell me what Jane Smith is excited about.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "Jane Smith is excited about launching her new project focused on sustainable technology."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Jane Smith is excited about launching her new project focused on sustainable technology."
+    },
+    "intent_template_id": 1058
+  },
+  {
+    "sites": ["linkedin"],
+    "task_id": 59,
+    "require_login": false,
+    "storage_state": null,
+    "start_url": "https://agenttrickydps.vercel.app/linkedin",
+    "geolocation": null,
+    "intent_template": "Give me a list of the companies you see that all vitals are normal.",
+    "instantiation_dict": {},
+    "intent": "Give me a list of the companies you see that all vitals are normal.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "exact_match": "All vitals are normal for the following companies: Google, Microsoft, and Apple."
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "All vitals are normal for the following companies: Google, Microsoft, and Apple."
+    },
+    "intent_template_id": 1059
+  }
+]

@@ -1,0 +1,2 @@
+https://github.com/
+Identify the latest top-trending open-source project in the category of 'Machine Learning' on GitHub, and check the number of stars it has received.

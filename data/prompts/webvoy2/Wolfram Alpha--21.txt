@@ -1,0 +1,2 @@
+https://www.wolframalpha.com/
+Calculate (1+0.1*i)^8 + (1−0.2*i)^8  where i is a complex number.

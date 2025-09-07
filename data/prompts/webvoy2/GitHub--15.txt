@@ -1,0 +1,2 @@
+https://github.com/
+Locate a repository on GitHub related to 'quantum computing' that has been updated within the last week and has at least 50 stars. Provide a brief description of the project.

@@ -1,0 +1,2 @@
+https://textinputdemos.tiiny.site/types/dynamic_autocomplete_input.html
+Type "Can" in the search field, select "Canada" from the dropdown suggestion list and click the submit button.

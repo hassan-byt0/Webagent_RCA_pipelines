@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://bulia-keshav.github.io/Element-variation-websites/Arxiv/Tailwind.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search - Tailwind</title>
+    <script src="./search_tailwind_files/saved_resource"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#007bff',
+                        'primary-hover': '#0056b3',
+                        gray: {
+                            50: '#f8f9fa',
+                            100: '#e9ecef',
+                            200: '#dee2e6',
+                            300: '#ced4da',
+                            400: '#adb5bd',
+                            500: '#6c757d',
+                            600: '#495057',
+                            700: '#343a40',
+                            800: '#212529',
+                            900: '#111'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#dee2e6}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-3{margin-left:0.75rem}.ml-5{margin-left:1.25rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-4{height:1rem}.w-16{width:4rem}.w-20{width:5rem}.w-24{width:6rem}.w-32{width:8rem}.w-36{width:9rem}.w-4{width:1rem}.max-w-4xl{max-width:56rem}.flex-1{flex:1 1 0%}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-5{gap:1.25rem}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.rounded{border-radius:0.25rem}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(206 212 218 / var(--tw-border-opacity, 1))}.border-green-300{--tw-border-opacity:1;border-color:rgb(134 239 172 / var(--tw-border-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(248 249 250 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(0 123 255 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-yellow-100{--tw-bg-opacity:1;background-color:rgb(254 249 195 / var(--tw-bg-opacity, 1))}.p-5{padding:1.25rem}.p-8{padding:2rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-normal{font-weight:400}.leading-relaxed{line-height:1.625}.text-gray-600{--tw-text-opacity:1;color:rgb(73 80 87 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(33 37 41 / var(--tw-text-opacity, 1))}.text-green-800{--tw-text-opacity:1;color:rgb(22 101 52 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(0 123 255 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(233 236 239 / var(--tw-bg-opacity, 1))}.hover\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgb(0 86 179 / var(--tw-bg-opacity, 1))}.focus\:border-transparent:focus{border-color:transparent}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-primary:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(0 123 255 / var(--tw-ring-opacity, 1))}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}</style></head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <div class="max-w-4xl mx-auto p-5">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-3xl mb-8 text-gray-800 font-normal">Advanced Search - Tailwind</h1>
+            
+            <form id="advancedSearchForm">
+                <!-- Search Terms Section -->
+                <div class="mb-6 border border-gray-300 p-5 rounded-lg">
+                    <div class="mb-4">
+                        <label class="block mb-2 font-bold text-gray-600">Search term(s)</label>
+                        <div id="searchTerms">
+                            <div class="flex gap-3 items-center mb-3">
+                                <input type="text" class="flex-1 px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Search term...">
+                                <select class="w-32 px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="title">Title</option>
+                                    <option value="author">Author</option>
+                                    <option value="abstract">Abstract</option>
+                                    <option value="comment">Comment</option>
+                                    <option value="journal">Journal</option>
+                                    <option value="subject">Subject</option>
+                                    <option value="report">Report</option>
+                                    <option value="all">All fields</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <button type="button" class="bg-gray-50 border border-gray-300 px-4 py-2 rounded text-gray-600 hover:bg-gray-100 transition-colors" onclick="addSearchTerm()">Add another term+</button>
+                            <button type="button" class="bg-primary text-white px-5 py-2 rounded text-sm font-bold hover:bg-primary-hover transition-colors">Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subject Section -->
+                <div class="mb-6 border border-gray-300 p-5 rounded-lg">
+                    <div class="mb-4">
+                        <label class="block mb-2 font-bold text-gray-600">Subject</label>
+                        <p class="text-gray-600 text-sm mb-3">All classifications will be included by default</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" id="cs" name="subject" value="cs" class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+                                <label for="cs" class="text-sm">Computer Science (cs)</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" id="physics" name="subject" value="physics" class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+                                <label for="physics" class="text-sm">Physics</label>
+                                <select class="w-16 ml-3 px-2 py-1 border border-gray-300 rounded text-sm">
+                                    <option value="all">all</option>
+                                </select>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" id="econ" name="subject" value="econ" class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+                                <label for="econ" class="text-sm">Economics (econ)</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" id="q-bio" name="subject" value="q-bio" class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+                                <label for="q-bio" class="text-sm">Quantitative Biology (q-bio)</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" id="eess" name="subject" value="eess" class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+                                <label for="eess" class="text-sm">Electrical Engineering and Systems Science (eess)</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" id="q-fin" name="subject" value="q-fin" class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+                                <label for="q-fin" class="text-sm">Quantitative Finance (q-fin)</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" id="math" name="subject" value="math" class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+                                <label for="math" class="text-sm">Mathematics (math)</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" id="stat" name="subject" value="stat" class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+                                <label for="stat" class="text-sm">Statistics (stat)</label>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-5 mt-3">
+                            <div class="flex items-center gap-2">
+                                <input type="radio" id="include-cross" name="cross-listed" value="include" checked="" class="w-4 h-4 text-primary focus:ring-primary border-gray-300">
+                                <label for="include-cross" class="text-sm">Include cross-listed papers</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="radio" id="exclude-cross" name="cross-listed" value="exclude" class="w-4 h-4 text-primary focus:ring-primary border-gray-300">
+                                <label for="exclude-cross" class="text-sm">Exclude cross-listed papers</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date Section -->
+                <div class="mb-6 border border-gray-300 p-5 rounded-lg">
+                    <div class="mb-4">
+                        <label class="block mb-2 font-bold text-gray-600">Date</label>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-2">
+                                <input type="radio" id="all-dates" name="date-filter" value="all" checked="" class="w-4 h-4 text-primary focus:ring-primary border-gray-300">
+                                <label for="all-dates" class="text-sm">All dates</label>
+                            </div>
+                            
+                            <div class="flex items-center gap-2">
+                                <input type="radio" id="past-12" name="date-filter" value="past-12" class="w-4 h-4 text-primary focus:ring-primary border-gray-300">
+                                <label for="past-12" class="text-sm">Past 12 months</label>
+                            </div>
+                            
+                            <div class="flex items-center gap-2">
+                                <input type="radio" id="specific-year" name="date-filter" value="specific" class="w-4 h-4 text-primary focus:ring-primary border-gray-300">
+                                <label for="specific-year" class="text-sm">Specific year</label>
+                                <input type="text" placeholder="YYYY" class="w-24 ml-3 px-2 py-1 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            
+                            <div class="flex items-center gap-2">
+                                <input type="radio" id="date-range" name="date-filter" value="range" class="w-4 h-4 text-primary focus:ring-primary border-gray-300">
+                                <label for="date-range" class="text-sm">Date range</label>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 mt-4 ml-5">
+                            <span class="text-sm">From</span>
+                            <input type="text" placeholder="YYYY[-MM[-DD]]" class="w-36 px-2 py-1 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <span class="text-sm">to</span>
+                            <input type="text" placeholder="YYYY[-MM[-DD]]" class="w-36 px-2 py-1 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+
+                        <div class="text-xs text-gray-600 mt-3 leading-relaxed">
+                            When limiting by date range, the lower bound of the "from" date and the upper bound of the "to" date are used.
+                            For example, searching with <span class="bg-yellow-100 px-1 rounded">From: 2012-02</span> and <span class="bg-yellow-100 px-1 rounded">To: 2013</span> will search for papers submitted from <span class="bg-yellow-100 px-1 rounded">2012-02-01</span> to <span class="bg-yellow-100 px-1 rounded">2013-12-31</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-5 mt-5">
+                            <div class="flex items-center gap-2">
+                                <input type="radio" id="submission-recent" name="date-type" value="submission-recent" checked="" class="w-4 h-4 text-primary focus:ring-primary border-gray-300">
+                                <label for="submission-recent" class="text-sm">Submission date (most recent)</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="radio" id="submission-original" name="date-type" value="submission-original" class="w-4 h-4 text-primary focus:ring-primary border-gray-300">
+                                <label for="submission-original" class="text-sm">Submission date (original)</label>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <input type="radio" id="announcement" name="date-type" value="announcement" class="w-4 h-4 text-primary focus:ring-primary border-gray-300">
+                                <label for="announcement" class="text-sm">Announcement date</label>
+                            </div>
+                        </div>
+
+                        <div class="text-xs text-gray-600 mt-3 leading-relaxed">
+                            You may filter on either submission date or announcement date. Note that announcement date supports only year and month granularity.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Display Options Section -->
+                <div class="mb-6 border border-gray-300 p-5 rounded-lg">
+                    <div class="flex flex-wrap gap-5 mb-4">
+                        <div class="flex items-center gap-2">
+                            <input type="radio" id="show-abstracts" name="abstracts" value="show" checked="" class="w-4 h-4 text-primary focus:ring-primary border-gray-300">
+                            <label for="show-abstracts" class="text-sm">Show abstracts</label>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <input type="radio" id="hide-abstracts" name="abstracts" value="hide" class="w-4 h-4 text-primary focus:ring-primary border-gray-300">
+                            <label for="hide-abstracts" class="text-sm">Hide abstracts</label>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-3 mb-4">
+                        <select class="w-20 px-2 py-1 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="25">25</option>
+                            <option value="50" selected="">50</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                        </select>
+                        <span class="text-sm">results per page</span>
+                        <div class="flex items-center gap-2 ml-5">
+                            <input type="checkbox" id="include-older" name="include-older" class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+                            <label for="include-older" class="text-sm">Include older versions of papers</label>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <button type="submit" class="bg-primary text-white px-5 py-2 rounded text-sm font-bold hover:bg-primary-hover transition-colors">Search</button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="successMessage" class="bg-green-100 text-green-800 border border-green-300 px-4 py-3 rounded mt-5 hidden">
+                Form submitted successfully!
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addSearchTerm() {
+            const searchTermsContainer = document.getElementById('searchTerms');
+            const newRow = document.createElement('div');
+            newRow.className = 'flex gap-3 items-center mb-3';
+            newRow.innerHTML = `
+                <input type="text" class="flex-1 px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Search term...">
+                <select class="w-32 px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <option value="title">Title</option>
+                    <option value="author">Author</option>
+                    <option value="abstract">Abstract</option>
+                    <option value="comment">Comment</option>
+                    <option value="journal">Journal</option>
+                    <option value="subject">Subject</option>
+                    <option value="report">Report</option>
+                    <option value="all">All fields</option>
+                </select>
+            `;
+            searchTermsContainer.appendChild(newRow);
+        }
+
+        function collectSearchParameters() {
+            const params = new URLSearchParams();
+            
+            // Collect search terms
+            const searchRows = document.querySelectorAll('#searchTerms > div');
+            const searchTerms = [];
+            searchRows.forEach(row => {
+                const term = row.querySelector('input[type="text"]').value.trim();
+                const field = row.querySelector('select').value;
+                if (term) {
+                    searchTerms.push({ term, field });
+                }
+            });
+            if (searchTerms.length > 0) {
+                params.set('searchTerms', JSON.stringify(searchTerms));
+            }
+            
+            // Collect subject filters
+            const subjects = [];
+            document.querySelectorAll('input[name="subject"]:checked').forEach(checkbox => {
+                subjects.push(checkbox.value);
+            });
+            if (subjects.length > 0) {
+                params.set('subjects', subjects.join(','));
+            }
+            
+            // Cross-listed papers option
+            const crossListed = document.querySelector('input[name="cross-listed"]:checked').value;
+            params.set('crossListed', crossListed);
+            
+            // Date filtering
+            const dateFilter = document.querySelector('input[name="date-filter"]:checked').value;
+            params.set('dateFilter', dateFilter);
+            
+            if (dateFilter === 'specific') {
+                const year = document.querySelector('input[placeholder="YYYY"]').value.trim();
+                if (year) params.set('specificYear', year);
+            } else if (dateFilter === 'range') {
+                const fromDate = document.querySelector('input[placeholder="YYYY[-MM[-DD]]"]').value.trim();
+                const toDate = document.querySelectorAll('input[placeholder="YYYY[-MM[-DD]]"]')[1].value.trim();
+                if (fromDate) params.set('fromDate', fromDate);
+                if (toDate) params.set('toDate', toDate);
+            }
+            
+            // Date type
+            const dateType = document.querySelector('input[name="date-type"]:checked').value;
+            params.set('dateType', dateType);
+            
+            // Display options
+            const showAbstracts = document.querySelector('input[name="abstracts"]:checked').value;
+            params.set('showAbstracts', showAbstracts);
+            
+            const resultsPerPage = document.querySelector('select').value;
+            params.set('resultsPerPage', resultsPerPage);
+            
+            const includeOlder = document.querySelector('#include-older').checked;
+            params.set('includeOlder', includeOlder);
+            
+            return params;
+        }
+
+        function performSearch() {
+            const params = collectSearchParameters();
+            // Redirect to results page with search parameters
+            window.location.href = `Data.html?${params.toString()}`;
+        }
+
+        document.getElementById('advancedSearchForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            performSearch();
+        });
+
+        // Handle search button clicks (not just form submission)
+        document.querySelectorAll('button[type="button"]').forEach(btn => {
+            if (btn.textContent.includes('Search')) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    performSearch();
+                });
+            }
+        });
+    </script>
+
+
+</body></html>

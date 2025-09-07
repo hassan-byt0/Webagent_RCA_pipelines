@@ -1,0 +1,4 @@
+task_id,status,framework,element_types,root_causes,five_whys,db_issues,recommendations,analysis_summary
+Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_3,failure,,{},Analysis error: Parsing error: No JSON found in response,{},,Check logs | Verify configuration,RCA failed due to technical error
+Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_2,failure,,{},Root cause analysis incomplete: missing field,{},,Review the model response for technical issues,Analysis summary missing due to model response format issues
+Add_Nike_shoes_for_men_and_Adidas_shoes_for_women_with_the_cheapest_available_price_to_the_cart__and_1,failure,,{},Root cause analysis incomplete: missing field,{},,Review the model response for technical issues,Analysis summary missing due to model response format issues

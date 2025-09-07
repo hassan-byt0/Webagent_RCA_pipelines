@@ -1,0 +1,2 @@
+https://huggingface.co/
+Look up the tour about how to use the 'pipeline' feature in the Hugging Face Transformers library for sentiment analysis, and identify the default model it uses.
