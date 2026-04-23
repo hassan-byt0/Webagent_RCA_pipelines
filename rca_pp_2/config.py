@@ -35,7 +35,7 @@ FRAMEWORK_PATTERNS = {
 }
 
 # API Configuration - OPENAI VERSION
-#OPENAI_API_KEY = "sk-proj-XsGOYBghOsmhy2s1f36yT3BlbkFJcGUUUYTH3mzb2tUqO9vW"  # Replace with your OpenAI key
+#OPENAI_API_KEY = ""  # Replace with your OpenAI key
 #OPENAI_MODEL = "gpt-4-turbo"  # Or another OpenAI model
 
 # Token limits - OPENAI VERSION
