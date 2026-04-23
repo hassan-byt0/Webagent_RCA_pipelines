@@ -53,7 +53,7 @@ MAX_CHUNK_SIZE = 30000
 MAX_TOKENS_PER_REQUEST = 1048576  # 1M tokens (Gemini 1.5 Flash limit)
 MIN_TOKENS_FOR_RESPONSE = 8192    # Reserve tokens for response
 # Gemini API configuration
-GEMINI_API_KEY = "AIzaSyB9xtsDBHlYXrd7eU4iiXiZA9w5q2mdzpo"
+GEMINI_API_KEY = ""
 GEMINI_MODEL = "gemini-2.5-pro"
 
 
